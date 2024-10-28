@@ -28,6 +28,13 @@ body {
   }
 }
 
+.about {
+  background-color: #323544;
+  color: #fff;
+  padding: 30px 0 0;
+  position: relative;
+}
+
 footer {
   background-color: #323544;
   color: #fff;
@@ -46,6 +53,9 @@ footer .footer-row .footer-menu {
   footer .footer-row .footer-menu {
     flex: 50%;
   }
+  footer .footer-row .footer-menu .footer-menu-list li {
+    text-align: left;
+  }
 }
 @media (min-width: 992px) {
   footer .footer-row .footer-menu {
@@ -61,4 +71,11 @@ footer .footer-row .footer-menu h4 {
   text-transform: uppercase;
   font-size: 1rem;
   margin-bottom: 26px;
+}
+footer .footer-row .footer-menu .footer-menu-list li:hover {
+  text-decoration: underline;
+}
+footer ul {
+  list-style-type: none;
+  margin-right: 10px;
 }/*# sourceMappingURL=styles.css.map */

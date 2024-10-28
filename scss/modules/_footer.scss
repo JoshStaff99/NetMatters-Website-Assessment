@@ -1,3 +1,7 @@
+// ==========================================================================
+// Footer Styles
+// ==========================================================================
+
 footer {
     background-color: #323544;
     color: #fff;
@@ -13,7 +17,10 @@ footer {
             margin-bottom: 30px;
            
             @media (min-width: 768px) {
-               flex: 50%;
+               flex: 50%; 
+              .footer-menu-list li {
+                  text-align: left;
+              }
             }
 
             @media (min-width: 992px) {
@@ -29,6 +36,15 @@ footer {
                 font-size: 1rem;
                 margin-bottom: 26px;	
             }
+
+            .footer-menu-list li:hover {
+               text-decoration: underline;
+            }
        }	  
     }
+    
+   ul {
+      list-style-type: none;
+      margin-right: 10px;
+   }
 }
