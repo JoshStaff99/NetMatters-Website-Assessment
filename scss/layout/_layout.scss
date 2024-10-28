@@ -26,6 +26,25 @@ box-sizing: border-box;
 
 }
 
+// Sticky Footer Container
+
+.container-sticky-footer {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    
+    @media (min-width: 768px) {
+         width: 750px;
+    }
+
+    @media (min-width: 992px) {
+        width: 970px;
+    }
+
+    @media (min-width: 1260px) {
+        width: 1200px;
+    }
+}
 // Welcome to next matters section styles
 
 .about-row {

@@ -28,6 +28,27 @@ body {
   }
 }
 
+.container-sticky-footer {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .container-sticky-footer {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-sticky-footer {
+    width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .container-sticky-footer {
+    width: 1200px;
+  }
+}
+
 .about-row .about {
   display: flex;
   flex-wrap: wrap;
@@ -91,7 +112,8 @@ footer ul {
 }
 footer .sticky-footer {
   position: relative;
-  left: 0;
+  margin-left: auto;
+  margin-right: auto;
   bottom: 0;
   width: 100%;
   background-color: #212330;

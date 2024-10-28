@@ -52,7 +52,8 @@ footer {
    .sticky-footer {
 
       position: relative;
-      left: 0;
+      margin-left: auto;
+      margin-right: auto;
       bottom: 0;
       width: 100%;
       background-color: #212330;
