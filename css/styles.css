@@ -28,7 +28,17 @@ body {
   }
 }
 
-.about {
+.about-row .about {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #323544;
+  color: #fff;
+  padding: 30px 0 0;
+  position: relative;
+}
+.about-row .what-our-clients-think {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #323544;
   color: #fff;
   padding: 30px 0 0;
@@ -78,4 +88,19 @@ footer .footer-row .footer-menu .footer-menu-list li:hover {
 footer ul {
   list-style-type: none;
   margin-right: 10px;
+}
+footer .sticky-footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #212330;
+  color: white;
+  text-align: left;
+}
+
+html {
+  font-family: Poppins, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }/*# sourceMappingURL=styles.css.map */

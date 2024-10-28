@@ -47,4 +47,16 @@ footer {
       list-style-type: none;
       margin-right: 10px;
    }
+
+   // Sticky footer element
+   .sticky-footer {
+
+      position: relative;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #212330;
+      color: white;
+      text-align: left;
+  }
 }
