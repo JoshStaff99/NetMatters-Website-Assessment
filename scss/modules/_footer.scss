@@ -40,13 +40,14 @@ footer {
             .footer-menu-list li:hover {
                text-decoration: underline;
             }
-       }	  
+       }	
+
+       ul {
+         list-style-type: none;
+         
+      }  
     }
     
-   ul {
-      list-style-type: none;
-      margin-right: 10px;
-   }
 
    // Sticky footer element
    .sticky-footer {
@@ -59,5 +60,10 @@ footer {
       background-color: #212330;
       color: white;
       text-align: left;
+  }
+
+  .container-sticky-footer {
+   background-color: #212330;
+   width: 100%; 
   }
 }

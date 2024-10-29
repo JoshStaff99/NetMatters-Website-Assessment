@@ -106,9 +106,8 @@ footer .footer-row .footer-menu h4 {
 footer .footer-row .footer-menu .footer-menu-list li:hover {
   text-decoration: underline;
 }
-footer ul {
+footer .footer-row ul {
   list-style-type: none;
-  margin-right: 10px;
 }
 footer .sticky-footer {
   position: relative;
@@ -119,6 +118,10 @@ footer .sticky-footer {
   background-color: #212330;
   color: white;
   text-align: left;
+}
+footer .container-sticky-footer {
+  background-color: #212330;
+  width: 100%;
 }
 
 html {
