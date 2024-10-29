@@ -1,5 +1,9 @@
 body {
-  margin: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  margin: auto;
+  line-height: 1.482857143;
 }
 
 * {
@@ -76,6 +80,15 @@ footer .footer-row {
   display: flex;
   flex-wrap: wrap;
 }
+footer .footer-row .footer-company-info {
+  width: auto;
+}
+footer .footer-row .footer-company-info .footer-company-socials-logos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
 footer .footer-row .footer-menu {
   flex: 100%;
   margin-bottom: 30px;
@@ -116,12 +129,17 @@ footer .sticky-footer {
   bottom: 0;
   width: 100%;
   background-color: #212330;
-  color: white;
+  color: #fff;
   text-align: left;
 }
 footer .container-sticky-footer {
   background-color: #212330;
   width: 100%;
+}
+
+.btn-primary {
+  color: #fff;
+  border-color: #333645;
 }
 
 html {

@@ -12,6 +12,18 @@ footer {
         display: flex;
         flex-wrap: wrap;
 
+        .footer-company-info {
+            width: auto;
+
+
+         .footer-company-socials-logos {
+               display: flex;
+               flex-wrap: wrap;
+               flex-direction: row;
+               margin-bottom: 30px;
+            }
+         }
+
         .footer-menu {   
             flex: 100%;   
             margin-bottom: 30px;
@@ -58,7 +70,7 @@ footer {
       bottom: 0;
       width: 100%;
       background-color: #212330;
-      color: white;
+      color: #fff;
       text-align: left;
   }
 

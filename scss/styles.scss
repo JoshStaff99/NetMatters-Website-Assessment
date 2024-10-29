@@ -5,6 +5,13 @@
 
 @import "modules/footer.scss";
 
-// global config
+// Buttons
+@import "modules/buttons";
+
+// Global config
 
 @import "utilities/config.scss";
+
+// Mixins
+
+@import "utilities/mixins";
