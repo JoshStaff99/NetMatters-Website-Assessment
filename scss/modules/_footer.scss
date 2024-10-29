@@ -10,10 +10,26 @@ footer {
 
     .footer-row {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
+
+        .footer-logo {
+            width: 250px;
+               img {
+                  width: 100%;
+                  vertical-align: middle;
+                  border: 0;
+               }
+        }
 
         .footer-company-info {
             width: auto;
+            display: flex;
+            justify-content: space-between;
+
+            h4 {
+               margin-top: 24px;
+            }
 
 
          .footer-company-socials-logos {
@@ -21,6 +37,20 @@ footer {
                flex-wrap: wrap;
                flex-direction: row;
                margin-bottom: 30px;
+                  a {
+                     padding: 12px 22px 16px;
+                     margin-right: 10px;
+                     margin-bottom: 10px;
+                     text-align: center;
+                     text-decoration:  none;
+                     font-size: 26px;
+                     line-height: 26px;
+                     background-color: #212330;
+                        img {
+                           position: relative;
+                           top: 4px;
+                        }
+                  }
             }
          }
 
@@ -57,7 +87,14 @@ footer {
        ul {
          list-style-type: none;
          
-      }  
+      } 
+      
+      h4 {
+         color: #fff;
+         text-transform: uppercase;
+         font-size: 1rem;
+         margin-bottom: 26px;
+      }
     }
     
 
@@ -72,6 +109,15 @@ footer {
       background-color: #212330;
       color: #fff;
       text-align: left;
+         a {
+            text-decoration: none;
+         }
+            a:hover {
+               text-decoration: underline;
+               color: #fff;
+               list-style: none;
+            }
+         
   }
 
   .container-sticky-footer {
