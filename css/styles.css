@@ -2,7 +2,7 @@ body {
   font-family: Poppins, sans-serif;
   font-size: 1rem;
   letter-spacing: 0.4px;
-  margin: auto;
+  margin: 0;
   line-height: 1.482857143;
 }
 
@@ -61,6 +61,13 @@ body {
   padding: 30px 0 0;
   position: relative;
 }
+.about-row .about a {
+  text-decoration: none;
+  color: #fff;
+}
+.about-row .about .welcome-arrow {
+  margin-left: 12px;
+}
 .about-row .what-our-clients-think {
   display: flex;
   flex-wrap: wrap;
@@ -68,6 +75,20 @@ body {
   color: #fff;
   padding: 30px 0 0;
   position: relative;
+}
+.about-row .what-our-clients-think a {
+  color: #fff;
+  text-decoration: none;
+}
+.about-row .star {
+  color: orange;
+  font-size: 50px;
+  display: inline-block;
+}
+
+p {
+  line-height: 1.875rem;
+  margin-bottom: 25px;
 }
 
 footer {
@@ -121,6 +142,10 @@ footer .footer-row .footer-menu {
   flex: 100%;
   margin-bottom: 30px;
 }
+footer .footer-row .footer-menu a {
+  color: #fff;
+  text-decoration: none;
+}
 @media (min-width: 768px) {
   footer .footer-row .footer-menu {
     flex: 50%;
@@ -165,9 +190,17 @@ footer .sticky-footer {
   background-color: #212330;
   color: #fff;
   text-align: left;
+  font-size: 0.8125rem;
+}
+@media (max-width: 769px) {
+  footer .sticky-footer {
+    padding: 5px 0 10px;
+    flex-direction: column;
+  }
 }
 footer .sticky-footer a {
   text-decoration: none;
+  color: #fff;
 }
 footer .sticky-footer a:hover {
   text-decoration: underline;
@@ -179,11 +212,51 @@ footer .container-sticky-footer {
   width: 100%;
 }
 
+.btn {
+  height: auto;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.btn-google {
+  background-color: #4387f6;
+}
+
+.btn-trustpilot {
+  background-color: #00b67b;
+}
+
+.btn-primary-inverse {
+  background-color: #272936;
+}
+
+.btn-google, .btn-trustpilot, .btn-primary-inverse {
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
 .btn-primary {
   color: #fff;
   border-color: #333645;
 }
 
+@media (max-width: 535px) {
+  .btn-primary-inverse {
+    margin-bottom: 17px;
+  }
+}
+@media (max-width: 1259px) {
+  .btn-google, .btn-trustpilot {
+    margin-top: 20px;
+  }
+}
 html {
   font-family: Poppins, sans-serif;
   -ms-text-size-adjust: 100%;

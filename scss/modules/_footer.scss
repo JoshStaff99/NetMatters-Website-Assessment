@@ -57,6 +57,10 @@ footer {
         .footer-menu {   
             flex: 100%;   
             margin-bottom: 30px;
+               a {
+                  color: #fff;
+                  text-decoration: none;
+               }
            
             @media (min-width: 768px) {
                flex: 50%; 
@@ -109,8 +113,14 @@ footer {
       background-color: #212330;
       color: #fff;
       text-align: left;
+      font-size: .8125rem;
+      @media (max-width: 769px) {
+               padding: 5px 0 10px;
+               flex-direction: column;
+            }
          a {
             text-decoration: none;
+            color: #fff;
          }
             a:hover {
                text-decoration: underline;

@@ -1,7 +1,57 @@
 // ==========================================================================
 //  Buttons
 // ==========================================================================
+
+// Welcome Section Buttons
+.btn {
+    height: auto;
+    line-height: 35px;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+.btn-google {
+    background-color: #4387f6;
+}
+
+.btn-trustpilot {
+    background-color: #00b67b;
+}
+
+.btn-primary-inverse {
+    background-color: #272936;
+}
+
+.btn-google, .btn-trustpilot, .btn-primary-inverse {
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+
+//Footer Buttons
+
 .btn-primary {
     color: #fff;
     border-color: #333645;
+}
+
+//media queries
+
+// Welcome Section
+@media (max-width: 535px) {
+    .btn-primary-inverse{
+    margin-bottom: 17px;
+    }
+}
+
+@media (max-width: 1259px) {
+    .btn-google, .btn-trustpilot{
+    margin-top: 20px;
+    }
 }
