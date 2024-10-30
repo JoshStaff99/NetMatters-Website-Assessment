@@ -101,19 +101,37 @@ p {
   margin-bottom: 25px;
 }
 
+.banner-background {
+  display: flex;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
 .banner {
+  color: #fff;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
-.banner img {
-  text-align: center;
-  align-items: center;
-  display: block;
-  flex-wrap: wrap;
-  margin: auto;
-  margin-left: 0;
+.banner a {
+  text-decoration: none;
+}
+.banner h1 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 0 0 1.25rem;
+  font-weight: 600;
+}
+.banner p {
+  margin-bottom: 0.375rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
 }
 
 footer {
@@ -199,6 +217,7 @@ footer .footer-row .footer-menu .footer-menu-list li:hover {
 }
 footer .footer-row ul {
   list-style-type: none;
+  margin: auto;
 }
 footer .footer-row h4 {
   color: #fff;
@@ -233,7 +252,6 @@ footer .sticky-footer a:hover {
   list-style: none;
 }
 footer .container-sticky-footer {
-  background-color: #212330;
   width: 100%;
 }
 
@@ -241,11 +259,23 @@ footer .container-sticky-footer {
   height: auto;
   line-height: 35px;
   text-transform: uppercase;
+  border-radius: 3px;
 }
 
 .btn {
   display: inline-block;
   border: 1px solid transparent;
+}
+
+.btn-primary-banner1 {
+  margin: auto;
+  color: #fff;
+  background-color: #926fb1;
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  padding: 5px 20px;
+  line-height: 50px;
+  font-size: 1.25rem;
 }
 
 .btn-google {
@@ -261,6 +291,7 @@ footer .container-sticky-footer {
 }
 
 .btn-google, .btn-trustpilot, .btn-primary-inverse {
+  margin: auto;
   color: #fff;
   border-radius: 6px;
   padding: 10px 30px;

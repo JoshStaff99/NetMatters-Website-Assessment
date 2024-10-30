@@ -7,11 +7,23 @@
     height: auto;
     line-height: 35px;
     text-transform: uppercase;
+    border-radius: 3px;
 }
 
 .btn {
     display: inline-block;
     border: 1px solid transparent;
+}
+
+.btn-primary-banner1 {
+    margin: auto;
+    color: #fff;
+    background-color: #926fb1;
+    margin-top: 1.938rem;
+    margin-bottom: 1.125rem;
+    padding: 5px 20px;
+    line-height: 50px;
+    font-size: 1.25rem;
 }
 
 .btn-google {
@@ -27,6 +39,7 @@
 }
 
 .btn-google, .btn-trustpilot, .btn-primary-inverse {
+    margin: auto;
     color: #fff;
     border-radius: 6px;
     padding: 10px 30px;
