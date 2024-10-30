@@ -1,0 +1,13 @@
+// ==========================================================================
+//  Case Stdies Styles
+// ==========================================================================
+.case-studies {
+    display: flex;
+    flex-direction: row;
+    img {
+        max-height: 70px;
+        width: auto !important;
+        max-width: 200px;
+        filter: grayscale(1);
+    }
+}

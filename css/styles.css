@@ -134,6 +134,17 @@ p {
   font-weight: 600;
 }
 
+.case-studies {
+  display: flex;
+  flex-direction: row;
+}
+.case-studies img {
+  max-height: 70px;
+  width: auto !important;
+  max-width: 200px;
+  filter: grayscale(1);
+}
+
 footer {
   background-color: #323544;
   color: #fff;
@@ -349,6 +360,16 @@ footer .container-sticky-footer {
 
 .icon-linkedin2:before {
   content: "\eaca";
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: #fff;
 }
 
 html {
