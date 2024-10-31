@@ -134,6 +134,23 @@ p {
   font-weight: 600;
 }
 
+.partners {
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.partners img {
+  width: 100%;
+  padding: 0 20px;
+  max-height: 70px;
+  width: auto !important;
+  filter: grayscale(1);
+}
+.partners img:hover {
+  filter: grayscale(0);
+}
+
 .case-studies {
   display: flex;
   flex-direction: row;
@@ -141,10 +158,10 @@ p {
   padding-bottom: 50px;
 }
 .case-studies img {
+  width: 100%;
   padding: 0 20px;
   max-height: 70px;
   width: auto !important;
-  max-width: 200px;
   filter: grayscale(1);
 }
 .case-studies img:hover {
