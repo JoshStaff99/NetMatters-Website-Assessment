@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
   font-family: Poppins, sans-serif;
   font-size: 1rem;
@@ -134,6 +135,120 @@ p {
   font-weight: 600;
 }
 
+.container-latest-news-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-latest-news-top h2 {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.1;
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #333645;
+}
+.container-latest-news-top h3 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.625rem;
+  font-weight: 600;
+  color: #333645;
+}
+.container-latest-news-top h3 a {
+  color: #333645;
+  text-decoration: none;
+}
+.container-latest-news-top .view-all-mobile {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .container-latest-news-top {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-latest-news-top {
+    width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .container-latest-news-top {
+    width: 1200px;
+  }
+}
+
+.container-news-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-latest-news {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-latest-news h2 {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.1;
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #333645;
+}
+.container-latest-news h3 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.625rem;
+  font-weight: 600;
+  color: #333645;
+}
+.container-latest-news h3 a {
+  color: #333645;
+  text-decoration: none;
+}
+.container-latest-news .view-all-mobile {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .container-latest-news {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-latest-news {
+    width: 970px;
+  }
+}
+@media (min-width: 1260px) {
+  .container-latest-news {
+    width: 1200px;
+  }
+}
+
+.latest-news {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .partners {
   display: flex;
   flex-direction: row;
@@ -200,20 +315,6 @@ footer .footer-row .footer-company-info .footer-company-socials-logos {
   flex-wrap: wrap;
   flex-direction: row;
   margin-bottom: 30px;
-}
-footer .footer-row .footer-company-info .footer-company-socials-logos a {
-  padding: 12px 22px 16px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 26px;
-  line-height: 26px;
-  background-color: #212330;
-}
-footer .footer-row .footer-company-info .footer-company-socials-logos a img {
-  position: relative;
-  top: 4px;
 }
 footer .footer-row .footer-menu {
   flex: 100%;
@@ -337,6 +438,62 @@ footer .container-sticky-footer {
   border-color: #333645;
 }
 
+.facebook {
+  padding: 12px 22px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 26px;
+  background-color: #212330;
+}
+.facebook :hover {
+  background-color: #3b5998;
+}
+
+.linkedin {
+  padding: 12px 22px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 26px;
+  background-color: #212330;
+}
+.linkedin :hover {
+  background-color: #0077b5;
+}
+
+.twitter {
+  padding: 12px 22px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 26px;
+  background-color: #212330;
+}
+.twitter :hover {
+  background-color: #00aced;
+}
+
+.instagram {
+  padding: 12px 22px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 26px;
+  background-color: #212330;
+}
+.instagram :hover {
+  background-color: #d93175;
+}
+
 @media (max-width: 535px) {
   .btn-primary-inverse {
     margin-bottom: 17px;
@@ -349,8 +506,8 @@ footer .container-sticky-footer {
 }
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?ky9gej");
-  src: url("fonts/icomoon.eot?ky9gej#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?ky9gej") format("truetype"), url("fonts/icomoon.woff?ky9gej") format("woff"), url("fonts/icomoon.svg?ky9gej#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?ky9gej");
+  src: url("../fonts/icomoon.eot?ky9gej#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?ky9gej") format("truetype"), url("../fonts/icomoon.woff?ky9gej") format("woff"), url("../fonts/icomoon.svg?ky9gej#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;

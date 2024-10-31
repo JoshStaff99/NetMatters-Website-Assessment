@@ -54,6 +54,63 @@
     border-color: #333645;
 }
 
+//footer social buttons
+.facebook {
+    padding: 12px 22px 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration:  none;
+    font-size: 26px;
+    line-height: 26px;
+    background-color: #212330;
+        :hover {
+            background-color: #3b5998;
+        }
+}
+
+.linkedin {
+    padding: 12px 22px 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration:  none;
+    font-size: 26px;
+    line-height: 26px;
+    background-color: #212330;
+        :hover {
+            background-color: #0077b5;
+        }
+}
+
+.twitter {
+    padding: 12px 22px 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration:  none;
+    font-size: 26px;
+    line-height: 26px;
+    background-color: #212330;
+        :hover {
+            background-color: #00aced;
+        }
+}
+
+.instagram {
+    padding: 12px 22px 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration:  none;
+    font-size: 26px;
+    line-height: 26px;
+    background-color: #212330;
+        :hover {
+            background-color: #d93175;
+        }
+}
+
 //media queries
 
 // Welcome Section
