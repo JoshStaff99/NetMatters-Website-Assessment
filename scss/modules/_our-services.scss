@@ -1,0 +1,27 @@
+// ==========================================================================
+//  Our Services Styles
+// ==========================================================================
+.our-services {
+    h2 {
+        font-size: 2.7rem;
+        line-height: 1.1;
+        color: #333645;
+        font-weight: 400;
+    }
+    h3 {
+        line-height: 1.1;
+        font-size: 1.625rem;
+        font-weight: 600;
+        color: #333645;
+        text-align: center;
+    }
+}
+
+.service-list {
+    .service {
+        display: block;
+        border: 1px solid #ccc;
+        padding: 30px;
+        box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+    }
+}
