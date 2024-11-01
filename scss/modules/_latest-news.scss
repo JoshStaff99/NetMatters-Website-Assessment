@@ -32,7 +32,7 @@
             margin: auto;
             display: flex;
             flex-wrap: wrap;
-            text-align: center;
+            
         }
 
     @media (min-width: 768px) {
@@ -49,6 +49,18 @@
 
 }
 
+.view-all-mobile {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+        font-size: 1.625rem;
+        font-weight: 600;
+        color: #333645;
+    }
+}
+
 .news-list {
     display: flex;
     flex-wrap: wrap;
@@ -62,8 +74,6 @@
 .article {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
     font-size: .8125rem;
     margin-top: 30px;
     position: relative;
@@ -77,22 +87,79 @@
     margin: auto;
 }
 
+.article-img-btn {
+    position: absolute;
+    right: 0;
+    color: #fff;
+    font-size: .75rem;
+    padding: 0 10px;
+    line-height: 1.438rem;
+    top: 10px;
+    z-index: 1;
+    text-transform: uppercase;
+}
+.art-btn-1 {
+    background-color: #db8c0d;
+}
+.art-btn-2 {
+    background-color: #2ecc71;
+}
+.art-btn-3 {
+    background-color: #926fb1;
+}
+
 .article-img {
     img {
         max-width: 100%;
     }
 }
-
-.container-news-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+.article-block {
+    border-top: 0;
+    border: 1px solid #ccc;
+    padding: 30px;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+    .h3-1 {
+        color: #db8c0d
+    }
+    .h3-2 {
+        color: #2ecc71;
+    }
+    .h3-3 {
+        color: #926fb1;
+    }
+    h3 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 0 0 15px;
+    }
+    p {
+        line-height: 1.375rem;
+        font-size: .8125rem;
+    }
 }
 
+.user {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    font-size: .875rem;
+}
+
+.user-img {
+    img {
+        border-radius: 50%;
+    }
+}
+
+.article-date {
+    padding-left: 20px;
+    line-height: 20px;
+    strong {
+        font-weight: 600;
+        color: #333645;
+    }
+}
 .latest-news {
     padding-top: 50px;
     padding-bottom: 50px;
