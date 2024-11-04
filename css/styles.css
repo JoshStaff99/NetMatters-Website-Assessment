@@ -103,6 +103,60 @@ p {
   margin-bottom: 25px;
 }
 
+header {
+  padding: 20px 0;
+}
+header img {
+  padding: 0;
+  max-width: 100%;
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.header-phone-icon {
+  max-width: 100%;
+  font-size: 32px;
+  margin-left: 15px;
+  color: #333645;
+}
+
+.icon-menu {
+  max-width: 100%;
+  color: #fff;
+  padding: 10px;
+  background-color: #333645;
+}
+
+.header-form {
+  position: relative;
+  margin-top: 11px;
+  color: #888;
+  opacity: 1;
+  display: inline-block;
+  width: 100%;
+  height: 47px;
+  padding: 5px 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: none;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.icon-search {
+  color: #333645;
+  position: relative;
+  right: 5px;
+  line-height: 47px;
+  font-size: 20px;
+}
+
 .banner-background {
   display: flex;
   background-size: cover;
@@ -863,6 +917,28 @@ footer .container-sticky-footer {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: #fff;
+}
+
+.icon-phone_in_talk:before {
+  content: "\e900";
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+
+.icon-search:before {
+  content: "\e904";
+}
+
 .icon-laptop:before {
   content: "\e957";
 }
@@ -909,16 +985,6 @@ footer .container-sticky-footer {
 
 .icon-linkedin2:before {
   content: "\eaca";
-}
-
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-  color: #fff;
 }
 
 html {

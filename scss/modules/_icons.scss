@@ -28,6 +28,27 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    color: #fff;
+  } 
+
+// Header Section
+.icon-phone_in_talk:before {
+  content: "\e900";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-search:before {
+  content: "\e904";
+}
+
 // Our Services Section
 .icon-laptop:before {
   content: "\e957";
@@ -71,13 +92,3 @@
   .icon-linkedin2:before {
     content: "\eaca";
   }
-
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-    color: #fff;
-  } 
