@@ -2,7 +2,7 @@
 //  Buttons
 // ==========================================================================
 
-// Welcome Section Buttons
+// Global Buttons
 .btn {
     height: auto;
     line-height: 35px;
@@ -15,6 +15,16 @@
     border: 1px solid transparent;
 }
 
+// Our Services Section
+.btn-service-software {
+    color: #fff;
+    background-color: #f7b322;
+    border-color: #f7b322;
+    padding: 5px 15px;
+    font-size: 1.063rem;
+}
+
+// Welcome Section
 .btn-primary-banner1 {
     margin: auto;
     color: #fff;

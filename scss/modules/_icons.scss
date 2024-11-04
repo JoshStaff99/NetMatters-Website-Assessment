@@ -28,7 +28,31 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-
+// Our Services Section
+.icon-laptop:before {
+  content: "\e957";
+}
+.icon-computer:before {
+  content: "\e90e";
+}
+.icon-display:before {
+  content: "\e956";
+}
+.icon-bar-graph:before {
+  content: "\e901";
+}
+.icon-phone_in_talk:before {
+  content: "\e900";
+}
+.icon-embed2:before {
+  content: "\ea80";
+}
+.icon-security:before {
+  content: "\e903";
+}
+.icon-school:before {
+  content: "\e902";
+}
 //Welcome Section
 
 

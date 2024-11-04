@@ -155,6 +155,35 @@ p {
   border: 1px solid #ccc;
   padding: 30px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 30px;
+}
+.service-list p {
+  text-align: center;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin-bottom: 13px;
+  line-height: 1.375rem;
+  color: #333645;
+}
+.service-list h2 {
+  font-size: 1.3rem;
+  position: relative;
+  padding-bottom: 10px;
+  margin: 0 0 11px;
+  text-align: center;
+}
+.service-list span {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 62px;
+  background-color: #333645;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 17px;
+  color: #fff;
+  border-radius: 50%;
 }
 
 .partners {
@@ -481,6 +510,14 @@ footer .container-sticky-footer {
   border: 1px solid transparent;
 }
 
+.btn-service-software {
+  color: #fff;
+  background-color: #f7b322;
+  border-color: #f7b322;
+  padding: 5px 15px;
+  font-size: 1.063rem;
+}
+
 .btn-primary-banner1 {
   margin: auto;
   color: #fff;
@@ -627,6 +664,38 @@ footer .container-sticky-footer {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-laptop:before {
+  content: "\e957";
+}
+
+.icon-computer:before {
+  content: "\e90e";
+}
+
+.icon-display:before {
+  content: "\e956";
+}
+
+.icon-bar-graph:before {
+  content: "\e901";
+}
+
+.icon-phone_in_talk:before {
+  content: "\e900";
+}
+
+.icon-embed2:before {
+  content: "\ea80";
+}
+
+.icon-security:before {
+  content: "\e903";
+}
+
+.icon-school:before {
+  content: "\e902";
 }
 
 .icon-facebook:before {
