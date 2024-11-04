@@ -26,6 +26,8 @@
         border-radius: 15px;
         text-align: center;
         margin-top: 30px;
+        top: 0;
+        position: relative;
     }
     p {
         text-align: center;
@@ -46,11 +48,181 @@
         display: inline-block;
         font-size: 2rem;
         line-height: 62px;
-        background-color: #333645;
         height: 65px;
         width: 65px;
         margin: 0 auto 17px;
         color: #fff;
         border-radius: 50%;
+    }
+}
+
+// Flex Box Hover Effect
+
+.software {
+    :hover {
+        color: #fff;
+        border-color: transparent;
+        top: -10px;
+        transition: .5s ease;
+        background-color: #67809f;
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+        a {
+            background-color: #fff;
+            color: #67809f;
+            border-color: transparent;
+        }
+        span {
+            color: #67809f;
+            background-color: #fff;
+        }
+    }
+}
+.it-support {
+    :hover {
+        color: #fff;
+        border-color: transparent;
+        top: -10px;
+        transition: .5s ease;
+        background-color: #4183d7;
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+        a {
+            background-color: #fff;
+            color: #4183d7;
+            border-color: transparent;
+        }
+        span {
+            color: #4183d7;
+            background-color: #fff;
+        }
+    }
+}
+.digital-marketing {
+    :hover {
+        color: #fff;
+        border-color: transparent;
+        top: -10px;
+        transition: .5s ease;
+        background-color: #2ecc71;
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+        a {
+            background-color: #fff;
+            color: #2ecc71;
+            border-color: transparent;
+        }
+        span {
+            color: #2ecc71;
+            background-color: #fff;
+        }
+    }
+}
+.telecoms-service {
+    :hover {
+        color: #fff;
+        border-color: transparent;
+        top: -10px;
+        transition: .5s ease;
+        background-color: #d64541;
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+        a {
+            background-color: #fff;
+            color: #d64541;
+            border-color: transparent;
+        }
+        span {
+            color: #d64541;
+            background-color: #fff;
+        }
+    }
+}
+.web-design {
+    :hover {
+        color: #fff;
+        border-color: transparent;
+        top: -10px;
+        transition: .5s ease;
+        background-color: #926fb1;
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+        a {
+            background-color: #fff;
+            color: #926fb1;
+            border-color: transparent;
+        }
+        span {
+            color: #926fb1;
+            background-color: #fff;
+        }
+    }
+}
+.cyber-security {
+    :hover {
+        color: #fff;
+        border-color: transparent;
+        top: -10px;
+        transition: .5s ease;
+        background-color: #f62459;
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+        a {
+            background-color: #fff;
+            color: #f62459;
+            border-color: transparent;
+        }
+        span {
+            color: #f62459;
+            background-color: #fff;
+        }
+    }
+}
+.developer-training {
+    :hover {
+        color: #fff;
+        border-color: transparent;
+        top: -10px;
+        transition: .5s ease;
+        background-color: #ce4125;
+        h2 {
+            color: #fff;
+        }
+        p {
+            color: #fff;
+        }
+        a {
+            background-color: #fff;
+            color: #ce4125;
+            border-color: transparent;
+        }
+        span {
+            color: #ce4125;
+            background-color: #fff;
+        }
     }
 }
