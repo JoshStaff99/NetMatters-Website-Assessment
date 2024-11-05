@@ -2,7 +2,7 @@
 //  Header Styles
 // ==========================================================================
 header {
-    padding: 20px 0;
+    padding-top:  20px;
     img{
         padding: 0;
         box-sizing: border-box;
@@ -10,6 +10,7 @@ header {
         display: block;
         flex-shrink: 3;
         align-self: center;
+        padding-bottom: 20px;
     }
 }
 
