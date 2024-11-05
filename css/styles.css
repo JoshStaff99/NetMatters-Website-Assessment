@@ -129,6 +129,14 @@ header img {
   align-self: center;
 }
 
+.header-icon-menu-container {
+  align-self: center;
+}
+.header-icon-menu-container :hover {
+  background-color: #22242e;
+  border-color: #191a22;
+}
+
 .icon-menu {
   margin-left: 20px;
   max-width: 100%;
@@ -182,6 +190,20 @@ header img {
   font-size: 14px;
   height: 56px;
   margin: 0;
+  outline: none;
+}
+.header-form-large :focus {
+  outline: 0;
+  border-color: #5bc0de;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
+.large-form-icon-container {
+  align-self: center;
+  line-height: 0;
+}
+.large-form-icon-container :hover {
+  background-color: #7e808a;
 }
 
 .icon-search-large {
@@ -192,6 +214,7 @@ header img {
   background-color: #999aa2;
   margin: 0;
   align-self: center;
+  display: inline;
 }
 
 @media (min-width: 766px) {
@@ -211,15 +234,22 @@ header img {
     width: 50%;
   }
 }
-
-@media (min-width: 1260px) {
-  .header-form-large {
-    width: 240px;
+@media (min-width: 992px) {
+  header img {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
+
 @media (min-width: 992px) {
   .header-form-large {
     display: none;
+  }
+}
+
+@media (min-width: 1260px) {
+  .header-form-large {
+    display: inline;
   }
 }
 
@@ -792,11 +822,32 @@ footer .container-sticky-footer {
   border: 1px solid transparent;
 }
 
+.btn-support-container {
+  align-self: center;
+}
+.btn-support-container :hover {
+  background-color: #2a6ec6;
+  border-color: #2665b5;
+}
+
 .btn-header-support {
   color: #fff;
   background-color: #4183d7;
   border-color: #4183d7;
   align-self: center;
+  padding: 5px 15px;
+}
+.btn-header-support span {
+  font-size: 1.436rem;
+  margin-right: 5px;
+}
+
+.btn-contact-container {
+  align-self: center;
+}
+.btn-contact-container :hover {
+  background-color: #84858f;
+  border-color: #797a85;
 }
 
 .btn-header-contact {
@@ -804,6 +855,11 @@ footer .container-sticky-footer {
   background-color: #999aa2;
   border-color: #999aa2;
   align-self: center;
+  padding: 5px 15px;
+}
+.btn-header-contact span {
+  font-size: 1.436rem;
+  margin-right: 5px;
 }
 
 .btn-service {
@@ -1023,6 +1079,14 @@ footer .container-sticky-footer {
 
 .icon-search:before {
   content: "\e904";
+}
+
+.icon-mouse:before {
+  content: "\e906";
+}
+
+.icon-paperplane:before {
+  content: "\e907";
 }
 
 .icon-laptop:before {

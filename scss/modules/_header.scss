@@ -27,6 +27,14 @@ header {
     align-self: center;
 }
 
+.header-icon-menu-container {
+    align-self: center;
+    :hover {
+        background-color: #22242e;
+        border-color: #191a22;
+    }
+}
+
 .icon-menu {
     margin-left: 20px;
     max-width: 100%;
@@ -68,6 +76,7 @@ header {
 .form-container {
     position: relative;
 }
+
 .large-form-container {
     align-self: center;
     display: flex;
@@ -80,6 +89,19 @@ header {
     font-size: 14px;
     height: 56px;
     margin: 0;
+    outline: none;
+    :focus {
+        outline: 0;
+        border-color: #5bc0de;
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,.6);
+    }
+}
+.large-form-icon-container {
+    align-self: center;
+    line-height: 0;
+    :hover {
+        background-color: #7e808a;
+    }
 }
 
 .icon-search-large {
@@ -90,6 +112,7 @@ header {
     background-color: #999aa2;
     margin: 0;
     align-self: center;
+    display: inline;
 }
 
 // Media Queries 
@@ -110,14 +133,19 @@ header {
         @media (min-width:766px) {
             width: 50%;
         }
+        @media (min-width: 992px) {
+            width: fit-content;
+        }
     }
 }
 
 .header-form-large {
-    @media (min-width:1260px) {
-        width: 240px;
-    }
     @media (min-width: 992px) {
         display: none;
+    }
+}
+.header-form-large {
+    @media (min-width: 1260px) {
+        display: inline;
     }
 }

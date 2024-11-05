@@ -16,17 +16,44 @@
 }
 
 // Header Section
+.btn-support-container {
+    align-self: center;
+    :hover {
+        background-color: #2a6ec6;
+        border-color: #2665b5;
+    }
+}
+
 .btn-header-support {
     color: #fff;
     background-color: #4183d7;
     border-color: #4183d7;
     align-self: center;
+    padding: 5px 15px;
+    span {
+        font-size: 1.436rem;
+        margin-right: 5px;
+    }
 }
+
+.btn-contact-container {
+    align-self: center;
+    :hover {
+        background-color: #84858f;
+        border-color: #797a85;
+    }
+}
+
 .btn-header-contact {
     color: #fff;
     background-color: #999aa2;
     border-color: #999aa2;
     align-self: center;
+    padding: 5px 15px;
+    span {
+        font-size: 1.436rem;
+        margin-right: 5px;
+    }
 }
 
 
