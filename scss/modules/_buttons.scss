@@ -15,6 +15,21 @@
     border: 1px solid transparent;
 }
 
+// Header Section
+.btn-header-support {
+    color: #fff;
+    background-color: #4183d7;
+    border-color: #4183d7;
+    align-self: center;
+}
+.btn-header-contact {
+    color: #fff;
+    background-color: #999aa2;
+    border-color: #999aa2;
+    align-self: center;
+}
+
+
 // Our Services Section
 .btn-service {
     color: #fff;
@@ -174,6 +189,13 @@
 }
 
 //media queries
+
+//header section
+.btn-header-support, .btn-header-contact {
+    @media (max-width:991px) {
+        display: none;
+    }
+}
 
 // Welcome Section
 @media (max-width: 535px) {
