@@ -550,6 +550,12 @@ header img {
   }
 }
 
+@media (max-width: 1260px) {
+  .triangle {
+    border-width: 40px 67px 0 67px;
+  }
+}
+
 .banner-background {
   display: flex;
   background-size: cover;
@@ -877,6 +883,7 @@ header img {
 .news-list {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .news-article {
@@ -885,13 +892,17 @@ header img {
 }
 
 .article {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   font-size: 0.8125rem;
   margin-top: 30px;
   position: relative;
   top: 0;
-  transition: 0.5 ease;
 }
 
 .article-img-container {
@@ -929,6 +940,7 @@ header img {
 }
 
 .article-block {
+  max-width: 100%;
   border-top: 0;
   border: 1px solid #ccc;
   padding: 30px;
@@ -977,6 +989,12 @@ header img {
 .latest-news {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+@media (min-width: 767px) {
+  .news-list {
+    flex-direction: row;
+  }
 }
 
 .case-studies {

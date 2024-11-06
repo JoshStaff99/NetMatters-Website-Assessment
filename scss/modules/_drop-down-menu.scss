@@ -314,3 +314,9 @@
         display: none;
     }
 }
+
+.triangle {
+    @media (max-width: 1260px) {
+        border-width: 40px 67px 0 67px;
+    }
+}
