@@ -254,10 +254,9 @@ header img {
   }
 }
 
-.drop-down-menu-container {
+.drop-down-menu-main-nav-container {
   background-color: #333645;
   margin-bottom: 0;
-  padding-bottom: 5px;
 }
 
 .drop-down-menu-row {
@@ -286,8 +285,80 @@ header img {
   margin: 0;
 }
 
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 70px 70px 0 70px;
+  border-color: #FF4532 transparent transparent transparent;
+  transform: rotate(0deg);
+  z-index: 3;
+  align-self: center;
+}
+
+.software-sub-menu-container {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  padding: 0;
+  min-width: 100%;
+  left: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #526781;
+}
+
+.software-sub-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  align-items: center;
+  text-align: left;
+}
+.software-sub-menu li {
+  width: 33%;
+  margin-top: 15px;
+}
+
 .main-nav-ddm-1 :hover {
   background-color: #67809f;
+  color: #fff;
+}
+.main-nav-ddm-1 :hover .software-sub-menu-container {
+  background-color: #526781;
+  display: block;
+}
+.main-nav-ddm-1 :hover ul, .main-nav-ddm-1 :hover li, .main-nav-ddm-1 :hover a {
+  background-color: #526781;
+}
+
+.main-nav-ddm-2 :hover {
+  background-color: #4183d7;
+  color: #fff;
+}
+
+.main-nav-ddm-3 :hover {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.main-nav-ddm-4 :hover {
+  background-color: #d64541;
+  color: #fff;
+}
+
+.main-nav-ddm-5 :hover {
+  background-color: #926fb1;
+  color: #fff;
+}
+
+.main-nav-ddm-6 :hover {
+  background-color: #f62459;
+  color: #fff;
+}
+
+.main-nav-ddm-7 :hover {
+  background-color: #ce4125;
   color: #fff;
 }
 
@@ -327,7 +398,7 @@ header img {
 }
 
 @media (max-width: 992px) {
-  .drop-down-menu-container {
+  .drop-down-menu-main-nav-container {
     display: none;
   }
 }
@@ -582,6 +653,7 @@ header img {
   flex-direction: row;
   padding-top: 50px;
   padding-bottom: 50px;
+  overflow-x: hidden;
 }
 .partners img {
   width: 100%;
@@ -765,6 +837,7 @@ header img {
   flex-direction: row;
   padding-top: 50px;
   padding-bottom: 50px;
+  overflow-x: hidden;
 }
 .case-studies img {
   width: 100%;
