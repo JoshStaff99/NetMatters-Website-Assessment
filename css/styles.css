@@ -173,10 +173,12 @@ header img {
   right: 5px;
   line-height: 47px;
   font-size: 30px;
+  margin-top: 20px;
 }
 
 .form-container {
   position: relative;
+  padding-bottom: 20px;
 }
 
 .large-form-container {
@@ -369,7 +371,7 @@ header img {
 }
 .main-nav-ddm-2 :hover .sub-menu-container {
   background-color: #286abd;
-  display: inline-flex;
+  display: block;
 }
 .main-nav-ddm-2 :hover ul, .main-nav-ddm-2 :hover li, .main-nav-ddm-2 :hover a, .main-nav-ddm-2 :hover span {
   background-color: #286abd;
