@@ -600,6 +600,16 @@ header img {
   font-size: 1.625rem;
   font-weight: 600;
   color: #333645;
+  text-align: right;
+}
+
+.our-services-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.our-services-top h3 {
+  line-height: 3rem;
   text-align: center;
 }
 
@@ -643,6 +653,12 @@ header img {
   margin: 0 auto 17px;
   color: #fff;
   border-radius: 50%;
+}
+
+.our-services-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .software :hover {
@@ -835,6 +851,18 @@ header img {
 @media (min-width: 1260px) {
   .service-container-small {
     width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-services-top h3 {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .our-services-bottom {
+    display: none;
   }
 }
 
