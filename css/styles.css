@@ -603,6 +603,11 @@ header img {
   text-align: center;
 }
 
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
 .service-list .service {
   display: block;
   border: 1px solid #ccc;
@@ -799,6 +804,38 @@ header img {
 .developer-training :hover span {
   color: #ce4125;
   background-color: #fff;
+}
+
+@media (min-width: 767px) {
+  .service-list {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  .service-container {
+    width: 33%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 767px) {
+  .service-container-small {
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .service-container-small {
+    width: 50%;
+  }
+}
+@media (min-width: 1260px) {
+  .service-container-small {
+    width: 25%;
+  }
 }
 
 .partners {
@@ -1007,13 +1044,13 @@ header img {
 @media (min-width: 767px) {
   .news-article {
     flex: auto;
-    width: 33.33333333%;
+    width: 33%;
     padding: 0px 10px 0 10px;
   }
 }
 @media (min-width: 1260px) {
   .news-article {
-    width: 33.33333333%;
+    width: 33%;
   }
 }
 

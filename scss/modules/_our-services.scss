@@ -18,6 +18,9 @@
 }
 
 .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     .service {
         display: block;
         border: 1px solid #ccc;
@@ -224,5 +227,35 @@
             color: #ce4125;
             background-color: #fff;
         }
+    }
+}
+
+// Media Queries 
+
+.service-list {
+    @media (min-width: 767px) {
+        flex-direction: row;
+    }
+}
+
+.service-container {
+    @media (min-width: 992px) {
+        width: 33%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.service-container-small {
+    @media (min-width: 767px) {
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media (min-width: 992px) {
+        width: 50%;
+    }
+    @media (min-width: 1260px) {
+        width: 25%;
     }
 }
