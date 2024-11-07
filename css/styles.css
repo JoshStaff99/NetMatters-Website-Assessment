@@ -1152,7 +1152,7 @@ footer {
 footer .footer-row {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 footer .footer-row .footer-logo {
   width: 250px;
@@ -1189,24 +1189,6 @@ footer .footer-row .footer-menu a {
   color: #fff;
   text-decoration: none;
 }
-@media (min-width: 768px) {
-  footer .footer-row .footer-menu {
-    flex: 50%;
-  }
-  footer .footer-row .footer-menu .footer-menu-list li {
-    text-align: left;
-  }
-}
-@media (min-width: 992px) {
-  footer .footer-row .footer-menu {
-    flex: 25%;
-  }
-}
-@media (min-width: 1260px) {
-  footer .footer-row .footer-menu {
-    margin-bottom: 40px;
-  }
-}
 footer .footer-row .footer-menu h4 {
   text-transform: uppercase;
   font-size: 1rem;
@@ -1231,16 +1213,9 @@ footer .sticky-footer {
   margin-right: auto;
   bottom: 0;
   width: 100%;
-  background-color: #212330;
   color: #fff;
   text-align: left;
   font-size: 0.8125rem;
-}
-@media (max-width: 769px) {
-  footer .sticky-footer {
-    padding: 5px 0 10px;
-    flex-direction: column;
-  }
 }
 footer .sticky-footer a {
   text-decoration: none;
@@ -1253,6 +1228,42 @@ footer .sticky-footer a:hover {
 }
 footer .container-sticky-footer {
   width: 100%;
+  background-color: #212330;
+  margin: 0;
+  overflow-y: hidden;
+}
+footer .container-sticky-footer p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 769px) {
+  .container-sticky-footer {
+    flex-direction: row;
+  }
+}
+@media (min-width: 769px) {
+  .container-sticky-footer br {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  footer .footer-row {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 767px) {
+  .sticky-footer {
+    padding: 5px 0 10px;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1260px) {
+  .footer-company-info, .footer-menu {
+    width: 25%;
+  }
 }
 
 .btn {

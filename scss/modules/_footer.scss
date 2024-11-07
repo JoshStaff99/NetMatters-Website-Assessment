@@ -7,12 +7,10 @@ footer {
     color: #fff;
     padding: 30px 0 0;
     position: relative;
-
     .footer-row {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-
+        flex-direction: column;
         .footer-logo {
             width: 250px;
                img {
@@ -21,17 +19,13 @@ footer {
                   border: 0;
                }
         }
-
         .footer-company-info {
             width: auto;
             display: flex;
             justify-content: space-between;
-
             h4 {
                margin-top: 24px;
             }
-
-
          .footer-company-socials-logos {
                display: flex;
                flex-wrap: wrap;
@@ -44,7 +38,6 @@ footer {
                   }
             }
          }
-
         .footer-menu {   
             flex: 100%;   
             margin-bottom: 30px;
@@ -52,28 +45,11 @@ footer {
                   color: #fff;
                   text-decoration: none;
                }
-           
-            @media (min-width: 768px) {
-               flex: 50%; 
-              .footer-menu-list li {
-                  text-align: left;
-              }
-            }
-
-            @media (min-width: 992px) {
-               flex: 25%;
-            }
-
-            @media (min-width: 1260px) {
-               margin-bottom: 40px;
-            }
-
             h4 {
                 text-transform: uppercase;
                 font-size: 1rem;
                 margin-bottom: 26px;	
             }
-
             .footer-menu-list li:hover {
                text-decoration: underline;
             }
@@ -95,20 +71,14 @@ footer {
 
    // Sticky footer element
    .sticky-footer {
-
       position: relative;
       margin-left: auto;
       margin-right: auto;
       bottom: 0;
       width: 100%;
-      background-color: #212330;
       color: #fff;
       text-align: left;
       font-size: .8125rem;
-      @media (max-width: 769px) {
-               padding: 5px 0 10px;
-               flex-direction: column;
-            }
          a {
             text-decoration: none;
             color: #fff;
@@ -123,5 +93,42 @@ footer {
 
   .container-sticky-footer {
    width: 100%; 
+   background-color: #212330;
+   margin: 0;
+   overflow-y: hidden;
+   p {
+      margin-bottom: 0;
+   }
   }
+}
+
+//Media Queries 
+.container-sticky-footer {
+   @media (min-width: 769px) {
+      flex-direction: row;
+   }
+   br {
+      @media (min-width: 769px) {
+         display: none;
+      }
+   }
+}
+footer {
+   .footer-row {
+      @media (min-width: 767px) {
+         flex-direction: row;
+      }
+   }
+}
+.sticky-footer {
+   @media (max-width: 767px) {
+      padding: 5px 0 10px;
+      flex-direction: column;
+   }
+}
+
+.footer-company-info, .footer-menu {
+   @media (min-width: 1260px) {
+      width: 25%;
+   }
 }
