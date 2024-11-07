@@ -70,6 +70,12 @@
 .news-article {
     flex: 0 0 auto;
     max-width: 100%;
+    top: 0;
+    position: relative;
+    :hover {
+        top: -10px;
+        transition: .5s ease;
+    }
 }
 
 .article {
@@ -176,5 +182,40 @@
 .news-list {
     @media (min-width: 767px) {
         flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+.news-article {
+    @media (min-width: 767px) {
+        flex: auto;
+        width: 33.33333333%;
+        padding: 0px 10px 0 10px;
+    }
+    @media (min-width: 1260px) {
+        width: 33.33333333%;
+    }
+}
+
+.view-all-mobile, .view-all-mobile-container {
+    @media (min-width: 767px) {
+        display: none;
+    }
+}
+
+.container-latest-news-top {
+    a{
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+
+.article-hidden {
+    @media (max-width: 1260px) {
+        display: none;
+    }
+    @media (max-width: 767px) {
+        display: flex;
     }
 }
