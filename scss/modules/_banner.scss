@@ -9,6 +9,10 @@
     align-items: center;
     flex-wrap: wrap;
     margin: auto;
+    min-height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background: no-repeat center linear-gradient(270deg, transparent 25%, #000);
 }
 .banner {
     color: #fff;
@@ -31,4 +35,11 @@
             line-height: 1.75rem;
             font-weight: 600;
         }
+}
+
+//media Queries
+.banner {
+    @media (min-width: 992px) {
+    text-align: left;
+    }
 }

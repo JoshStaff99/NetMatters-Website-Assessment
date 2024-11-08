@@ -516,6 +516,9 @@ header img {
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
+  min-height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .banner {
@@ -539,6 +542,12 @@ header img {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
+}
+
+@media (min-width: 992px) {
+  .banner {
+    text-align: left;
+  }
 }
 
 .our-services h2 {
