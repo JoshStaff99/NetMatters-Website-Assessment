@@ -9,10 +9,10 @@ footer {
     position: relative;
     .footer-row {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         flex-direction: column;
         .footer-logo {
-            width: 250px;
                img {
                   width: 100%;
                   vertical-align: middle;
@@ -20,7 +20,6 @@ footer {
                }
         }
         .footer-company-info {
-            width: auto;
             display: flex;
             justify-content: space-between;
             h4 {
@@ -38,8 +37,7 @@ footer {
                   }
             }
          }
-        .footer-menu {   
-            flex: 100%;   
+        .footer-menu {    
             margin-bottom: 30px;
                a {
                   color: #fff;
@@ -68,6 +66,9 @@ footer {
       }
     }
     
+    .footer-menu-list {
+      padding-left: 0;
+    }
 
    // Sticky footer element
    .sticky-footer {
@@ -106,6 +107,7 @@ footer {
 .container-sticky-footer {
    @media (min-width: 769px) {
       flex-direction: row;
+      flex-wrap: wrap;
    }
    br {
       @media (min-width: 769px) {
@@ -127,8 +129,26 @@ footer {
    }
 }
 
-.footer-company-info, .footer-menu {
-   @media (min-width: 1260px) {
+.footer-menu {
+   @media (min-width: 767px) {
+      width: 50%;
+   }
+   @media (min-width: 992px) {
       width: 25%;
+   }
+   @media (min-width: 1260px) {
+      width: 15%;
+   }
+}
+
+ .footer-company-info {
+   @media (min-width: 767px) {
+      width: 100%;
+   }
+   @media (min-width: 992px) {
+      width: 100%;
+   }
+   @media (min-width: 1260px) {
+      width:400px;
    }
 }
