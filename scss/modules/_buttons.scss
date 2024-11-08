@@ -94,7 +94,7 @@
     border-color: #ce4125;
 }
 
-// Welcome Section
+//Banner
 .btn-primary-banner1 {
     margin: auto;
     color: #fff;
@@ -105,6 +105,14 @@
     line-height: 50px;
     font-size: 1.25rem;
 }
+.banner-btn-container {
+    :hover {
+        background-color: #7e57a0;
+        border-color: #735093;
+    }
+}
+
+// Welcome Section
 
 .btn-google {
     background-color: #4387f6;
@@ -116,10 +124,31 @@
 
 .btn-primary-inverse {
     background-color: #272936;
+    margin-bottom: 17px;
+}
+.welcome-btn-container {
+    display: flex;
+    margin-right: 10px;
+    :hover {
+        background-color: #121318;
+    }
+}
+
+.google-btn-container {
+    margin-right: 10px;
+    :hover {
+        background-color: #166af4;
+    }
+}
+
+.trustpilot-btn-container {
+    margin-right: 10px;
+    :hover {
+        background-color: #009b69;
+    }
 }
 
 .btn-google, .btn-trustpilot, .btn-primary-inverse {
-    margin: auto;
     color: #fff;
     border-radius: 6px;
     padding: 10px 30px;
@@ -232,12 +261,6 @@
 }
 
 // Welcome Section
-@media (max-width: 535px) {
-    .btn-primary-inverse{
-    margin-bottom: 17px;
-    }
-}
-
 @media (max-width: 1259px) {
     .btn-google, .btn-trustpilot{
     margin-top: 20px;

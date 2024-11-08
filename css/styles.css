@@ -892,6 +892,16 @@ p {
   margin-bottom: 25px;
 }
 
+.welcome-section-btn-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-section-btn-container-2 {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 992px) {
   .about-row {
     flex-direction: row;
@@ -901,6 +911,38 @@ p {
 @media (min-width: 992px) {
   .about, .what-our-clients-think {
     width: 50%;
+  }
+}
+
+@media (min-width: 537px) {
+  .welcome-section-btn-container {
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-section-btn-container {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1260px) {
+  .welcome-section-btn-container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 600px) {
+  .welcome-section-btn-container-2 {
+    flex-direction: row;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-section-btn-container-2 {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1260px) {
+  .welcome-section-btn-container-2 {
+    flex-direction: row;
   }
 }
 
@@ -1420,6 +1462,11 @@ footer .footer-row h4 {
   font-size: 1.25rem;
 }
 
+.banner-btn-container :hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+
 .btn-google {
   background-color: #4387f6;
 }
@@ -1430,10 +1477,32 @@ footer .footer-row h4 {
 
 .btn-primary-inverse {
   background-color: #272936;
+  margin-bottom: 17px;
+}
+
+.welcome-btn-container {
+  display: flex;
+  margin-right: 10px;
+}
+.welcome-btn-container :hover {
+  background-color: #121318;
+}
+
+.google-btn-container {
+  margin-right: 10px;
+}
+.google-btn-container :hover {
+  background-color: #166af4;
+}
+
+.trustpilot-btn-container {
+  margin-right: 10px;
+}
+.trustpilot-btn-container :hover {
+  background-color: #009b69;
 }
 
 .btn-google, .btn-trustpilot, .btn-primary-inverse {
-  margin: auto;
   color: #fff;
   border-radius: 6px;
   padding: 10px 30px;
@@ -1535,11 +1604,6 @@ footer .footer-row h4 {
   }
 }
 
-@media (max-width: 535px) {
-  .btn-primary-inverse {
-    margin-bottom: 17px;
-  }
-}
 @media (max-width: 1259px) {
   .btn-google, .btn-trustpilot {
     margin-top: 20px;
