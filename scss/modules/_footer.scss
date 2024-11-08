@@ -14,7 +14,7 @@ footer {
         flex-direction: column;
         .footer-logo {
                img {
-                  width: 100%;
+                  width: auto;
                   vertical-align: middle;
                   border: 0;
                }
@@ -29,9 +29,7 @@ footer {
                display: flex;
                flex-wrap: wrap;
                flex-direction: row;
-               margin-bottom: 30px;
                   a {
-                     padding: 12px 22px 16px;
                      margin-right: 10px;
                      margin-bottom: 10px;
                   }
@@ -64,12 +62,17 @@ footer {
          font-size: 1rem;
          margin-bottom: 26px;
       }
-    }
-    
+   }
+}   
+
     .footer-menu-list {
       padding-left: 0;
     }
 
+   .footer-logo-container {
+      align-self: center;
+      margin-bottom: 30px;
+   }
    // Sticky footer element
    .sticky-footer {
       position: relative;
@@ -101,7 +104,6 @@ footer {
       margin-bottom: 0;
    }
   }
-}
 
 //Media Queries 
 .container-sticky-footer {
@@ -150,5 +152,23 @@ footer {
    }
    @media (min-width: 1260px) {
       width:400px;
+   }
+}
+
+.footer-logo-container {
+   @media (max-width: 480px) {
+      width: 35%;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      margin-bottom: 0;
+   }
+}
+
+.footer-company-socials-logos {
+   a {
+      @media (max-width: 480px) {
+         padding-right: 40px;
+         padding-left: 40px;
+      }
    }
 }
