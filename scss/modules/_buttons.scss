@@ -30,7 +30,12 @@
     border-color: #4183d7;
     align-self: center;
     padding: 5px 15px;
+    font-size: 1.125rem;
+    margin-left: 20px;
+    height: 56px;
+    line-height: 46px;
     span {
+        //line-height: 45px;
         font-size: 1.436rem;
         margin-right: 5px;
     }
@@ -38,6 +43,7 @@
 
 .btn-contact-container {
     align-self: center;
+    font-size: 1.125rem;
     :hover {
         background-color: #84858f;
         border-color: #797a85;
@@ -50,6 +56,9 @@
     border-color: #999aa2;
     align-self: center;
     padding: 5px 15px;
+    margin-left: 20px;
+    height: 56px;
+    line-height: 46px;
     span {
         font-size: 1.436rem;
         margin-right: 5px;

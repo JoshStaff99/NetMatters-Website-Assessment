@@ -65,13 +65,19 @@ header img {
   display: block;
   flex-shrink: 3;
   align-self: center;
-  padding-bottom: 20px;
+  max-width: 100%;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.header-actions-container {
+  display: flex;
+  padding: 7px 0;
 }
 
 .header-phone-icon {
@@ -84,6 +90,7 @@ header img {
 
 .header-icon-menu-container {
   align-self: center;
+  margin-left: 20px;
 }
 .header-icon-menu-container :hover {
   background-color: #22242e;
@@ -91,7 +98,6 @@ header img {
 }
 
 .icon-menu {
-  margin-left: 20px;
   max-width: 100%;
   color: #fff;
   padding: 11px;
@@ -136,6 +142,7 @@ header img {
 .large-form-container {
   align-self: center;
   display: flex;
+  margin-left: 20px;
 }
 
 .header-form-large {
@@ -146,11 +153,6 @@ header img {
   height: 56px;
   margin: 0;
   outline: none;
-}
-.header-form-large :focus {
-  outline: 0;
-  border-color: #5bc0de;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
 .large-form-icon-container {
@@ -170,6 +172,12 @@ header img {
   margin: 0;
   align-self: center;
   display: inline;
+}
+
+.header-form-large:focus {
+  outline: 0;
+  border-color: #5bc0de;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
 @media (min-width: 766px) {
@@ -205,6 +213,8 @@ header img {
 @media (min-width: 1260px) {
   .header-form-large {
     display: inline;
+    border-radius: 0;
+    width: 240px;
   }
 }
 
@@ -1391,6 +1401,10 @@ footer .footer-row h4 {
   border-color: #4183d7;
   align-self: center;
   padding: 5px 15px;
+  font-size: 1.125rem;
+  margin-left: 20px;
+  height: 56px;
+  line-height: 46px;
 }
 .btn-header-support span {
   font-size: 1.436rem;
@@ -1399,6 +1413,7 @@ footer .footer-row h4 {
 
 .btn-contact-container {
   align-self: center;
+  font-size: 1.125rem;
 }
 .btn-contact-container :hover {
   background-color: #84858f;
@@ -1411,6 +1426,9 @@ footer .footer-row h4 {
   border-color: #999aa2;
   align-self: center;
   padding: 5px 15px;
+  margin-left: 20px;
+  height: 56px;
+  line-height: 46px;
 }
 .btn-header-contact span {
   font-size: 1.436rem;
