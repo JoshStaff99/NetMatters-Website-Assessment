@@ -310,7 +310,7 @@ header img {
   min-width: 100%;
   left: 0;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   margin-top: 82px;
 }
 
@@ -329,6 +329,7 @@ header img {
   margin-top: 15px;
 }
 .sub-menu .sub-menu-title {
+  text-transform: none;
   width: 100%;
   color: #fff !important;
   margin-bottom: 10px;
@@ -910,14 +911,12 @@ header img {
   background-color: #323544;
   color: #fff;
   padding: 30px 0 0;
+  padding-right: 15px;
   position: relative;
 }
 .about-row .about a {
   text-decoration: none;
   color: #fff;
-}
-.about-row .about .welcome-arrow {
-  margin-left: 12px;
 }
 .about-row .what-our-clients-think {
   display: flex;
@@ -925,6 +924,7 @@ header img {
   background-color: #323544;
   color: #fff;
   padding: 30px 0 50px;
+  padding-left: 15px;
   position: relative;
 }
 .about-row .what-our-clients-think a {
@@ -947,9 +947,19 @@ header img {
   display: inline-block;
 }
 
+.client-quote {
+  font-weight: 600;
+  color: #a3a8ac;
+  font-size: 1.1rem;
+}
+
 p {
   line-height: 1.875rem;
   margin-bottom: 25px;
+}
+
+.welcome-arrow {
+  margin-left: 8px;
 }
 
 .welcome-section-btn-container {
@@ -1574,15 +1584,12 @@ footer .footer-row h4 {
 }
 
 .google-btn-container {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 .google-btn-container :hover {
   background-color: #166af4;
 }
 
-.trustpilot-btn-container {
-  margin-right: 10px;
-}
 .trustpilot-btn-container :hover {
   background-color: #009b69;
 }

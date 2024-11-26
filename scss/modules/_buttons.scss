@@ -35,7 +35,6 @@
     height: 56px;
     line-height: 46px;
     span {
-        //line-height: 45px;
         font-size: 1.436rem;
         margin-right: 5px;
     }
@@ -157,14 +156,13 @@
 }
 
 .google-btn-container {
-    margin-right: 10px;
+    margin-right: 8px;
     :hover {
         background-color: #166af4;
     }
 }
 
 .trustpilot-btn-container {
-    margin-right: 10px;
     :hover {
         background-color: #009b69;
     }

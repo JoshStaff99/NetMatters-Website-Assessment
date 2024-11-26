@@ -16,14 +16,11 @@
             background-color: #323544;
             color: #fff;
             padding: 30px 0 0;
+            padding-right: 15px;
             position: relative;
                 a {
                     text-decoration: none;
                     color: #fff;
-                }
-            
-                .welcome-arrow {
-                    margin-left: 12px;
                 }
         }
 
@@ -33,6 +30,7 @@
             background-color: #323544;
             color: #fff;
             padding: 30px 0 50px;
+            padding-left: 15px;
             position: relative;
                 a {
                     color: #fff;
@@ -57,11 +55,18 @@
     }
 }
 
+.client-quote {
+    font-weight: 600;
+    color: #a3a8ac;
+    font-size: 1.1rem;
+}
 p {
     line-height: 1.875rem;
     margin-bottom: 25px;
 }
-
+.welcome-arrow {
+    margin-left: 8px;
+}
 .welcome-section-btn-container {
     display: flex;
     flex-direction: column;
