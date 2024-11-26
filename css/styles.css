@@ -61,7 +61,7 @@ header {
 header img {
   padding: 0;
   box-sizing: border-box;
-  width: 65%;
+  width: 100%;
   display: block;
   flex-shrink: 3;
   align-self: center;
@@ -71,6 +71,7 @@ header img {
 .row {
   display: flex;
   flex-direction: row;
+  width: 100%;
   justify-content: space-between;
   padding-bottom: 20px;
 }
@@ -122,6 +123,7 @@ header img {
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  padding-right: 40px;
 }
 
 .icon-search-small {
@@ -153,6 +155,8 @@ header img {
   height: 56px;
   margin: 0;
   outline: none;
+  padding: 5px 15px;
+  border-color: #ccc;
 }
 
 .large-form-icon-container {
@@ -180,6 +184,12 @@ header img {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
+@media (max-width: 766px) {
+  .row {
+    padding-bottom: 0;
+  }
+}
+
 @media (min-width: 766px) {
   .form-container, .header-phone-icon {
     display: none;
@@ -192,15 +202,17 @@ header img {
   }
 }
 
-@media (min-width: 766px) {
-  header img {
-    width: 50%;
-  }
-}
 @media (min-width: 992px) {
   header img {
     width: -moz-fit-content;
     width: fit-content;
+  }
+}
+
+@media (min-width: 767px) {
+  .header-form-large {
+    width: 174px;
+    border-radius: 0;
   }
 }
 
@@ -1216,14 +1228,18 @@ footer .footer-row {
   justify-content: space-between;
   flex-direction: column;
 }
-footer .footer-row .footer-logo img {
+footer .footer-row .footer-logo {
   width: auto;
+}
+footer .footer-row .footer-logo img {
+  width: 100%;
   vertical-align: middle;
   border: 0;
 }
 footer .footer-row .footer-company-info {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 footer .footer-row .footer-company-info h4 {
   margin-top: 24px;
