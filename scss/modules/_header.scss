@@ -6,7 +6,6 @@ header {
     img{
         padding: 0;
         box-sizing: border-box;
-        width: 100%;
         display: block;
         flex-shrink: 3;
         align-self: center;
@@ -108,6 +107,14 @@ header {
 .large-form-icon-container {
     align-self: center;
     line-height: 0;
+    outline: none;
+    background-color: #999aa2;
+    height: 56px;
+    font-size: 1.063rem;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    color: #fff;
+    padding: 7px 20px 3px;
     :hover {
         background-color: #7e808a;
     }
@@ -116,9 +123,8 @@ header {
 .icon-search-large {
     border: 0;
     color: #fff;
-    font-size: 2rem;
-    padding: 12px 20px 12px;
-    background-color: #999aa2;
+    font-size: 23px;
+    font-weight: 400;
     margin: 0;
     align-self: center;
     display: inline;
@@ -131,6 +137,10 @@ header {
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,.6);
 }
 
+// Hover Effect
+.large-form-icon-container:hover {
+    background-color: #7e808a;
+}
 
 // Media Queries 
 .row {
@@ -145,20 +155,21 @@ header {
     }
 }
 
-.header-form-large, .icon-search-large {
+.header-form-large, .icon-search-large, .large-form-icon-container {
     @media (max-width:767px) {
         display: none;
     }
 }
 
-header {
-    img {
-        @media (min-width:766px) {
-            //width: 50%;
-        }
-        @media (min-width: 992px) {
-            width: fit-content;
-        }
+.header-logo-container {
+    @media (min-width:768px) {
+        width: 50%;
+    }
+    @media (min-width:992px) {
+        width: 41.66666667%
+    }
+    @media (min-width:1260px) {
+        width: 33.33333333%;
     }
 }
 
@@ -178,5 +189,11 @@ header {
         display: inline;
         border-radius: 0;
         width: 240px;
+    }
+}
+
+.large-form-icon-container {
+    @media (min-width: 992px) and (max-width: 1259px) {
+        border-radius: 3px;
     }
 }
