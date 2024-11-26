@@ -643,7 +643,6 @@ header img {
   position: relative;
 }
 .service-list p {
-  text-align: center;
   font-size: 0.8125rem;
   font-weight: 400;
   margin-bottom: 13px;
@@ -655,10 +654,9 @@ header img {
   position: relative;
   padding-bottom: 10px;
   margin: 0 0 11px;
-  text-align: center;
 }
 .service-list span {
-  display: inline-block;
+  display: block;
   font-size: 2rem;
   line-height: 62px;
   height: 65px;
@@ -666,6 +664,10 @@ header img {
   margin: 0 auto 17px;
   color: #fff;
   border-radius: 50%;
+}
+
+.service-container {
+  width: 100%;
 }
 
 .our-services-bottom {
@@ -843,7 +845,7 @@ header img {
 
 @media (min-width: 992px) {
   .service-container {
-    width: 33%;
+    width: 33.33333333%;
     padding-left: 15px;
     padding-right: 15px;
   }
