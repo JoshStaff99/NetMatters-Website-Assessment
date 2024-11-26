@@ -23,9 +23,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     h3 {
-        line-height: 3rem;
+        line-height: 4rem;
         text-align: center;
     }
+}
+.our-services-icon-arrow-right {
+    margin-left: 8px;
 }
 .service-list {
     display: flex;

@@ -617,8 +617,12 @@ header img {
   justify-content: space-between;
 }
 .our-services-top h3 {
-  line-height: 3rem;
+  line-height: 4rem;
   text-align: center;
+}
+
+.our-services-icon-arrow-right {
+  margin-left: 8px;
 }
 
 .service-list {
@@ -1475,6 +1479,14 @@ footer .footer-row h4 {
   margin-right: 5px;
 }
 
+.view-our-work-btn {
+  color: #333645;
+}
+
+.view-our-work-btn:hover {
+  text-decoration: underline;
+}
+
 .btn-service {
   color: #fff;
   background-color: #f7b322;
@@ -1527,6 +1539,12 @@ footer .footer-row h4 {
   padding: 5px 20px;
   line-height: 50px;
   font-size: 1.25rem;
+  width: auto;
+}
+
+.banner-btn-arrow {
+  margin-left: 12px;
+  line-height: 50px;
 }
 
 .banner-btn-container :hover {
@@ -1726,6 +1744,10 @@ footer .footer-row h4 {
 
 .icon-paperplane:before {
   content: "\e907";
+}
+
+.icon-arrow-right2:before {
+  content: "\ea3c";
 }
 
 .icon-laptop:before {

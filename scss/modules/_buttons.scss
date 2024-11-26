@@ -67,6 +67,12 @@
 
 
 // Our Services Section
+.view-our-work-btn {
+    color: #333645;
+}
+.view-our-work-btn:hover {
+    text-decoration: underline;
+}
 .btn-service {
     color: #fff;
     background-color: #f7b322;
@@ -113,6 +119,11 @@
     padding: 5px 20px;
     line-height: 50px;
     font-size: 1.25rem;
+    width: auto;
+}
+.banner-btn-arrow {
+    margin-left: 12px;
+    line-height: 50px;
 }
 .banner-btn-container {
     :hover {
@@ -120,6 +131,8 @@
         border-color: #735093;
     }
 }
+
+
 
 // Welcome Section
 
