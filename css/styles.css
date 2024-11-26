@@ -674,163 +674,163 @@ header img {
   justify-content: center;
 }
 
-.software :hover {
+.software:hover {
   color: #fff;
   border-color: transparent;
   top: -10px;
   transition: 0.5s ease;
   background-color: #67809f;
 }
-.software :hover h2 {
+.software:hover h2 {
   color: #fff;
 }
-.software :hover p {
+.software:hover p {
   color: #fff;
 }
-.software :hover a {
+.software:hover a {
   background-color: #fff;
   color: #67809f;
   border-color: transparent;
 }
-.software :hover span {
+.software:hover span {
   color: #67809f;
   background-color: #fff;
 }
 
-.it-support :hover {
+.it-support:hover {
   color: #fff;
   border-color: transparent;
   top: -10px;
   transition: 0.5s ease;
   background-color: #4183d7;
 }
-.it-support :hover h2 {
+.it-support:hover h2 {
   color: #fff;
 }
-.it-support :hover p {
+.it-support:hover p {
   color: #fff;
 }
-.it-support :hover a {
+.it-support:hover a {
   background-color: #fff;
   color: #4183d7;
   border-color: transparent;
 }
-.it-support :hover span {
+.it-support:hover span {
   color: #4183d7;
   background-color: #fff;
 }
 
-.digital-marketing :hover {
+.digital-marketing:hover {
   color: #fff;
   border-color: transparent;
   top: -10px;
   transition: 0.5s ease;
   background-color: #2ecc71;
 }
-.digital-marketing :hover h2 {
+.digital-marketing:hover h2 {
   color: #fff;
 }
-.digital-marketing :hover p {
+.digital-marketing:hover p {
   color: #fff;
 }
-.digital-marketing :hover a {
+.digital-marketing:hover a {
   background-color: #fff;
   color: #2ecc71;
   border-color: transparent;
 }
-.digital-marketing :hover span {
+.digital-marketing:hover span {
   color: #2ecc71;
   background-color: #fff;
 }
 
-.telecoms-service :hover {
+.telecoms-service:hover {
   color: #fff;
   border-color: transparent;
   top: -10px;
   transition: 0.5s ease;
   background-color: #d64541;
 }
-.telecoms-service :hover h2 {
+.telecoms-service:hover h2 {
   color: #fff;
 }
-.telecoms-service :hover p {
+.telecoms-service:hover p {
   color: #fff;
 }
-.telecoms-service :hover a {
+.telecoms-service:hover a {
   background-color: #fff;
   color: #d64541;
   border-color: transparent;
 }
-.telecoms-service :hover span {
+.telecoms-service:hover span {
   color: #d64541;
   background-color: #fff;
 }
 
-.web-design :hover {
+.web-design:hover {
   color: #fff;
   border-color: transparent;
   top: -10px;
   transition: 0.5s ease;
   background-color: #926fb1;
 }
-.web-design :hover h2 {
+.web-design:hover h2 {
   color: #fff;
 }
-.web-design :hover p {
+.web-design:hover p {
   color: #fff;
 }
-.web-design :hover a {
+.web-design:hover a {
   background-color: #fff;
   color: #926fb1;
   border-color: transparent;
 }
-.web-design :hover span {
+.web-design:hover span {
   color: #926fb1;
   background-color: #fff;
 }
 
-.cyber-security :hover {
+.cyber-security:hover {
   color: #fff;
   border-color: transparent;
   top: -10px;
   transition: 0.5s ease;
   background-color: #f62459;
 }
-.cyber-security :hover h2 {
+.cyber-security:hover h2 {
   color: #fff;
 }
-.cyber-security :hover p {
+.cyber-security:hover p {
   color: #fff;
 }
-.cyber-security :hover a {
+.cyber-security:hover a {
   background-color: #fff;
   color: #f62459;
   border-color: transparent;
 }
-.cyber-security :hover span {
+.cyber-security:hover span {
   color: #f62459;
   background-color: #fff;
 }
 
-.developer-training :hover {
+.developer-training:hover {
   color: #fff;
   border-color: transparent;
   top: -10px;
   transition: 0.5s ease;
   background-color: #ce4125;
 }
-.developer-training :hover h2 {
+.developer-training:hover h2 {
   color: #fff;
 }
-.developer-training :hover p {
+.developer-training:hover p {
   color: #fff;
 }
-.developer-training :hover a {
+.developer-training:hover a {
   background-color: #fff;
   color: #ce4125;
   border-color: transparent;
 }
-.developer-training :hover span {
+.developer-training:hover span {
   color: #ce4125;
   background-color: #fff;
 }

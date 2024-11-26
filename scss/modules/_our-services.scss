@@ -77,175 +77,161 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-// Flex Box Hover Effect
 
-.software {
-    :hover {
+// Flex Box Hover Effect
+.software:hover {
+    color: #fff;
+    border-color: transparent;
+    top: -10px;
+    transition: .5s ease;
+    background-color: #67809f;
+    h2 {
         color: #fff;
+    }
+    p {
+        color: #fff;
+    }
+    a {
+        background-color: #fff;
+        color: #67809f;
         border-color: transparent;
-        top: -10px;
-        transition: .5s ease;
-        background-color: #67809f;
-        h2 {
-            color: #fff;
-        }
-        p {
-            color: #fff;
-        }
-        a {
-            background-color: #fff;
-            color: #67809f;
-            border-color: transparent;
-        }
-        span {
-            color: #67809f;
-            background-color: #fff;
-        }
+    }
+    span {
+        color: #67809f;
+        background-color: #fff;
     }
 }
-.it-support {
-    :hover {
+.it-support:hover {
+    color: #fff;
+    border-color: transparent;
+    top: -10px;
+    transition: .5s ease;
+    background-color: #4183d7;
+    h2 {
         color: #fff;
+    }
+    p {
+        color: #fff;
+    }
+    a {
+        background-color: #fff;
+        color: #4183d7;
         border-color: transparent;
-        top: -10px;
-        transition: .5s ease;
-        background-color: #4183d7;
-        h2 {
-            color: #fff;
-        }
-        p {
-            color: #fff;
-        }
-        a {
-            background-color: #fff;
-            color: #4183d7;
-            border-color: transparent;
-        }
-        span {
-            color: #4183d7;
-            background-color: #fff;
-        }
+    }
+    span {
+        color: #4183d7;
+        background-color: #fff;
     }
 }
-.digital-marketing {
-    :hover {
+.digital-marketing:hover {
+    color: #fff;
+    border-color: transparent;
+    top: -10px;
+    transition: .5s ease;
+    background-color: #2ecc71;
+    h2 {
         color: #fff;
+     }
+    p {
+        color: #fff;
+    }
+    a {
+        background-color: #fff;
+        color: #2ecc71;
         border-color: transparent;
-        top: -10px;
-        transition: .5s ease;
-        background-color: #2ecc71;
-        h2 {
-            color: #fff;
-        }
-        p {
-            color: #fff;
-        }
-        a {
-            background-color: #fff;
-            color: #2ecc71;
-            border-color: transparent;
-        }
-        span {
-            color: #2ecc71;
-            background-color: #fff;
-        }
+    }
+    span {
+        color: #2ecc71;
+        background-color: #fff;
     }
 }
-.telecoms-service {
-    :hover {
+.telecoms-service:hover {
+    color: #fff;
+    border-color: transparent;
+    top: -10px;
+    transition: .5s ease;
+    background-color: #d64541;
+    h2 {
         color: #fff;
+    }
+    p {
+        color: #fff;
+    }
+    a {
+        background-color: #fff;
+        color: #d64541;
         border-color: transparent;
-        top: -10px;
-        transition: .5s ease;
-        background-color: #d64541;
-        h2 {
-            color: #fff;
-        }
-        p {
-            color: #fff;
-        }
-        a {
-            background-color: #fff;
-            color: #d64541;
-            border-color: transparent;
-        }
-        span {
-            color: #d64541;
-            background-color: #fff;
-        }
+    }
+    span {
+        color: #d64541;
+        background-color: #fff;
     }
 }
-.web-design {
-    :hover {
+.web-design:hover {
+    color: #fff;
+    border-color: transparent;
+    top: -10px;
+    transition: .5s ease;
+    background-color: #926fb1;
+    h2 {
         color: #fff;
-        border-color: transparent;
-        top: -10px;
-        transition: .5s ease;
-        background-color: #926fb1;
-        h2 {
-            color: #fff;
-        }
-        p {
-            color: #fff;
-        }
-        a {
-            background-color: #fff;
-            color: #926fb1;
-            border-color: transparent;
-        }
-        span {
-            color: #926fb1;
-            background-color: #fff;
-        }
     }
+    p {
+        color: #fff;
+    }
+    a {
+        background-color: #fff;
+        color: #926fb1;
+        border-color: transparent;
+    }
+    span {
+        color: #926fb1;
+        background-color: #fff;
+    }    
 }
-.cyber-security {
-    :hover {
+.cyber-security:hover {
+    color: #fff;
+    border-color: transparent;
+    top: -10px;
+    transition: .5s ease;
+    background-color: #f62459;
+    h2 {
         color: #fff;
-        border-color: transparent;
-        top: -10px;
-        transition: .5s ease;
-        background-color: #f62459;
-        h2 {
-            color: #fff;
-        }
-        p {
-            color: #fff;
-        }
-        a {
-            background-color: #fff;
-            color: #f62459;
-            border-color: transparent;
-        }
-        span {
-            color: #f62459;
-            background-color: #fff;
-        }
     }
+    p {
+        color: #fff;
+    }
+    a {
+        background-color: #fff;
+        color: #f62459;
+        border-color: transparent;
+    }
+    span {
+        color: #f62459;
+        background-color: #fff;
+    } 
 }
-.developer-training {
-    :hover {
+.developer-training:hover {
+    color: #fff;
+    border-color: transparent;
+    top: -10px;
+    transition: .5s ease;
+    background-color: #ce4125;
+    h2 {
         color: #fff;
-        border-color: transparent;
-        top: -10px;
-        transition: .5s ease;
-        background-color: #ce4125;
-        h2 {
-            color: #fff;
-        }
-        p {
-            color: #fff;
-        }
-        a {
-            background-color: #fff;
-            color: #ce4125;
-            border-color: transparent;
-        }
-        span {
-            color: #ce4125;
-            background-color: #fff;
-        }
     }
+    p {
+        color: #fff;
+    }
+    a {
+        background-color: #fff;
+        color: #ce4125;
+        border-color: transparent;
+    }
+    span {
+        color: #ce4125;
+        background-color: #fff;
+    }    
 }
 
 // Media Queries 
