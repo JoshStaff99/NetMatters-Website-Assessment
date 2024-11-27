@@ -598,6 +598,9 @@ header img {
   }
 }
 
+.our-services {
+  padding-top: 30px;
+}
 .our-services h2 {
   font-size: 2.7rem;
   line-height: 1.1;
@@ -617,7 +620,9 @@ header img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.our-services-top h3 {
+.our-services-top h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
   line-height: 4rem;
   text-align: center;
 }
@@ -898,7 +903,7 @@ header img {
 }
 
 @media (max-width: 767px) {
-  .our-services-top h3 {
+  .our-services-top h1 {
     display: none;
   }
 }

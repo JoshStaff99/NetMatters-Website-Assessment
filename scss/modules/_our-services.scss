@@ -3,6 +3,7 @@
 // ==========================================================================
 
 .our-services {
+    padding-top: 30px;
     h2 {
         font-size: 2.7rem;
         line-height: 1.1;
@@ -22,7 +23,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    h3 {
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 600;
         line-height: 4rem;
         text-align: center;
     }
@@ -289,7 +292,7 @@
 } 
 
 .our-services-top {
-    h3 {
+    h1 {
         @media (max-width: 767px){
             display: none;
         }
