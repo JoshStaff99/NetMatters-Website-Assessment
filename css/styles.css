@@ -976,7 +976,7 @@ header img {
   font-weight: 600;
   font-size: 1.1rem;
 }
-.about-row .star {
+.about-row .welcome-star {
   color: orange;
   font-size: 50px;
   display: inline-block;
@@ -1822,6 +1822,10 @@ footer .footer-row h4 {
 
 .icon-school:before {
   content: "\e902";
+}
+
+.icon-star-full:before {
+  content: "\e9d9";
 }
 
 .icon-facebook:before {
