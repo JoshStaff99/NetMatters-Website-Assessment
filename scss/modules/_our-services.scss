@@ -253,8 +253,6 @@
 .service-container-small {
     @media (min-width: 767px) {
         width: 50%;
-        padding-left: 15px;
-        padding-right: 15px;
     }
     @media (min-width: 992px) {
         width: 50%;
@@ -263,6 +261,32 @@
         width: 25%;
     }
 }
+
+.service-small-1, .service-small-3 {
+    @media (min-width: 767px) {
+        padding-right: 15px;
+    }
+}
+.service-small-2, .service-small-4 {
+    @media (min-width: 767px) {
+        padding-left: 15px;
+    }
+}
+.service-small-1, .service-small-3 {
+    @media (min-width: 992px) {
+        padding-left: 15px;
+    }
+}
+.service-small-2, .service-small-4 {
+    @media (min-width: 992px) {
+        padding-right: 15px;
+    }
+}
+.service-small-4 {
+    @media (min-width:1260px) {
+        padding-right: 13px;
+    }
+} 
 
 .our-services-top {
     h3 {
