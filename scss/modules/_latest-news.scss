@@ -68,6 +68,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 
 .news-article {
@@ -177,19 +178,20 @@
 }
 .latest-news {
     padding-top: 50px;
-    padding-bottom: 50px; 
 }
 
 // Hover Effect
-h3 {
-    a:hover {
-        text-decoration: underline;
-    }
-}
-
 .news-article:hover {
     top: -10px;
     transition: .5s ease;
+}
+
+.article-img-btn:hover {
+    text-decoration: underline;
+}
+
+.latest-news-view-all-link:hover {
+    text-decoration: underline;
 }
 //Media Queries
 .news-list {

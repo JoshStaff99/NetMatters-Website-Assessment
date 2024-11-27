@@ -1119,6 +1119,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 
 .news-article {
@@ -1231,16 +1232,19 @@ p {
 
 .latest-news {
   padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-h3 a:hover {
-  text-decoration: underline;
 }
 
 .news-article:hover {
   top: -10px;
   transition: 0.5s ease;
+}
+
+.article-img-btn:hover {
+  text-decoration: underline;
+}
+
+.latest-news-view-all-link:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 767px) {
