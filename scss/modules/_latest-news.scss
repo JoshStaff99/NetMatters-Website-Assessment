@@ -14,8 +14,11 @@
             flex-wrap: wrap;
             line-height: 1.1;
             font-size: 2.25rem;
-            font-weight: 600;
+            font-weight: 400;
             color: #333645;
+            strong {
+                font-weight: 600;
+            }
         }
         h3 {
             display: flex;
@@ -72,10 +75,6 @@
     max-width: 100%;
     top: 0;
     position: relative;
-    :hover {
-        top: -10px;
-        transition: .5s ease;
-    }
 }
 
 .article {
@@ -120,8 +119,12 @@
 }
 
 .article-img {
+    padding: 0;
+    margin: 0;
     img {
         max-width: 100%;
+        max-height: 100%;
+        display: flex;
     }
 }
 .article-block {
@@ -131,7 +134,7 @@
     padding: 30px;
     box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
     .h3-1 {
-        color: #db8c0d
+        color: #db8c0d;
     }
     .h3-2 {
         color: #2ecc71;
@@ -174,10 +177,20 @@
 }
 .latest-news {
     padding-top: 50px;
-    padding-bottom: 50px;
-       
+    padding-bottom: 50px; 
 }
 
+// Hover Effect
+h3 {
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.news-article:hover {
+    top: -10px;
+    transition: .5s ease;
+}
 //Media Queries
 .news-list {
     @media (min-width: 767px) {
@@ -189,11 +202,11 @@
 .news-article {
     @media (min-width: 767px) {
         flex: auto;
-        width: 33%;
+        width: 33.33333333%;
         padding: 0px 10px 0 10px;
     }
     @media (min-width: 1260px) {
-        width: 33%;
+        width: 33.33333333%;
     }
 }
 
@@ -216,6 +229,13 @@
         display: none;
     }
     @media (max-width: 767px) {
+        display: flex;
+    }
+}
+
+.h3-1 {
+    @media (min-width: 1260px) {
+        min-height: 3rem;
         display: flex;
     }
 }
