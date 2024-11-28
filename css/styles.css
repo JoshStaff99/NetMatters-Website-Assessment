@@ -1316,6 +1316,7 @@ p {
 .case-study-image-container {
   display: flex;
   overflow: hidden;
+  height: 120px;
 }
 .case-study-image-container img {
   display: block;
