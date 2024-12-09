@@ -3,24 +3,47 @@
 // ==========================================================================
 
 // Our Services Section
-.software-color {
+@mixin software-color {
     background-color: #67809f;
 }
-.it-support-color {
+@mixin it-support-color {
     background-color: #4183d7;
 }
-.digital-marketing-color {
+@mixin digital-marketing-color {
     background-color: #2ecc71;
 }
-.telecoms-service-color {
+@mixin telecoms-service-color {
     background-color: #d64541;
 }
-.web-design-color {
+@mixin web-design-color {
     background-color: #926fb1;
 }
-.cyber-security-color {
+@mixin cyber-security-color {
     background-color: #f62459;
 }
-.developer-training-color {
+@mixin developer-training-color {
     background-color: #ce4125;
+}
+
+// our services section
+.software-color {
+    @include software-color;
+}
+.it-support-color {
+    @include it-support-color;
+}
+.digital-marketing-color {
+    @include digital-marketing-color;
+}
+.telecoms-service-color {
+    @include telecoms-service-color;
+}
+.web-design-color {
+    @include web-design-color;
+}
+.cyber-security-color {
+    @include cyber-security-color;
+}
+.developer-training-color {
+    @include developer-training-color;
 }
