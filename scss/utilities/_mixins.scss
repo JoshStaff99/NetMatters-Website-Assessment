@@ -2,9 +2,12 @@
 //  Mixins
 // ==========================================================================
 
-// Our Services Section
+// Color Mixins
 @mixin software-color {
     background-color: #67809f;
+}
+@mixin software-btn-color {
+    background-color: #f7b322;
 }
 @mixin it-support-color {
     background-color: #4183d7;
@@ -23,6 +26,39 @@
 }
 @mixin developer-training-color {
     background-color: #ce4125;
+}
+
+// Latest News Button Mixins
+@mixin btn-latest-news {
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 1.063rem;
+}
+@mixin bus-dev-color {
+    background-color: #db8c0d;
+}
+@mixin btn-bus-dev-color {
+    background-color: #db8c0d;
+    border-color: #db8c0d;
+}
+@mixin digital-color {
+    background-color: #2ecc71;
+}
+@mixin btn-digital-color {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+}
+@mixin web-color {
+    background-color: #926fb1;
+}
+@mixin btn-web-color {
+    background-color: #926fb1;
+    border-color: #926fb1;
+}
+
+// Header Buttons
+.btn-header-support {
+    @include it-support-color;
 }
 
 // Drop Down Menu
@@ -89,6 +125,11 @@
     }
 }
 
+// Banner Section
+.btn-primary-banner1 {
+    @include web-design-color;
+}
+
 // Our Services Section
 .software-color {
     @include software-color;
@@ -110,4 +151,56 @@
 }
 .developer-training-color {
     @include developer-training-color;
+}
+
+// Our Services Buttons
+.btn-software {
+    @include software-btn-color;
+}
+.btn-it-support {
+    @include it-support-color;
+}
+.btn-digital-marketing {
+    @include digital-marketing-color;
+}
+.btn-telecoms {
+    @include telecoms-service-color;
+}
+.btn-web-design {
+    @include web-design-color;
+}
+.btn-cyber-security {
+    @include cyber-security-color;
+}
+.btn-developer-training {
+    @include developer-training-color;
+}
+
+//Latest News Section 
+
+// Small card Buttons
+.art-btn-1 {
+    @include bus-dev-color;
+}
+.art-btn-2 {
+    @include digital-color;
+}
+.art-btn-3 {
+    @include web-color;
+}
+
+// Latest News Buttons
+.btn-bus-dev {
+    @include btn-latest-news;
+    @include btn-bus-dev-color;
+}
+
+.btn-digital {
+    @include btn-latest-news;
+    @include btn-digital-color;
+}
+
+.btn-web {
+    @include btn-latest-news;
+    @include btn-web-color;
 }

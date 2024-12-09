@@ -559,6 +559,7 @@ header img {
   min-height: 550px;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../img/home-YLei.png");
 }
 
 .banner {
@@ -1151,18 +1152,6 @@ p {
   top: 10px;
   z-index: 1;
   text-transform: uppercase;
-}
-
-.art-btn-1 {
-  background-color: #db8c0d;
-}
-
-.art-btn-2 {
-  background-color: #2ecc71;
-}
-
-.art-btn-3 {
-  background-color: #926fb1;
 }
 
 .article-img {
@@ -2220,7 +2209,6 @@ footer .footer-row h4 {
 
 .btn-header-support {
   color: #fff;
-  background-color: #4183d7;
   border-color: #4183d7;
   align-self: center;
   padding: 5px 15px;
@@ -2268,51 +2256,42 @@ footer .footer-row h4 {
 
 .btn-service {
   color: #fff;
-  background-color: #f7b322;
   border-color: #f7b322;
   padding: 5px 15px;
   font-size: 1.063rem;
 }
 
 .btn-software {
-  background-color: #f7b322;
   border-color: #f7b322;
 }
 
 .btn-it-support {
-  background-color: #4183d7;
   border-color: #4183d7;
 }
 
 .btn-digital-marketing {
-  background-color: #2ecc71;
   border-color: #2ecc71;
 }
 
 .btn-telecoms {
-  background-color: #d64541;
   border-color: #d64541;
 }
 
 .btn-web-design {
-  background-color: #926fb1;
   border-color: #926fb1;
 }
 
 .btn-cyber-security {
-  background-color: #f62459;
   border-color: #f62459;
 }
 
 .btn-developer-training {
-  background-color: #ce4125;
   border-color: #ce4125;
 }
 
 .btn-primary-banner1 {
   margin: auto;
   color: #fff;
-  background-color: #926fb1;
   margin-top: 1.938rem;
   margin-bottom: 1.125rem;
   padding: 5px 20px;
@@ -2368,30 +2347,6 @@ footer .footer-row h4 {
   border-radius: 6px;
   padding: 10px 30px;
   font-size: 20px;
-}
-
-.btn-bus-dev {
-  color: #fff;
-  background-color: #db8c0d;
-  border-color: #db8c0d;
-  padding: 5px 15px;
-  font-size: 1.063rem;
-}
-
-.btn-digital {
-  color: #fff;
-  background-color: #2ecc71;
-  border-color: #2ecc71;
-  padding: 5px 15px;
-  font-size: 1.063rem;
-}
-
-.btn-web {
-  color: #fff;
-  background-color: #926fb1;
-  border-color: #926fb1;
-  padding: 5px 15px;
-  font-size: 1.063rem;
 }
 
 .case-study-button-1 {
@@ -2684,6 +2639,10 @@ a {
   text-decoration: none;
 }
 
+.btn-header-support {
+  background-color: #4183d7;
+}
+
 .main-nav-ddm-1 :hover {
   background-color: #67809f;
 }
@@ -2733,6 +2692,10 @@ a {
   background-color: #ce4125;
 }
 
+.btn-primary-banner1 {
+  background-color: #926fb1;
+}
+
 .software-color {
   background-color: #67809f;
 }
@@ -2759,4 +2722,68 @@ a {
 
 .developer-training-color {
   background-color: #ce4125;
+}
+
+.btn-software {
+  background-color: #f7b322;
+}
+
+.btn-it-support {
+  background-color: #4183d7;
+}
+
+.btn-digital-marketing {
+  background-color: #2ecc71;
+}
+
+.btn-telecoms {
+  background-color: #d64541;
+}
+
+.btn-web-design {
+  background-color: #926fb1;
+}
+
+.btn-cyber-security {
+  background-color: #f62459;
+}
+
+.btn-developer-training {
+  background-color: #ce4125;
+}
+
+.art-btn-1 {
+  background-color: #db8c0d;
+}
+
+.art-btn-2 {
+  background-color: #2ecc71;
+}
+
+.art-btn-3 {
+  background-color: #926fb1;
+}
+
+.btn-bus-dev {
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  background-color: #db8c0d;
+  border-color: #db8c0d;
+}
+
+.btn-digital {
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.btn-web {
+  color: #fff;
+  padding: 5px 15px;
+  font-size: 1.063rem;
+  background-color: #926fb1;
+  border-color: #926fb1;
 }/*# sourceMappingURL=styles.css.map */
