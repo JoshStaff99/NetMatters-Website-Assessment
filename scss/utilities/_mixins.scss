@@ -66,15 +66,17 @@
     text-transform: uppercase;
     border-radius: 3px;
     font-weight: 400;
+    color: #fff
 }
 @mixin case-study-button-color-1 {
-    background-color: #e8a008; 
-    border-color: #d49308;
+    background-color:#f7b322;
+    border-color: #f7b322;
 }
 @mixin case-study-button-color-2 {
     background-color: #4183d7; 
     border-color: #4183d7;
 }
+
 // Header Buttons
 .btn-header-support {
     @include it-support-color;

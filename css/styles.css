@@ -2419,6 +2419,41 @@ footer .footer-row h4 {
   background-color: #d93175;
 }
 
+.case-study-button-1:hover {
+  background-color: #e8a008;
+  border-color: #d49308;
+}
+
+.case-study-button-5:hover {
+  background-color: #2a6ec6;
+  border-color: #2665b5;
+}
+
+.case-study-button-6:hover {
+  background-color: #26ab5f;
+  border-color: #239a55;
+}
+
+.case-study-button-8:hover {
+  background-color: #26ab5f;
+  border-color: #239a55;
+}
+
+.case-study-button-9:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+
+.case-study-button-10:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+
+.case-study-button-11:hover {
+  background-color: #26ab5f;
+  border-color: #239a55;
+}
+
 @media (max-width: 991px) {
   .btn-header-support, .btn-header-contact {
     display: none;
@@ -2706,8 +2741,9 @@ a {
   text-transform: uppercase;
   border-radius: 3px;
   font-weight: 400;
-  background-color: #e8a008;
-  border-color: #d49308;
+  color: #fff;
+  background-color: #f7b322;
+  border-color: #f7b322;
 }
 
 .case-study-button-5 {
@@ -2719,6 +2755,7 @@ a {
   text-transform: uppercase;
   border-radius: 3px;
   font-weight: 400;
+  color: #fff;
   background-color: #4183d7;
   border-color: #4183d7;
 }
@@ -2732,6 +2769,7 @@ a {
   text-transform: uppercase;
   border-radius: 3px;
   font-weight: 400;
+  color: #fff;
   background-color: #2ecc71;
   border-color: #2ecc71;
 }
@@ -2745,6 +2783,7 @@ a {
   text-transform: uppercase;
   border-radius: 3px;
   font-weight: 400;
+  color: #fff;
   background-color: #2ecc71;
   border-color: #2ecc71;
 }
@@ -2758,6 +2797,7 @@ a {
   text-transform: uppercase;
   border-radius: 3px;
   font-weight: 400;
+  color: #fff;
   background-color: #926fb1;
   border-color: #926fb1;
 }
@@ -2771,6 +2811,7 @@ a {
   text-transform: uppercase;
   border-radius: 3px;
   font-weight: 400;
+  color: #fff;
   background-color: #926fb1;
   border-color: #926fb1;
 }
@@ -2784,6 +2825,7 @@ a {
   text-transform: uppercase;
   border-radius: 3px;
   font-weight: 400;
+  color: #fff;
   background-color: #2ecc71;
   border-color: #2ecc71;
 }/*# sourceMappingURL=styles.css.map */
