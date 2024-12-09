@@ -56,6 +56,25 @@
     border-color: #926fb1;
 }
 
+// Case Studies Section Mixins
+@mixin case-study-button {
+    margin-top: 11px;
+    font-size: 16px;
+    display: flex;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: 400;
+}
+@mixin case-study-button-color-1 {
+    background-color: #e8a008; 
+    border-color: #d49308;
+}
+@mixin case-study-button-color-2 {
+    background-color: #4183d7; 
+    border-color: #4183d7;
+}
 // Header Buttons
 .btn-header-support {
     @include it-support-color;
@@ -203,4 +222,39 @@
 .btn-web {
     @include btn-latest-news;
     @include btn-web-color;
+}
+
+// Case Studies Section 
+.case-study-button-1 {
+    @include case-study-button;
+    @include case-study-button-color-1;
+}
+.case-study-button-5 {
+    @include case-study-button;
+    @include case-study-button-color-2;
+}
+
+.case-study-button-6 {
+    @include case-study-button;
+    @include btn-digital-color;
+}
+
+.case-study-button-8 {
+    @include case-study-button;
+    @include btn-digital-color;
+}
+
+.case-study-button-9 {
+    @include case-study-button;
+    @include btn-web-color;
+}
+
+.case-study-button-10 {
+    @include case-study-button;
+    @include btn-web-color;
+}
+
+.case-study-button-11 {
+    @include case-study-button;
+    @include btn-digital-color;
 }
