@@ -25,7 +25,71 @@
     background-color: #ce4125;
 }
 
-// our services section
+// Drop Down Menu
+.main-nav-ddm-1 {
+    :hover {
+        @include software-color;
+        .icon-software-ddm {
+            @include software-color;
+        }
+    }
+}
+
+.main-nav-ddm-2 {
+    :hover {
+        @include it-support-color;
+        .icon-it-support-ddm {
+            @include it-support-color;
+        }
+    }
+}
+
+.main-nav-ddm-3 {
+    :hover {
+        @include digital-marketing-color;
+        .icon-digital-marketing-ddm {
+            @include digital-marketing-color;
+        }
+    }
+}
+
+.main-nav-ddm-4 {
+    :hover {
+        @include telecoms-service-color;
+        .icon-telecoms-service-ddm {
+            @include telecoms-service-color;
+        }
+    }
+}
+
+.main-nav-ddm-5 {
+    :hover {
+        @include web-design-color;
+        .icon-web-design-ddm {
+            @include web-design-color;
+        }
+    }
+}
+
+.main-nav-ddm-6 {
+    :hover {
+        @include cyber-security-color;
+        .icon-cyber-security-ddm {
+            @include cyber-security-color;
+        }
+    }
+}
+
+.main-nav-ddm-7 {
+    :hover {
+        @include developer-training-color;
+        .icon-developer-training-ddm {
+            @include developer-training-color;
+        }
+    }
+}
+
+// Our Services Section
 .software-color {
     @include software-color;
 }
