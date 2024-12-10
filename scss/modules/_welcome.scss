@@ -15,7 +15,7 @@
             flex-wrap: wrap;
             background-color: #323544;
             color: #fff;
-            padding: 30px 0 0;
+            padding-top: 30px;
             padding-right: 15px;
             position: relative;
                 a {
@@ -29,7 +29,8 @@
             flex-wrap: wrap;
             background-color: #323544;
             color: #fff;
-            padding: 30px 0 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
             padding-left: 15px;
             position: relative;
                 a {
@@ -89,6 +90,12 @@ p {
     }
 }
 
+.about {
+    @media (min-width: 992px) {
+        padding-bottom: 30px;
+    }
+}
+
 .welcome-section-btn-container {
     @media (min-width: 537px) {
         flex-direction: row;
@@ -110,5 +117,14 @@ p {
     }
     @media (min-width: 1260px) {
         flex-direction: row;
+    }
+}
+
+.client-quote {
+    @media (min-width: 992px) {
+        padding-bottom: 20px;
+    }
+    @media (min-width: 1260px) {
+        padding-bottom: 41px;
     }
 }
