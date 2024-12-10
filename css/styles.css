@@ -1097,6 +1097,11 @@ header img {
   display: inline-block;
 }
 
+.about-title {
+  font-weight: 600;
+  font-size: 2.25rem;
+}
+
 .client-quote {
   font-weight: 600;
   color: #a3a8ac;
@@ -1209,6 +1214,7 @@ p {
   font-size: 1.625rem;
   font-weight: 600;
   color: #333645;
+  align-self: center;
 }
 .container-latest-news-top h3 a {
   color: #333645;
@@ -1245,6 +1251,9 @@ p {
   font-size: 1.625rem;
   font-weight: 600;
   color: #333645;
+}
+.view-all-mobile h3 {
+  margin: 0;
 }
 
 .news-list {
