@@ -45,6 +45,7 @@
     border-color: #FF4532 transparent transparent transparent;
     transform: rotate(0deg);
     left: 0;
+    top: -32px;
     margin-top: 12px;
     display: none;
     align-self: center;
@@ -108,7 +109,7 @@
             text-transform: none;
             color: #fff;
         }
-        .triangle {
+        .triangle-1 {
             display: inline-flex;
             border-color: #67809f transparent transparent transparent;
         }
@@ -132,7 +133,7 @@
             text-transform: none;
             color: #fff;
         }
-        .triangle {
+        .triangle-2 {
             display: inline-flex;
             border-color: #4183d7 transparent transparent transparent;
         }
@@ -304,7 +305,86 @@
     }
 }
 
-.triangle {
+// Triangles
+.triangle-1 {
+    @media (min-width:994px){
+        left: -403px;
+    }
+    @media (min-width: 1260px){
+        left: -500px;
+    }
+    @media (max-width: 1260px) {
+        border-width: 40px 67px 0 67px;
+    }
+}
+
+ .triangle-2 {
+    @media (min-width:994px){
+        left: -269px;
+    }
+    @media (min-width: 1260px){
+        left: -336px;
+    }
+    @media (max-width: 1260px) {
+        border-width: 40px 67px 0 67px;
+    }
+}
+
+.triangle-3 {
+    @media (min-width:994px){
+        left: -134px;
+    }
+    @media (min-width: 1260px){
+        left: -167px;
+    }
+    @media (max-width: 1260px) {
+        border-width: 40px 67px 0 67px;
+    }
+}
+
+.triangle-4 {
+    @media (min-width:994px){
+        left: 0px;
+    }
+    @media (min-width: 1260px){
+        left: 0px;
+    }
+    @media (max-width: 1260px) {
+        border-width: 40px 67px 0 67px;
+    }
+}
+
+.triangle-5 {
+    @media (min-width:994px){
+        left: 134px;
+    }
+    @media (min-width: 1260px){
+        left: 168px;
+    }
+    @media (max-width: 1260px) {
+        border-width: 40px 67px 0 67px;
+    }
+}
+
+.triangle-6 {
+    @media (min-width:994px){
+        left: 268px;
+    }
+    @media (min-width: 1260px){
+        left: 334px;;
+    }
+    @media (max-width: 1260px) {
+        border-width: 40px 67px 0 67px;
+    }
+}
+
+.triangle-7 {
+    @media (min-width:994px){
+        left: 404px;
+    }
+    @media (min-width: 1260px){
+        left: 501px;
+    }
     @media (max-width: 1260px) {
         border-width: 40px 67px 0 67px;
     }

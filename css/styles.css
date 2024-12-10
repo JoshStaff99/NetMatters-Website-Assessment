@@ -313,6 +313,7 @@ header img {
   border-color: #FF4532 transparent transparent transparent;
   transform: rotate(0deg);
   left: 0;
+  top: -32px;
   margin-top: 12px;
   display: none;
   align-self: center;
@@ -374,7 +375,7 @@ header img {
   text-transform: none;
   color: #fff;
 }
-.main-nav-ddm-1 :hover .triangle {
+.main-nav-ddm-1 :hover .triangle-1 {
   display: inline-flex;
   border-color: #67809f transparent transparent transparent;
 }
@@ -396,7 +397,7 @@ header img {
   text-transform: none;
   color: #fff;
 }
-.main-nav-ddm-2 :hover .triangle {
+.main-nav-ddm-2 :hover .triangle-2 {
   display: inline-flex;
   border-color: #4183d7 transparent transparent transparent;
 }
@@ -554,8 +555,114 @@ header img {
   }
 }
 
+@media (min-width: 994px) {
+  .triangle-1 {
+    left: -403px;
+  }
+}
+@media (min-width: 1260px) {
+  .triangle-1 {
+    left: -500px;
+  }
+}
 @media (max-width: 1260px) {
-  .triangle {
+  .triangle-1 {
+    border-width: 40px 67px 0 67px;
+  }
+}
+
+@media (min-width: 994px) {
+  .triangle-2 {
+    left: -269px;
+  }
+}
+@media (min-width: 1260px) {
+  .triangle-2 {
+    left: -336px;
+  }
+}
+@media (max-width: 1260px) {
+  .triangle-2 {
+    border-width: 40px 67px 0 67px;
+  }
+}
+
+@media (min-width: 994px) {
+  .triangle-3 {
+    left: -134px;
+  }
+}
+@media (min-width: 1260px) {
+  .triangle-3 {
+    left: -167px;
+  }
+}
+@media (max-width: 1260px) {
+  .triangle-3 {
+    border-width: 40px 67px 0 67px;
+  }
+}
+
+@media (min-width: 994px) {
+  .triangle-4 {
+    left: 0px;
+  }
+}
+@media (min-width: 1260px) {
+  .triangle-4 {
+    left: 0px;
+  }
+}
+@media (max-width: 1260px) {
+  .triangle-4 {
+    border-width: 40px 67px 0 67px;
+  }
+}
+
+@media (min-width: 994px) {
+  .triangle-5 {
+    left: 134px;
+  }
+}
+@media (min-width: 1260px) {
+  .triangle-5 {
+    left: 168px;
+  }
+}
+@media (max-width: 1260px) {
+  .triangle-5 {
+    border-width: 40px 67px 0 67px;
+  }
+}
+
+@media (min-width: 994px) {
+  .triangle-6 {
+    left: 268px;
+  }
+}
+@media (min-width: 1260px) {
+  .triangle-6 {
+    left: 334px;
+  }
+}
+@media (max-width: 1260px) {
+  .triangle-6 {
+    border-width: 40px 67px 0 67px;
+  }
+}
+
+@media (min-width: 994px) {
+  .triangle-7 {
+    left: 404px;
+  }
+}
+@media (min-width: 1260px) {
+  .triangle-7 {
+    left: 501px;
+  }
+}
+@media (max-width: 1260px) {
+  .triangle-7 {
     border-width: 40px 67px 0 67px;
   }
 }
