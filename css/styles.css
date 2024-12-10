@@ -79,6 +79,11 @@ header img {
   padding-bottom: 20px;
 }
 
+.header-logo-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-actions-container {
   display: flex;
   padding: 7px 0;
@@ -168,6 +173,8 @@ header img {
 }
 
 .large-form-icon-container {
+  display: flex;
+  align-items: center;
   align-self: center;
   line-height: 0;
   outline: none;

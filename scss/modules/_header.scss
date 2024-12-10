@@ -20,7 +20,10 @@ header {
     justify-content: space-between;
     padding-bottom: 20px;
 }
-
+.header-logo-container {
+    display: flex;
+    align-items: center;
+}
 .header-actions-container{
     display: flex;
     padding: 7px 0;
@@ -110,6 +113,8 @@ header {
     border-color: #ccc;
 }
 .large-form-icon-container {
+    display: flex;
+    align-items: center;
     align-self: center;
     line-height: 0;
     outline: none;
