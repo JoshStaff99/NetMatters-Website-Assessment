@@ -19,6 +19,9 @@ footer {
                   vertical-align: middle;
                   border: 0;
                }
+               h4 {
+                  font-weight: 400;
+               }
         }
         .footer-company-info {
             display: flex;
@@ -45,7 +48,9 @@ footer {
             h4 {
                 text-transform: uppercase;
                 font-size: 1rem;
-                margin-bottom: 26px;	
+                font-weight: 400;
+                margin-bottom: 26px;
+                line-height: 1.1;	
             }
             .footer-menu-list li:hover {
                text-decoration: underline;
@@ -67,46 +72,58 @@ footer {
 }   
     .footer-menu-list {
       padding-left: 0;
+      li {
+         font-size: .8125rem;
+         line-height: 1.375rem;
+      }
     }
 
    .footer-logo-container {
       align-self: center;
       margin-bottom: 30px;
    }
-   // Sticky footer element
-   .sticky-footer {
-      position: relative;
-      margin-left: auto;
-      margin-right: auto;
-      bottom: 0;
-      width: 100%;
-      color: #fff;
-      text-align: left;
-      font-size: .8125rem;
-         a {
-            text-decoration: none;
-            color: #fff;
-         }
-            a:hover {
-               text-decoration: underline;
-               color: #fff;
-               list-style: none;
-            }
-         
-  }
-
-  .container-sticky-footer {
+// Sticky footer element
+.container-sticky-footer {
    width: 100%; 
    background-color: #212330;
    margin: 0;
    overflow-y: hidden;
    p {
+      padding: 5px 0 10px;
       margin-bottom: 0;
+      margin-top: 0;
+      line-height: 1.42857143;
    }
-  }
+   a {
+      font-size: .8125rem;
+      line-height: 1.375rem;
+   }
+}
+.sticky-footer {
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   bottom: 0;
+   width: 100%;
+   color: #fff;
+   text-align: left;
+   font-size: .8125rem;
+   a {
+      text-decoration: none;
+      color: #fff;
+   }
+   a:hover {
+      text-decoration: underline;
+      color: #fff;
+      list-style: none;
+   }        
+}
 
 //Media Queries 
 .container-sticky-footer {
+   @media (max-width: 767px) {
+      padding-top: 10px;
+   }
    @media (min-width: 769px) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -126,7 +143,6 @@ footer {
 }
 .sticky-footer {
    @media (max-width: 767px) {
-      padding: 5px 0 10px;
       flex-direction: column;
    }
 }
