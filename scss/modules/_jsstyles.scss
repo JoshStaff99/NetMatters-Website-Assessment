@@ -1,0 +1,41 @@
+// ==========================================================================
+//  JavaScript Styles
+// ==========================================================================
+
+//Sticky header Styles
+.nav-up {
+    top: -40px;
+}
+
+.nav-down {
+    padding-top: 20px;
+    position: fixed;
+    transition: top 0.2s ease-in-out 0.2s;
+    width: 100%;
+    z-index: 20;
+    top: 0;
+    box-shadow: 0 5px 35px rgba(0,0,0,.1);
+}
+
+.fake-header{
+    background-color: #fff;
+}
+
+// header placeholder 
+
+.header-hidden {
+    display:none;
+}
+
+.header-show {
+    display: inline-block;
+    height: 84px;
+}
+
+// media queries
+
+.header-show {
+    @media (min-width: 992px) {
+        height: 189px; 
+    }
+}

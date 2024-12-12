@@ -71,6 +71,10 @@ header img {
   max-width: 100%;
 }
 
+.header-background {
+  background-color: #fff;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -3012,4 +3016,37 @@ a {
   color: #fff;
   background-color: #2ecc71;
   border-color: #2ecc71;
+}
+
+.nav-up {
+  top: -40px;
+}
+
+.nav-down {
+  padding-top: 20px;
+  position: fixed;
+  transition: top 0.2s ease-in-out 0.2s;
+  width: 100%;
+  z-index: 20;
+  top: 0;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+}
+
+.fake-header {
+  background-color: #fff;
+}
+
+.header-hidden {
+  display: none;
+}
+
+.header-show {
+  display: inline-block;
+  height: 84px;
+}
+
+@media (min-width: 992px) {
+  .header-show {
+    height: 189px;
+  }
 }/*# sourceMappingURL=styles.css.map */
