@@ -1,3 +1,11 @@
+// ==========================================================================
+//  Main JavaScript 
+// ==========================================================================
+
+////////
+// Sticky Header
+////////
+
 // Hide Header on on scroll down
 var didScroll;
 var lastScrollTop = 0;
@@ -38,3 +46,17 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
+
+
+////////
+// Slick carousel
+////////
+
+$(document).ready(function(){
+    $('.slides').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+  });
