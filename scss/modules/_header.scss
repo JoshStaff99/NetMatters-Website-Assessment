@@ -158,7 +158,7 @@ header {
 
 // Media Queries 
 .row {
-    @media (max-width:766px) {
+    @media (max-width:765px) {
         padding-bottom: 0;
     }
 }
@@ -170,7 +170,7 @@ header {
 }
 
 .header-form-large, .icon-search-large, .large-form-icon-container {
-    @media (max-width:767px) {
+    @media (max-width:765px) {
         display: none;
     }
 }
@@ -188,7 +188,7 @@ header {
 }
 
 .header-form-large {
-    @media (min-width: 767px) {
+    @media (min-width: 766px) {
         width: 174px;
         border-radius: 0;
     }

@@ -216,7 +216,7 @@ header img {
   background-color: #7e808a;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 765px) {
   .row {
     padding-bottom: 0;
   }
@@ -228,7 +228,7 @@ header img {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 765px) {
   .header-form-large, .icon-search-large, .large-form-icon-container {
     display: none;
   }
@@ -250,7 +250,7 @@ header img {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 766px) {
   .header-form-large {
     width: 174px;
     border-radius: 0;
@@ -3042,9 +3042,14 @@ a {
 
 .header-show {
   display: inline-block;
-  height: 84px;
+  height: 142px;
 }
 
+@media (min-width: 768px) {
+  .header-show {
+    height: 84px;
+  }
+}
 @media (min-width: 992px) {
   .header-show {
     height: 189px;

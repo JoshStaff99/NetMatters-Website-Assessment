@@ -29,12 +29,15 @@
 
 .header-show {
     display: inline-block;
-    height: 84px;
+    height: 142px;
 }
 
 // media queries
 
 .header-show {
+    @media (min-width: 768px) {
+        height: 84px; 
+    }
     @media (min-width: 992px) {
         height: 189px; 
     }
