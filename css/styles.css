@@ -674,14 +674,14 @@ header img {
 }
 
 .banner-background {
-  display: flex;
+  display: flex !important;
   background-size: cover;
   justify-content: center;
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
   margin: auto;
-  min-height: 550px;
+  min-height: 550px !important;
   background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(270deg, transparent 25%, #000), url("../img/home-YLei.png");
@@ -3054,4 +3054,8 @@ a {
   .header-show {
     height: 189px;
   }
+}
+
+.slick-dots {
+  bottom: 30px !important;
 }/*# sourceMappingURL=styles.css.map */
