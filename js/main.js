@@ -81,7 +81,7 @@ $(document).ready(function(){
     });
 });
 
-// // Case Studies Carousel
+// Case Studies Carousel
 $(document).ready(function(){
      $('.case-studies').slick({
         slidesToShow:       3,
@@ -98,3 +98,6 @@ $(document).ready(function(){
     $('.case-studies .slick-list').addClass('slick-list-overflowremove')
  });
 
+////////
+// Side Menu
+////////
