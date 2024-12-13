@@ -46,11 +46,17 @@
 }
 
 ////////
-// Slick carousel
+// Slick Carousel
 ////////
 
+//Banner Carousel
 //Slick Dots
 
 .slick-dots {
     bottom: 30px !important;
+}
+
+// Case Studies Carousel
+.slick-list-overflowremove{
+    overflow: visible !important;
 }

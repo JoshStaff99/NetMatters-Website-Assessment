@@ -63,7 +63,38 @@ $(document).ready(function(){
         dots: true,
         appendDots: $('.slides'),
     });
-  });
+});
 
+// Partner Carousel
+$(document).ready(function(){
+    $('.partners').slick({
+        slidesToShow:       3,
+        slidesToScroll:     1,
+        autoplay:           true,
+        arrows:             false,
+        infinite:           true,
+        variableWidth:      true,
+        swipe:              false,
+        draggable:          false,
+        pauseOnHover:       true,
+        pauseOnFocus:       true,
+    });
+});
 
-  $(".slick-dots").addClass("slick-dots-positioning");
+// // Case Studies Carousel
+$(document).ready(function(){
+     $('.case-studies').slick({
+        slidesToShow:       3,
+        slidesToScroll:     1,
+        autoplay:           true,
+        arrows:             false,
+        infinite:           true,
+        variableWidth:      true,
+        swipe:              false,
+        draggable:          false,
+        pauseOnHover:       true,
+        pauseOnFocus:       true,
+    });
+    $('.case-studies .slick-list').addClass('slick-list-overflowremove')
+ });
+
