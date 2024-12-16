@@ -25,13 +25,10 @@ setInterval(function() {
 
 function hasScrolled() {
     var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
     if(Math.abs(lastScrollTop - st) <= delta)
         return;
     
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
+    // If they scrolled down and are past the .fake-header, add class .nav-up.
     if (st > lastScrollTop && st > navbarHeight){
         // Scroll Down
         $('.fake-header').removeClass('nav-down').addClass('nav-up');
@@ -115,15 +112,27 @@ $(document).ready(function(){
 //         });
 // });
 
+// set's variables for the sidebar and wrapper
+const sideMenu = document.querySelector('.sidebar');
+
+// Animation for the wrapper moving the page content on click of the burger menu
+
 $(document).ready(function() {
     $('.header-icon-menu-container').click(function(e) {
       var mySideBar = $('.sidebar');
-      mySideBar.addClass('active-sidebar').removeClass('hide-sidebar'); // open this one
+      mySideBar.addClass('active-sidebar').removeClass('hide-sidebar');
+      $('.wrapper').addClass('wrapper-right').removeClass('wrapper-center');
+       $(".wrapper").animate({
+          right: `${sideMenu.offsetWidth}px`
+       })
       $('.wrapper').click(function() {
-        // no need for an if statement here, just use a selector that matches the active elements:
-        $('.active-sidebar').removeClass('active-sidebar').addClass('hide-sidebar');
-        $('.wrapper').off('click'); // cancel the body's click handler when it's used
+        $('.active-sidebar').removeClass('active-sidebar');
+        $('.wrapper').addClass('wrapper-center').removeClass('wrapper-right');
+          $(".wrapper").animate({
+              right: '0px'
+           })
+        $('.wrapper').off('click'); // cancel the wrappers click handler when it's used
       });
-      e.stopPropagation(); // prevent the navbar event from bubbling up to the body
+      e.stopPropagation(); 
     });
-  });
+});

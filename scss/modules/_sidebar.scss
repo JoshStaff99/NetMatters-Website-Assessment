@@ -1,28 +1,15 @@
 // ==========================================================================
-//  Case Studies Styles
+//  Side Menu Styles
 // ==========================================================================
 .sidebar {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 20;
+    z-index: -1;
     height: 100%;
     width: 275px;
     background: #333645;
     overflow: auto;
-}
-
-.hide-sidebar{
-   display: none;
-}
-
-.active-sidebar {
-  display: block;
-}
-
-.active {
-  display: block;
-  color: blue;
 }
 
 // Media Queries

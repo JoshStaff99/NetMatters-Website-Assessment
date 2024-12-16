@@ -60,3 +60,27 @@
 .slick-list-overflowremove{
     overflow: visible !important;
 }
+
+
+////////
+// Side Menu
+////////
+
+// shows/hides sidebar
+.hide-sidebar{
+    display: none;
+}
+ 
+.active-sidebar {
+   display: block;
+}
+
+// moves the body wrapper when the side bar is active
+.wrapper-center {
+    transition: 0.3s;
+    transition-timing-function: linear;
+}
+.wrapper-right {
+    transition: 0.3s;
+    transition-timing-function: linear;
+}
