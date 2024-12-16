@@ -101,3 +101,13 @@ $(document).ready(function(){
 ////////
 // Side Menu
 ////////
+
+// function openNav() {
+//     document.getElementsByClassName(".sidebar").style.width = "275px";
+// }
+  
+// function closeNav() {
+//     document.getElementsByClassName(".sidebar").style.width = "0";
+// }
+
+// 

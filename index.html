@@ -12,7 +12,7 @@
     </head>
 
     <body>
-        <div class="wrapper">
+        <div class="wrapper" onclick="closeNav()">
         <header>
             <div class="header-placeholder header-hidden"></div>
             <div class="fake-header">
@@ -37,7 +37,7 @@
                                 <span class="icon-search-large icon-search"></span>
                             </button>
                         </form>
-                        <div class="header-icon-menu-container">
+                        <div class="header-icon-menu-container" onclick="openNav()">
                             <span href="#" class="icon-menu"></span>
                         </div>
                     </div>
@@ -772,8 +772,30 @@
             </div> 
         </footer>
     </div>
-    <div class="sidebar">
-
+    <div style="font-size:30px;cursor:pointer" class="sidebar">
+        <ul>
+           <li><a href="#">Contact Us</a></li> 
+           <li>
+                <a><span class="icon-apps"></span><small>Bespoke</small>Software</a>
+                <div class="side-sub-menu-banner">
+                    <ul class="side-sub-menu">
+                        <li><a href="#">Bespoke CRM</a></li>
+                        <li><a href="#">Business Automation</a></li>
+                        <li><a href="#">Software Integrations</a></li>
+                        <li><a href="#">Mobile App Development</a></li>
+                        <li><a href="#">Bespoke Databases</a></li>
+                        <li><a href="#">Sharepoint Development</a></li>
+                        <li><a href="#">Operational Systems</a></li>
+                        <li><a href="#">Business Central Implementation</a></li>
+                        <li><a href="#">Internet of Things (IoT) Software</a></li>
+                        <li><a href="#">Intranet Development</a></li>
+                        <li><a href="#">Customer Portal Development</a></li>
+                        <li><a href="#">Reporting Hub</a></li>
+                        <li><a href="#">SAP S/4HANA Management</a></li>
+                    </ul>
+                </div>
+           </li>
+        </ul>
     </div>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="js/slick/slick.min.js"></script>

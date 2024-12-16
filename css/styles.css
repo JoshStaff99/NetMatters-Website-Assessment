@@ -2772,6 +2772,7 @@ footer .footer-row h4 {
   top: 0;
   right: 0;
   z-index: -1;
+  display: none;
   height: 100%;
   width: 275px;
   background: #333645;
