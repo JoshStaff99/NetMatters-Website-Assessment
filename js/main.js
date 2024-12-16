@@ -102,12 +102,28 @@ $(document).ready(function(){
 // Side Menu
 ////////
 
-// function openNav() {
-//     document.getElementsByClassName(".sidebar").style.width = "275px";
-// }
-  
-// function closeNav() {
-//     document.getElementsByClassName(".sidebar").style.width = "0";
-// }
+// Side menu show/hide on click 
 
-// 
+// $(function() {     
+//      $('.header-icon-menu-container').on('click', function(e) {
+//        e.preventDefault();
+//        $('.sidebar').removeClass('hide-sidebar').addClass('active-sidebar');
+//      });
+//        $('.wrapper').on('click', function(e) {
+//           e.preventDefault();
+//            $('.sidebar').removeClass('active-sidebar').addClass('hide-sidebar');
+//         });
+// });
+
+$(document).ready(function() {
+    $('.header-icon-menu-container').click(function(e) {
+      var mySideBar = $('.sidebar');
+      mySideBar.addClass('active-sidebar').removeClass('hide-sidebar'); // open this one
+      $('.wrapper').click(function() {
+        // no need for an if statement here, just use a selector that matches the active elements:
+        $('.active-sidebar').removeClass('active-sidebar').addClass('hide-sidebar');
+        $('.wrapper').off('click'); // cancel the body's click handler when it's used
+      });
+      e.stopPropagation(); // prevent the navbar event from bubbling up to the body
+    });
+  });

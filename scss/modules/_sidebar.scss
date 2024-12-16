@@ -5,19 +5,29 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: -1;
-    display: none;
+    z-index: 20;
     height: 100%;
     width: 275px;
     background: #333645;
     overflow: auto;
-  }
+}
 
+.hide-sidebar{
+   display: none;
+}
 
+.active-sidebar {
+  display: block;
+}
+
+.active {
+  display: block;
+  color: blue;
+}
 
 // Media Queries
 @media (min-width: 992px) {
     .sidebar {
       width: 350px;
     }
-  }
+}
