@@ -84,3 +84,139 @@
     transition: 0.3s;
     transition-timing-function: linear;
 }
+
+////////
+// Cookie Pop Up Styles
+////////
+
+.cookie-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-pack: center !important;
+    padding: 30px;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.modal-dialog {
+    margin: auto;
+    transform: translate(0);
+    transition: transform .3s ease-out;
+    position: relative;
+    width: auto;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    background-clip: padding-box;
+    outline: none;
+}
+
+.modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    min-height: 16.42857143px;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    font-weight: 400;
+}
+
+.modal-body {
+    position: relative;
+    padding: 20px;
+}
+
+.modal-footer {
+    margin: 0;
+    padding: 19px 20px 20px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.modal-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.modal-btn-1 {
+    text-align: center;
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;
+    color: #fff;
+    background-color: #999aa2;
+    border-color: #999aa2;
+    display: block;
+    width: 100%;
+}
+
+.modal-btn-2 {
+    text-align: center;
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;
+    color: #fff;
+    background-color: #926fb1;
+    border-color: #926fb1;
+    display: block;
+    width: 100%;
+}
+
+.modal-row-item {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+// Media Queries
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-row-item {
+        width: 50%;
+    }
+}

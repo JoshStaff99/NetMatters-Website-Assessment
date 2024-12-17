@@ -3,14 +3,22 @@
 // ==========================================================================
 
 ////////
-// Sticky Header
+// Global Variables 
 ////////
 
-// Hide Header on on scroll down
+// Sticky Header
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('.fake-header').outerHeight();
+
+// Side Menu
+// set's variables for the sidebar
+const sideMenu = document.querySelector('.sidebar');
+
+////////
+// Sticky Header
+////////
 
 $(window).scroll(function(event){
     didScroll = true;
@@ -100,37 +108,22 @@ $(document).ready(function(){
 ////////
 
 // Side menu show/hide on click 
-
-// $(function() {     
-//      $('.header-icon-menu-container').on('click', function(e) {
-//        e.preventDefault();
-//        $('.sidebar').removeClass('hide-sidebar').addClass('active-sidebar');
-//      });
-//        $('.wrapper').on('click', function(e) {
-//           e.preventDefault();
-//            $('.sidebar').removeClass('active-sidebar').addClass('hide-sidebar');
-//         });
-// });
-
-// set's variables for the sidebar and wrapper
-const sideMenu = document.querySelector('.sidebar');
-
 // Animation for the wrapper moving the page content on click of the burger menu
 
 $(document).ready(function() {
     $('.header-icon-menu-container').click(function(e) {
-      var mySideBar = $('.sidebar');
-      mySideBar.addClass('active-sidebar').removeClass('hide-sidebar');
-      $('.wrapper').addClass('wrapper-right').removeClass('wrapper-center');
-       $(".wrapper").animate({
-          right: `${sideMenu.offsetWidth}px`
+        var mySideBar = $('.sidebar');
+        mySideBar.addClass('active-sidebar').removeClass('hide-sidebar');
+        $('.wrapper').addClass('wrapper-right').removeClass('wrapper-center');
+        $(".wrapper").animate({
+            right: `${sideMenu.offsetWidth}px`
        })
-      $('.wrapper').click(function() {
+        $('.wrapper').click(function() {
         $('.active-sidebar').removeClass('active-sidebar');
         $('.wrapper').addClass('wrapper-center').removeClass('wrapper-right');
-          $(".wrapper").animate({
-              right: '0px'
-           })
+        $(".wrapper").animate({
+            right: '0px'
+        })
         $('.wrapper').off('click'); // cancel the wrappers click handler when it's used
       });
       e.stopPropagation(); 
