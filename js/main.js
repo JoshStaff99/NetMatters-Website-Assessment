@@ -6,15 +6,51 @@
 // Global Variables 
 ////////
 
-// Sticky Header
+// Sticky Header Variables 
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('.fake-header').outerHeight();
 
-// Side Menu
+// Side Menu Variables
 // set's variables for the sidebar
 const sideMenu = document.querySelector('.sidebar');
+
+// Cookie Variables
+const $cookies_policy = $('#cookie-consent');
+const $cookies_accept = $('.modal-btn-2');
+const $cookies_manage = $('.cookie-settings-btn');
+const $cookies_settings = $('.modal-btn-1');
+
+////////
+// Cookie Pop Up
+////////
+
+//Checks If Cookies Are Accepted
+if(localStorage.getItem('cAccepted') === null){
+    $cookies_policy.addClass('cookie-show');
+}
+else{
+    $cookies_policy.addClass('cookie-hide');
+    $cookies_manage.addClass('cookie-show');
+}
+
+
+//Cookies Accept Function on Click
+$cookies_accept.on('click', function(){
+    $cookies_policy.removeClass('cookie-show').addClass('cookie-hide');
+    localStorage.setItem("cAccepted", "true");
+});
+
+//Cookies Manage Consent Function on Click
+$cookies_manage.on('click', function(){
+    $cookies_policy.removeClass('cookie-hide').addClass('cookie-show');
+});
+
+//Cookies Settings Function on Click
+$cookies_settings.on('click', function(){
+    $cookies_policy.removeClass('cookie-show').addClass('cookie-hide');
+});
 
 ////////
 // Sticky Header

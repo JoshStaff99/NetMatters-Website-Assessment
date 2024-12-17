@@ -88,6 +88,25 @@
 ////////
 // Cookie Pop Up Styles
 ////////
+.cookie-settings-btn {
+    position: fixed;
+    line-height: 22px;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background: #75788a;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    border: solid #75788a;
+    border-width: 1px 1px 0 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: .8rem;
+}
 
 .cookie-modal {
     position: fixed;
@@ -97,7 +116,7 @@
     right: 0;
     z-index: 100;
     background-color: rgba(0, 0, 0, .7);
-    display: flex;
+    display: none;
     -webkit-overflow-scrolling: touch;
     outline: 0;
     overflow-x: hidden;
@@ -177,6 +196,7 @@
     border-color: #999aa2;
     display: block;
     width: 100%;
+    cursor: pointer;
 }
 
 .modal-btn-2 {
@@ -193,15 +213,36 @@
     border-color: #926fb1;
     display: block;
     width: 100%;
+    cursor: pointer;
 }
 
 .modal-row-item {
+    width: 100%;
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
 }
 
+.cookie-show {
+    display: block;
+}
+
+.cookie-hide {
+    display: none;
+}
+// Hover Effects
+.modal-btn-1:hover {
+    color: #fff;
+    background-color: #84858f;
+    border-color: #797a85;
+}
+
+.modal-btn-2:hover {
+    color: #fff;
+    background-color: #7e57a0;
+    border-color: #735093;
+}
 // Media Queries
 @media (min-width: 768px) {
     .modal-dialog {
@@ -212,6 +253,12 @@
 @media (min-width: 768px) {
     .modal-content {
         box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    }
+}
+
+@media (max-width: 767px) {
+    .modal-top-btn {
+        margin-bottom: 30px;
     }
 }
 
