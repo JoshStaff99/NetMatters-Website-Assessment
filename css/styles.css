@@ -2772,11 +2772,44 @@ footer .footer-row h4 {
   position: fixed;
   top: 0;
   right: 0;
+  bottom: 0;
   z-index: -1;
   height: 100%;
   width: 275px;
   background: #333645;
   overflow: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ::-webkit-scrollbar {
+  position: relative;
+  left: 30px;
+}
+
+.main-sidebar {
+  padding: 21px;
+}
+.main-sidebar ul {
+  margin: -20px 0 0;
+}
+.main-sidebar ul li {
+  padding: 20px 0 0;
+}
+.main-sidebar ul li a {
+  font-size: 1.125rem;
+  padding: 19px 0 18px;
+  border-radius: 3px;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 @media (min-width: 992px) {
@@ -3089,10 +3122,16 @@ a {
 
 .hide-sidebar {
   display: none;
+  z-index: -1;
+  transition: 0.3s;
+  transition-timing-function: linear;
 }
 
 .active-sidebar {
   display: block;
+  z-index: 20;
+  transition: 60s;
+  transition-timing-function: linear;
 }
 
 .wrapper-center {
@@ -3134,7 +3173,6 @@ a {
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.7);
   display: none;
-  -webkit-overflow-scrolling: touch;
   outline: 0;
   overflow-x: hidden;
   overflow-y: auto;

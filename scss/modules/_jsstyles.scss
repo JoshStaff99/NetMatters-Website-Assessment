@@ -69,10 +69,16 @@
 // shows/hides sidebar
 .hide-sidebar{
     display: none;
+    z-index: -1;
+    transition: 0.3s;
+    transition-timing-function: linear;
 }
  
 .active-sidebar {
-   display: block;
+    display: block;
+    z-index: 20;
+    transition: 60s;
+    transition-timing-function: linear;
 }
 
 // moves the body wrapper when the side bar is active
@@ -117,7 +123,6 @@
     z-index: 100;
     background-color: rgba(0, 0, 0, .7);
     display: none;
-    -webkit-overflow-scrolling: touch;
     outline: 0;
     overflow-x: hidden;
     overflow-y: auto;
