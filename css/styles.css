@@ -3242,7 +3242,7 @@ a {
 }
 
 .cookie-show {
-  display: block;
+  display: flex;
 }
 
 .cookie-hide {
