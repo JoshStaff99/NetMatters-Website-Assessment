@@ -108,6 +108,7 @@
 ////////
 // Cookie Pop Up Styles
 ////////
+
 .cookie-settings-btn {
     position: fixed;
     line-height: 22px;
@@ -250,6 +251,7 @@
 .cookie-hide {
     display: none;
 }
+
 // Hover Effects
 .modal-btn-1:hover {
     color: #fff;
@@ -262,6 +264,7 @@
     background-color: #7e57a0;
     border-color: #735093;
 }
+
 // Media Queries
 @media (min-width: 768px) {
     .modal-dialog {

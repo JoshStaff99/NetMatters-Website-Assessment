@@ -2808,6 +2808,7 @@ footer .footer-row h4 {
 
 .side-item-center {
   display: block;
+  font-size: 0.625rem;
 }
 
 .side-menu-list-item {
@@ -2855,9 +2856,49 @@ footer .footer-row h4 {
   display: block;
 }
 
+.icon-bar-graph-style {
+  color: #2ecc71;
+  font-size: 1.438rem;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.icon-phone-in-talk-style {
+  color: #d64541;
+  font-size: 1.438rem;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.icon-embed2-style {
+  color: #926fb1;
+  font-size: 1.438rem;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.icon-security-style {
+  color: #f62459;
+  font-size: 1.438rem;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.icon-school-style {
+  color: #ce4125;
+  font-size: 1.438rem;
+  padding-bottom: 10px;
+  display: block;
+}
+
 @media (min-width: 992px) {
   .sidebar {
     width: 350px;
+  }
+}
+@media (min-width: 992px) {
+  .side-menu-mobile {
+    display: none;
   }
 }
 html {
