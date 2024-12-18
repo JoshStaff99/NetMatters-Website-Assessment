@@ -76,8 +76,9 @@
  
 .active-sidebar {
     display: block;
-    z-index: 20;
-    transition: 60s;
+    z-index: 40;
+    //transition: 60s;
+    transition: 0.3s;
     transition-timing-function: linear;
 }
 
@@ -89,6 +90,19 @@
 .wrapper-right {
     transition: 0.3s;
     transition-timing-function: linear;
+}
+
+.wrapper-right::before{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: opacity 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0,0,0,.4);
+    z-index: 30;
+    content: ""; 
 }
 
 ////////
