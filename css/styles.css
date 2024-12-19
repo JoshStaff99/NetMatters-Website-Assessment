@@ -113,6 +113,9 @@ header img {
   background-color: #22242e;
   border-color: #191a22;
 }
+.header-icon-menu-container :hover .hamburger-inner {
+  background-color: #fff;
+}
 
 .icon-menu {
   line-height: 46px !important;
@@ -126,6 +129,74 @@ header img {
   align-self: center;
   width: 100%;
   height: 56px;
+}
+
+.hamburger-box {
+  padding: 5px 15px;
+  width: 63px;
+  height: 19px;
+  display: block;
+  position: relative;
+  font-size: 1.438rem;
+  line-height: 45px;
+  color: #fff;
+  background-color: #333645;
+  border-color: #333645;
+  height: 56px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  border-radius: 3px;
+}
+
+.hamburger-inner {
+  background-color: #fff;
+  border-radius: 0;
+  font-size: 1.438rem;
+  line-height: 45px;
+  width: 33px;
+  height: 4px;
+  border-radius: 0;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+  display: block;
+  top: 50%;
+  margin-top: -1.5px;
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger-inner::before {
+  content: "";
+  top: -10px;
+  background-color: #fff;
+  border-radius: 0;
+  width: 33px;
+  height: 4px;
+  border-radius: 0;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+  display: block;
+  transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+}
+
+.hamburger-inner::after {
+  content: "";
+  bottom: -10px;
+  background-color: #fff;
+  border-radius: 0;
+  width: 33px;
+  height: 4px;
+  border-radius: 0;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+  display: block;
+  transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .header-form {
@@ -3248,6 +3319,21 @@ a {
 
 .slick-list-overflowremove {
   overflow: visible !important;
+}
+
+.burger-active .hamburger-inner {
+  transform: rotate(225deg);
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.burger-active .hamburger-inner::before {
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
+}
+.burger-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
 }
 
 .hide-sidebar {

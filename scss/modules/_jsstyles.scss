@@ -61,6 +61,25 @@
     overflow: visible !important;
 }
 
+////////
+// Burger Menu Animation
+////////
+.burger-active {
+    .hamburger-inner {
+        transform: rotate(225deg);
+        transition-duration: .22s;
+        transition-timing-function: cubic-bezier(.215,.61,.355,1);
+    }
+    .hamburger-inner::before {
+        opacity: 0;
+        transition: top .1s ease-out,opacity .1s ease-out .12s;
+    }
+    .hamburger-inner::after {
+        bottom: 0;
+        transform: rotate(-90deg);
+        transition: bottom .1s ease-out,transform .22s cubic-bezier(.215,.61,.355,1) .12s;
+    }
+}
 
 ////////
 // Side Menu
@@ -77,7 +96,6 @@
 .active-sidebar {
     display: block;
     z-index: 40;
-    //transition: 60s;
     transition: 0.3s;
     transition-timing-function: linear;
 }

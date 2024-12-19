@@ -143,20 +143,22 @@ $(document).ready(function(){
 // Side Menu
 ////////
 
-// Side menu show/hide on click 
-// Animation for the wrapper moving the page content on click of the burger menu
+// Side menu show/hide on click
+// Animation for the wrapper moving the page content and burger animation on click of the burger menu
 
 $(document).ready(function() {
     $('.header-icon-menu-container').click(function(e) {
         var mySideBar = $('.sidebar');
         mySideBar.addClass('active-sidebar').removeClass('hide-sidebar');
         $('.wrapper').addClass('wrapper-right').removeClass('wrapper-center');
+        $('.hamburger-box').addClass('burger-active');
         $(".wrapper").animate({
             right: `${sideMenu.offsetWidth}px`
        })
         $('.wrapper').click(function() {
         $('.active-sidebar').removeClass('active-sidebar');
         $('.wrapper').addClass('wrapper-center').removeClass('wrapper-right');
+        $('.hamburger-box').removeClass('burger-active');
         $(".wrapper").animate({
             right: '0px'
         })
@@ -165,3 +167,13 @@ $(document).ready(function() {
       e.stopPropagation(); 
     });
 });
+
+// Burger Menu Animation
+// $(document).ready(function() {
+//     $('.header-icon-menu-container').click(function() {
+//       $('.hamburger-inner').addClass('burger-active');
+//     });
+//     $('.wrapper').click(function() {
+//         $('.hamburger-inner').removeClass('burger-active');
+//       });
+//   });

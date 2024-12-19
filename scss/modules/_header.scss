@@ -46,6 +46,9 @@ header {
     :hover {
         background-color: #22242e;
         border-color: #191a22;
+        .hamburger-inner {
+            background-color: #fff;
+        }
     }
 }
 
@@ -63,6 +66,74 @@ header {
     height: 56px;
 }
 
+//Burger Menu
+.hamburger-box {
+    padding: 5px 15px;
+    width: 63px;
+    height: 19px;
+    display: block;
+    position: relative;
+    font-size: 1.438rem;
+    line-height: 45px;
+    color: #fff;
+    background-color: #333645;
+    border-color: #333645;
+    height: 56px;
+    line-height: 46px;
+    font-size: 1.125rem;
+    border-radius: 3px;
+}
+
+.hamburger-inner {
+    background-color: #fff;
+    border-radius: 0;
+    font-size: 1.438rem;
+    line-height: 45px;
+    width: 33px;
+    height: 4px;
+    border-radius: 0;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+    display: block;
+    top: 50%;
+    margin-top: -1.5px;
+    transition-duration: .22s;
+    transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+}
+
+.hamburger-inner::before {
+    content: "";
+    top: -10px;
+    background-color: #fff;
+    border-radius: 0;
+    width: 33px;
+    height: 4px;
+    border-radius: 0;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+    display: block;
+    transition: top .1s ease-in .25s,opacity .1s ease-in;
+}
+
+.hamburger-inner::after {
+    content: "";
+    bottom: -10px;
+    background-color: #fff;
+    border-radius: 0;
+    width: 33px;
+    height: 4px;
+    border-radius: 0;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: .15s;
+    transition-timing-function: ease;
+    display: block;
+    transition: bottom .1s ease-in .25s,transform .22s cubic-bezier(.55,.055,.675,.19);
+}
 // Header Form
 .header-form {
     position: relative;
