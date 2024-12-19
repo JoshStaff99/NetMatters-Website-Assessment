@@ -7,12 +7,39 @@
         <meta name="ROBOTS" content="NOINDEX,NOFOLLOW">
 
 	<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
     </head>
 
     <body>
-        <div class="wrapper">
+        <button type="button" class="cookie-settings-btn btn">Manage Consent</button>
+        <div id="cookie-consent" class="cookie-modal fade-in">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Cookies Policy</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>Our website uses cookies. This helps us provide you with a good experiance on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "<a href="#">Privacy Policy</a>" otherwise click "Accept Cookies" to enter. </p>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="modal-row">
+                            <div class="modal-row-item modal-top-btn">
+                                <a class="btn modal-btn-1">Change Settings</a>
+                            </div>
+                            <div class="modal-row-item">
+                                <a class="btn modal-btn-2">Accept Cookies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper wrapper-center">
         <header>
-            <div class="container">
+            <div class="header-placeholder header-hidden"></div>
+            <div class="fake-header">
+            <div class="container header-background">
                 <div class="row">
                     <div class="header-logo-container">
                         <a href="#">
@@ -189,16 +216,87 @@
                     </div>
                 </div>
             </div>
+            </div>
         </header>
-        <div class="banner-background"> 
-            <div class="">
-                <div class="banner container">
-                    <h1>The East Of England's Leading Technology Company</h1>  
-                    <p>Performance-driven digital and technology services<br>with complete transparency.</p>
-                    <div class="banner-btn-container">
-                        <a class="btn btn-primary-banner1" href="#" target="_blank">why choose us?<span class="banner-btn-arrow icon-arrow-right2"></span></a>
+        <div class="banner-outer-container">
+            <div class="slides">
+                <div class="banner-background slide-1"> 
+                    <div class="">
+                        <div class="banner container">
+                            <h1>The East Of England's Leading Technology Company</h1>  
+                            <p>Performance-driven digital and technology services<br>with complete transparency.</p>
+                            <div class="banner-btn-container">
+                                <a class="btn btn-primary-banner1" href="#" target="_blank">why choose us?<span class="banner-btn-arrow icon-arrow-right2"></span></a>
+                            </div>
+                        </div> 
                     </div>
-                </div> 
+                </div>
+                <div class="banner-background slide-2"> 
+                    <div class="">
+                        <div class="banner container">
+                            <h1>This is slide two</h1>  
+                            <p>Performance-driven digital and technology services<br>with complete transparency.</p>
+                            <div class="banner-btn-container">
+                                <a class="btn btn-primary-banner1" href="#" target="_blank">why choose us?<span class="banner-btn-arrow icon-arrow-right2"></span></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="banner-background slide-3"> 
+                    <div class="">
+                        <div class="banner container">
+                            <h1>This is Slide three</h1>  
+                            <p>Performance-driven digital and technology services<br>with complete transparency.</p>
+                            <div class="banner-btn-container">
+                                <a class="btn btn-primary-banner1" href="#" target="_blank">why choose us?<span class="banner-btn-arrow icon-arrow-right2"></span></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="banner-background slide-4"> 
+                    <div class="">
+                        <div class="banner container">
+                            <h1>This is Slide four</h1>  
+                            <p>Performance-driven digital and technology services<br>with complete transparency.</p>
+                            <div class="banner-btn-container">
+                                <a class="btn btn-primary-banner1" href="#" target="_blank">why choose us?<span class="banner-btn-arrow icon-arrow-right2"></span></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="banner-background slide-5"> 
+                    <div class="">
+                        <div class="banner container">
+                            <h1>This is Slide five</h1>  
+                            <p>Performance-driven digital and technology services<br>with complete transparency.</p>
+                            <div class="banner-btn-container">
+                                <a class="btn btn-primary-banner1" href="#" target="_blank">why choose us?<span class="banner-btn-arrow icon-arrow-right2"></span></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="banner-background slide-6"> 
+                    <div class="">
+                        <div class="banner container">
+                            <h1>This is Slide six</h1>  
+                            <p>Performance-driven digital and technology services<br>with complete transparency.</p>
+                            <div class="banner-btn-container">
+                                <a class="btn btn-primary-banner1" href="#" target="_blank">why choose us?<span class="banner-btn-arrow icon-arrow-right2"></span></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="banner-background slide-7"> 
+                    <div class="">
+                        <div class="banner container">
+                            <h1>This is Slide seven</h1>  
+                            <p>Performance-driven digital and technology services<br>with complete transparency.</p>
+                            <div class="banner-btn-container">
+                                <a class="btn btn-primary-banner1" href="#" target="_blank">why choose us?<span class="banner-btn-arrow icon-arrow-right2"></span></a>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
             </div>
         </div>
         <div class="our-services">
@@ -272,18 +370,42 @@
             </div>
         </div>
         <div class="partners">
-            <img src="img/partner-img/google-partner.webp" alt="Google Partner Logo">
-            <img src="img/partner-img/living_wage.webp" alt="Living Wage Logo">
-            <img src="img/partner-img/norfolk_prohelp.webp" alt="Norfolk Prohelp Logo">
-            <img src="img/partner-img/investing-in-future-growth.webp" alt="Investing In Future Growth Logo">
-            <img src="img/partner-img/norfolk-carbon-charter.webp" alt="Norfolk Carbon Charter Logo">
-            <img src="img/PPC_logo.webp" alt="PPC Logo">
-            <img src="img/partner-img/princess-royal-training.webp" alt="Princess Royal Training Logo">
-            <img src="img/partner-img/future-50.webp" alt="Future 50 Logo">
-            <img src="img/partner-img/qms.webp" alt="QMS Logo">
-            <img src="img/partner-img/iso_27001.webp" alt="Iso Logo">
-            <img src="img/partner-img/skills-of-tomorrow.webp" alt="Skills of Tomorrow Logo">
-            <img src="img/partner-img/cyber-essentials-colour.webp" alt="Cyber Essentials Logo">
+            <div class="partner-item">
+                <img src="img/partner-img/google-partner.webp" alt="Google Partner Logo">
+            </div>
+            <div class="partner-item">
+                <img src="img/partner-img/living_wage.webp" alt="Living Wage Logo">
+            </div>
+            <div class="partner-item">
+                <img src="img/partner-img/norfolk_prohelp.webp" alt="Norfolk Prohelp Logo">
+            </div>
+            <div class="partner-item"> 
+                <img src="img/partner-img/investing-in-future-growth.webp" alt="Investing In Future Growth Logo">
+            </div>
+            <div class="partner-item"> 
+                <img src="img/partner-img/norfolk-carbon-charter.webp" alt="Norfolk Carbon Charter Logo">
+            </div>
+            <div class="partner-item"> 
+                <img src="img/PPC_logo.webp" alt="PPC Logo">
+            </div>
+            <div class="partner-item"> 
+                <img src="img/partner-img/princess-royal-training.webp" alt="Princess Royal Training Logo">
+            </div>
+            <div class="partner-item"> 
+                <img src="img/partner-img/future-50.webp" alt="Future 50 Logo">
+            </div>
+            <div class="partner-item"> 
+                <img src="img/partner-img/qms.webp" alt="QMS Logo">
+            </div>
+            <div class="partner-item"> 
+                <img src="img/partner-img/iso_27001.webp" alt="Iso Logo">
+            </div>
+            <div class="partner-item"> 
+                <img src="img/partner-img/skills-of-tomorrow.webp" alt="Skills of Tomorrow Logo">
+            </div>
+            <div class="partner-item"> 
+                <img src="img/partner-img/cyber-essentials-colour.webp" alt="Cyber Essentials Logo">
+            </div>
         </div>
         <div class="welcome-container">
             <div class="about-row container">
@@ -673,5 +795,179 @@
             </div> 
         </footer>
     </div>
+    <div class="sidebar hide-sidebar">
+        <div class="main-sidebar">
+            <ul class="side-menu-item side-menu-mobile">
+                <li class="side-menu-list-item"><a class="side-list-item-large" href="#">Contact Us</a></li> 
+                <li class="software-sm side-menu-list-item">
+                    <a class="side-list-item-large side-menu-item-span"><span class="icon-computer-style icon-computer"></span><small class="side-item-center">Bespoke</small>Software</a>
+                    <div class="side-sub-menu-banner">
+                        <ul class="side-sub-menu">
+                            <li class="side-sub-menu-item"><a href="#">Bespoke CRM</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Business Automation</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Software Integrations</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Mobile App Development</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Bespoke Databases</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Sharepoint Development</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Operational Systems</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Business Central Implementation</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Internet of Things (IoT) Software</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Intranet Development</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Customer Portal Development</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Reporting Hub</a></li>
+                            <li class="side-sub-menu-item"><a href="#">SAP S/4HANA Management</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="it-support-sm side-menu-list-item">
+                    <a class="side-list-item-large side-menu-item-span"><span class="icon-display-style icon-display"></span><small class="side-item-center">IT</small>Support</a>
+                    <div class="side-sub-menu-banner">
+                        <ul class="side-sub-menu">
+                            <li class="side-sub-menu-item"><a href="#">Managed IT Support</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Business IT Support</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Office 365 for Business</a></li>
+                            <li class="side-sub-menu-item"><a href="#">IT Consultancy</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Cloud Service Provider</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Data Backup & Disaster Recovery</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="digital-sm side-menu-list-item">
+                    <a class="side-list-item-large side-menu-item-span"><span class="icon-bar-graph-style icon-bar-graph"></span><small class="side-item-center">Digital</small>Marketing</a>
+                    <div class="side-sub-menu-banner">
+                        <ul class="side-sub-menu">
+                            <li class="side-sub-menu-item"><a href="#">Search Engine Optimisation</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Pay Per Click Advertising (PPC)</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Conversion Rate Optimisation</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Email Marketing</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Social Media Marketing</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Content Marketing</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="telecoms-sm side-menu-list-item">
+                    <a class="side-list-item-large side-menu-item-span"><span class="icon-phone-in-talk-style icon-phone_in_talk"></span><small class="side-item-center">Telecoms</small>Services</a>
+                    <div class="side-sub-menu-banner">
+                        <ul class="side-sub-menu">
+                            <li class="side-sub-menu-item"><a href="#">Business Mobile</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Hosted VoIP Provider</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Business VoIP Systems</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Business Broadband</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Leased Lines Provider</a></li>
+                            <li class="side-sub-menu-item"><a href="#">3CX Systems</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="web-design-sm side-menu-list-item">
+                    <a class="side-list-item-large side-menu-item-span"><span class="icon-embed2-style icon-embed2"></span><small class="side-item-center">Web</small>Design</a>
+                    <div class="side-sub-menu-banner">
+                        <ul class="side-sub-menu">
+                            <li class="side-sub-menu-item"><a href="#">Bespoke Website Design</a></li>
+                            <li class="side-sub-menu-item"><a href="#">eCommerce Website Design</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Pay Monthly Websites</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Branding & Design</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Mobile App Development</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Web Hosting</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="cyber-security-sm side-menu-list-item">
+                    <a class="side-list-item-large side-menu-item-span"><span class="icon-security-style icon-security"></span><small class="side-item-center">Cyber</small>Security</a>
+                    <div class="side-sub-menu-banner">
+                        <ul class="side-sub-menu">
+                            <li class="side-sub-menu-item"><a href="#">Cyber Security Assessment</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Cyber Security Management</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Cyber Penetration Testing</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Cyber Essentials Certification</a></li>
+                            <li class="side-sub-menu-item"><a href="#">PCI Compliance</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Hacking Prevention</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="developer-training-sm side-menu-list-item">
+                    <a class="side-list-item-large side-menu-item-span"><span class="icon-school-style icon-school"></span><small class="side-item-center">Developer</small>Course</a>
+                    <div class="side-sub-menu-banner">
+                        <ul class="side-sub-menu">
+                            <li class="side-sub-menu-item"><a href="#">Train For A Career In Tech</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Skills Bootcamp</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Scion Scheme Frequently Asked Questions</a></li>
+                            <li class="side-sub-menu-item"><a href="#">Scion Collaborators</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="main-sidebar-large">
+            <ul class="side-menu-item side-menu-large-viewport">
+                <li class="side-menu-list-item-large">
+                    <a class="side-list-item-large-viewport">Our Work</a>
+                    <div class="side-sub-menu-banner-large">
+                        <ul class="side-sub-menu">
+                            <li class="side-sub-menu-item-large"><a href="#">Case Studies</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Our Digital Marketing Clients</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Our Website Clients</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Our IT Clients</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Our Bespoke Software Clients</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Our Telecoms Clients</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="side-menu-list-item-large">
+                    <a class="side-list-item-large-viewport">Our Knowledge</a>
+                    <div class="side-sub-menu-banner-large">
+                        <ul class="side-sub-menu">
+                            <li class="side-sub-menu-item-large"><a href="#">Technologies</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Industries</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">News</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Insights</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="side-menu-list-item-large">
+                    <a class="side-list-item-large-viewport">Training</a>
+                    <div class="side-sub-menu-banner-large">
+                        <ul class="side-sub-menu">
+                            <li class="side-sub-menu-item-large"><a href="#">Train For A career In Tech</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Skills Bootcamp</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">SCS Frequently Asked Questions</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Scion Collaborators</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="side-menu-list-item-large">
+                    <a class="side-list-item-large-viewport">Our Company</a>
+                    <div class="side-sub-menu-banner-large">
+                        <ul class="side-sub-menu">
+                            <li class="side-sub-menu-item-large"><a href="#">Why Choose Us?</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Our Culture</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Our Team</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Our Careers</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Our Benefits</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Our Accreditations</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="side-menu-list-item-large">
+                    <a class="side-list-item-large-viewport">Contact Us</a>
+                    <div class="side-sub-menu-banner-large">
+                        <ul class="side-sub-menu">
+                            <li class="side-sub-menu-item-large"><a href="#">Cambridge Office</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Wymondham Office</a></li>
+                            <li class="side-sub-menu-item-large"><a href="#">Great Yarmouth Office</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="side-menu-list-item-large">
+                    <a class="side-list-item-large-viewport">COVID Risk Assessments</a>
+                </li>
+                <li class="side-menu-list-item-large">
+                    <a class="side-list-item-large-viewport">Support</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
     </body>
 </html>
