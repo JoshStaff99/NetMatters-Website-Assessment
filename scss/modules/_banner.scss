@@ -17,8 +17,23 @@
     min-height: 550px !important;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(270deg, transparent 25%, #000), url('../img/home-YLei.png');
+    background-image: linear-gradient(270deg, transparent 25%, #000), url('../img/banner-img/home-YLei.png');
 }
+
+.banner-background-2 {
+    display: flex !important;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    min-height: 550px !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(270deg, transparent 25%, #000), url('../../img/banner-img/home-O67Y.png');
+}
+
 .banner {
     color: #fff;
     margin: auto;
@@ -42,7 +57,16 @@
         }
 }
 
-//media Queries
+// Banner Backgrounds 
+.banner-img-1{
+    background-image: linear-gradient(270deg, transparent 25%, #000), url('../img/banner-img/home-YLei.png');
+}
+
+.banner-img-2{
+    background-image: linear-gradient(270deg, transparent 25%, #000), url('../img/banner-img/home-067Y.jpg');
+}
+
+//Media Queries
 .banner {
     @media (min-width: 992px) {
     text-align: left;
