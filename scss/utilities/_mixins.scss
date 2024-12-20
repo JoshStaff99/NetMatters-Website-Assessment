@@ -147,8 +147,50 @@
 }
 
 // Banner Section
+@mixin btn-primary-banner {
+    margin: auto;
+    color: #fff;
+    margin-top: 1.938rem;
+    margin-bottom: 1.125rem;
+    padding: 5px 20px;
+    line-height: 50px;
+    font-size: 1.25rem;
+    width: auto;
+}
+
 .btn-primary-banner1 {
+    @include btn-primary-banner;
     @include web-design-color;
+}
+
+.btn-primary-banner2 {
+    @include btn-primary-banner;
+    @include software-btn-color;
+}
+
+.btn-primary-banner3 {
+    @include btn-primary-banner;
+    @include it-support-color;
+}
+
+.btn-primary-banner4 {
+    @include btn-primary-banner;
+    @include digital-marketing-color;
+}
+
+.btn-primary-banner5 {
+    @include btn-primary-banner;
+    @include telecoms-service-color;
+}
+
+.btn-primary-banner6 {
+    @include btn-primary-banner;
+    @include web-design-color;
+}
+
+.btn-primary-banner7 {
+    @include btn-primary-banner;
+    @include cyber-security-color;
 }
 
 // Our Services Section

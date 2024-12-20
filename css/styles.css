@@ -758,21 +758,6 @@ header img {
   min-height: 550px !important;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../img/banner-img/home-YLei.png");
-}
-
-.banner-background-2 {
-  display: flex !important;
-  background-size: cover;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: auto;
-  min-height: 550px !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../img/banner-img/home-O67Y.png");
 }
 
 .banner {
@@ -798,17 +783,48 @@ header img {
   font-weight: 600;
 }
 
-.banner-img-1 {
+.banner-background-1 {
   background-image: linear-gradient(270deg, transparent 25%, #000), url("../img/banner-img/home-YLei.png");
 }
 
-.banner-img-2 {
-  background-image: linear-gradient(270deg, transparent 25%, #000), url("../img/banner-img/home-067Y.jpg");
+.banner-background-2 {
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../img/banner-img/home-O67Y.png");
+}
+
+.banner-background-3 {
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../img/banner-img/home-gay8.png");
+}
+
+.banner-background-4 {
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../img/banner-img/home-6yTp.png");
+}
+
+.banner-background-5 {
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../img/banner-img/home-J8Xx.png");
+}
+
+.banner-background-6 {
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../img/banner-img/home-K0pn.png");
+}
+
+.banner-background-7 {
+  background-image: linear-gradient(270deg, transparent 25%, #000), url("../img/banner-img/home-MSxH.png");
 }
 
 @media (min-width: 992px) {
   .banner {
     text-align: left;
+  }
+  .banner h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin: 0 0 1.25rem;
+    font-weight: 600;
+  }
+  .banner p {
+    font-size: 1.625rem;
+    line-height: 2.5rem;
+    font-weight: 600;
   }
 }
 
@@ -2562,17 +2578,6 @@ footer .footer-row h4 {
   border-color: #ce4125;
 }
 
-.btn-primary-banner1 {
-  margin: auto;
-  color: #fff;
-  margin-top: 1.938rem;
-  margin-bottom: 1.125rem;
-  padding: 5px 20px;
-  line-height: 50px;
-  font-size: 1.25rem;
-  width: auto;
-}
-
 .banner-btn-arrow {
   margin-left: 12px;
   line-height: 50px;
@@ -2581,6 +2586,31 @@ footer .footer-row h4 {
 .banner-btn-container :hover {
   background-color: #7e57a0;
   border-color: #735093;
+}
+
+.banner-btn-container2 :hover {
+  background-color: #e8a008;
+  border-color: #d49308;
+}
+
+.banner-btn-container3 :hover {
+  background-color: #2a6ec6;
+  border-color: #2665b5;
+}
+
+.banner-btn-container4 :hover {
+  background-color: #26ab5f;
+  border-color: #239a55;
+}
+
+.banner-btn-container5 :hover {
+  background-color: #c42e2a;
+  border-color: #b32a27;
+}
+
+.banner-btn-container7 :hover {
+  background-color: #e80a42;
+  border-color: #d4093c;
 }
 
 .btn-google {
@@ -3104,7 +3134,87 @@ a {
 }
 
 .btn-primary-banner1 {
+  margin: auto;
+  color: #fff;
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  padding: 5px 20px;
+  line-height: 50px;
+  font-size: 1.25rem;
+  width: auto;
   background-color: #926fb1;
+}
+
+.btn-primary-banner2 {
+  margin: auto;
+  color: #fff;
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  padding: 5px 20px;
+  line-height: 50px;
+  font-size: 1.25rem;
+  width: auto;
+  background-color: #f7b322;
+}
+
+.btn-primary-banner3 {
+  margin: auto;
+  color: #fff;
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  padding: 5px 20px;
+  line-height: 50px;
+  font-size: 1.25rem;
+  width: auto;
+  background-color: #4183d7;
+}
+
+.btn-primary-banner4 {
+  margin: auto;
+  color: #fff;
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  padding: 5px 20px;
+  line-height: 50px;
+  font-size: 1.25rem;
+  width: auto;
+  background-color: #2ecc71;
+}
+
+.btn-primary-banner5 {
+  margin: auto;
+  color: #fff;
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  padding: 5px 20px;
+  line-height: 50px;
+  font-size: 1.25rem;
+  width: auto;
+  background-color: #d64541;
+}
+
+.btn-primary-banner6 {
+  margin: auto;
+  color: #fff;
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  padding: 5px 20px;
+  line-height: 50px;
+  font-size: 1.25rem;
+  width: auto;
+  background-color: #926fb1;
+}
+
+.btn-primary-banner7 {
+  margin: auto;
+  color: #fff;
+  margin-top: 1.938rem;
+  margin-bottom: 1.125rem;
+  padding: 5px 20px;
+  line-height: 50px;
+  font-size: 1.25rem;
+  width: auto;
+  background-color: #f62459;
 }
 
 .software-color {
