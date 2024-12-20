@@ -3448,6 +3448,20 @@ a {
 .slick-dots {
   bottom: 30px !important;
 }
+.slick-dots button::before {
+  color: hsla(0, 0%, 100%, 0.5) !important;
+  font-size: 11px !important;
+  margin: 0 10px !important;
+  width: 16px !important;
+  height: 16px !important;
+  opacity: 1 !important;
+}
+
+.slick-active button::before {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff !important;
+}
 
 .slick-list-overflowremove {
   overflow: visible !important;
