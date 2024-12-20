@@ -123,6 +123,25 @@
 .wrapper-right {
     transition: 0.3s;
     transition-timing-function: linear;
+    right: 275px;
+}
+
+// .wrapper-right-small {
+//     transition: 0.3s;
+//     transition-timing-function: linear;
+//     right: 275px;
+// }
+
+// .wrapper-right-large {
+//     transition: 0.3s;
+//     transition-timing-function: linear;
+//     right: 350px;
+// }
+
+@media (min-width: 992px) {
+    .wrapper-right {
+        right: 350px;
+    }
 }
 
 .wrapper-right::before{

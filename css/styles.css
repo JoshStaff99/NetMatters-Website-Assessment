@@ -3504,8 +3504,14 @@ a {
 .wrapper-right {
   transition: 0.3s;
   transition-timing-function: linear;
+  right: 275px;
 }
 
+@media (min-width: 992px) {
+  .wrapper-right {
+    right: 350px;
+  }
+}
 .wrapper-right::before {
   width: 100%;
   height: 100%;
