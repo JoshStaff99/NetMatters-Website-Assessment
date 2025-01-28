@@ -3070,6 +3070,21 @@ footer .footer-row h4 {
     display: none;
   }
 }
+.our-office-nav-container {
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  padding: 14px 0 13px;
+}
+
+.our-office-nav {
+  background: none;
+  color: #333645;
+  font-size: 0.8125rem;
+  border-radius: 2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: Poppins, sans-serif;
   -ms-text-size-adjust: 100%;

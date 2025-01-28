@@ -4,7 +4,7 @@
             <div class="container header-background">
                 <div class="row">
                     <div class="header-logo-container">
-                        <a href="#">
+                        <a href="index.php">
                         <img src="img/header/f-logo.png" alt="Netmatters Logo">
                         </a>
                     </div>
@@ -14,7 +14,7 @@
                             <a href="#" target="_blank" class="btn btn-header-support"><span class="icon-mouse"></span>Support</a>
                         </div>
                         <div class="btn-contact-container">
-                            <a href="#" class="btn btn-header-contact"><span class="icon-paperplane"></span>Contact</a>
+                            <a href="contact-us.php" class="btn btn-header-contact"><span class="icon-paperplane"></span>Contact</a>
                         </div>
                         <form class="large-form-container">
                             <input class="header-form-large" type="text" placeholder="Search...">

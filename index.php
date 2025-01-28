@@ -9,7 +9,9 @@ include('inc/connection.php');
       	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-        <meta name="ROBOTS" content="NOINDEX,NOFOLLOW">
+    <meta name="ROBOTS" content="NOINDEX,NOFOLLOW">
+    <meta name="author" content="Joshua Stafford">
+    <meta name="description" content="Homepage">
 
 	<link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="js/slick/slick.css">

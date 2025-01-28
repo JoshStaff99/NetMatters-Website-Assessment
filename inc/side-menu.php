@@ -1,7 +1,7 @@
 <div class="sidebar hide-sidebar">
         <div class="main-sidebar">
             <ul class="side-menu-item side-menu-mobile">
-                <li class="side-menu-list-item"><a class="side-list-item-large" href="#">Contact Us</a></li> 
+                <li class="side-menu-list-item"><a class="side-list-item-large" href="contact-us.php">Contact Us</a></li> 
                 <li class="software-sm side-menu-list-item">
                     <a class="side-list-item-large side-menu-item-span"><span class="icon-computer-style icon-computer"></span><small class="side-item-center">Bespoke</small>Software</a>
                     <div class="side-sub-menu-banner">
