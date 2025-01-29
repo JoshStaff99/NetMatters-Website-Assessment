@@ -3116,20 +3116,16 @@ footer .footer-row h4 {
   color: #333645;
 }
 
-.office-addresses {
-  margin-bottom: 40px;
-}
-
-.service-list {
+.office-list {
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.office-addresses-row {
+.office-address-row {
   margin-left: -15px;
   margin-right: -15px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .office-address-item {
@@ -3145,6 +3141,20 @@ footer .footer-row h4 {
   width: 100%;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border: 1px solid #ccc;
+  margin-bottom: 30px;
+  text-decoration: none;
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  top: 0;
+  transition: 0.5s ease;
+}
+
+.office-image-full {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 
 .office-content {
@@ -3179,6 +3189,20 @@ footer .footer-row h4 {
   font-size: 1.25rem;
 }
 
+@media (min-width: 992px) {
+  .office-address-item {
+    width: 33.33333333%;
+    position: relative;
+    min-height: 1px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .office-address-row {
+    flex-direction: row;
+  }
+}
 html {
   font-family: Poppins, sans-serif;
   -ms-text-size-adjust: 100%;

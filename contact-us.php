@@ -17,6 +17,7 @@ include('inc/connection.php');
     <link rel="stylesheet" href="js/slick/slick.css">
     <link rel="stylesheet" href="js/slick/slick-theme.css">
     </head>
+
     <body>
         <?php include ('inc/cookies.php'); ?>
         <div class="wrapper wrapper-center">
@@ -38,8 +39,9 @@ include('inc/connection.php');
             </div>
 
             <div class="office-addresses">
-                <div class="service-list container">
+                <div class="office-list container">
                     <div class="office-address-row">
+
                         <div class="office-address-item">
                             <div class="office-image">
                                 <a href="#"><img class="office-image-full" src="img/contact-us-img/cambridge.jpeg" alt="Cambridge Office"></a>
@@ -47,7 +49,7 @@ include('inc/connection.php');
                             <div class="office-content">
                                 <p class="h2"><a class="office-title" href="#">Cambridge Office</a></p>
                                 <p class="p">
-                                    Unit 1.31 
+                                    Unit 1.31, 
                                     <br>
                                     St Hohn's Innovation Centre,
                                     <br>
@@ -65,18 +67,68 @@ include('inc/connection.php');
                                 </div>
                             </div>
                         </div>
-                        <div class="office-address-item">
 
+                        <div class="office-address-item">
+                            <div class="office-image">
+                                <a href="#"><img class="office-image-full" src="img/contact-us-img/wymondham.jpeg" alt="Wymondham Office"></a>
+                            </div>
+                            <div class="office-content">
+                                <p class="h2"><a class="office-title" href="#">Wymondham Office</a></p>
+                                <p class="p">
+                                    Unit 15, 
+                                    <br>
+                                    Penfold Drive,
+                                    <br>
+                                    Gateway 11 Business Park,
+                                    <br>
+                                    Wymondham, Norfolk,
+                                    <br>
+                                    NR18 0WZ
+                                </p>
+                                 <div class="tel">
+                                    <a class="text-web" href="#">01603 70 40 20</a>
+                                </div>
+                                <div class="office-btn-container">
+                                    <a class="btn btn-web office-item-btn" href="#">View More</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="office-address-item">
 
+                        <div class="office-address-item">
+                            <div class="office-image">
+                                <a href="#"><img class="office-image-full" src="img/contact-us-img/yarmouth-2.jpeg" alt="Great Yarmouth Office"></a>
+                            </div>
+                            <div class="office-content">
+                                <p class="h2"><a class="office-title" href="#">Great Yarmouth Office</a></p>
+                                <p class="p">
+                                    Suite F23,
+                                    <br>
+                                    Beacon Innovation Centre,
+                                    <br>
+                                    Beacon Park, Gorleston,
+                                    <br>
+                                    Great Yarmouth, Norfolk,
+                                    <br>
+                                    NR31 7RA
+                                </p>
+                                <div class="tel">
+                                    <a class="text-web" href="#">01493 60 32 04</a>
+                                </div>
+                                <div class="office-btn-container">
+                                    <a class="btn btn-web office-item-btn" href="#">View More</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <?php include ('inc/footer.php'); ?>
+            <div class="container">
+
+            </div>
+
         </div>
+        <?php include ('inc/footer.php'); ?>
     <?php include ('inc/side-menu.php'); ?>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="js/slick/slick.min.js"></script>
