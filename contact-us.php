@@ -22,12 +22,56 @@ include('inc/connection.php');
         <div class="wrapper wrapper-center">
             <?php include ('inc/header.php'); ?>
 
-            <div class="container middle">
-                <div class="our-office-nav-container">
+            <div class="our-office-nav-container">
+                <div class="container middle">
                     <ul class="our-office-nav">
-                        <li><a href="index.php">Home /</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li>Our Offices</li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="section-top">
+                <div class="container">
+                    <h1 class="section-top-title">Our Offices</h1>
+                </div>
+            </div>
+
+            <div class="office-addresses">
+                <div class="service-list container">
+                    <div class="office-address-row">
+                        <div class="office-address-item">
+                            <div class="office-image">
+                                <a href="#"><img class="office-image-full" src="img/contact-us-img/cambridge.jpeg" alt="Cambridge Office"></a>
+                            </div>
+                            <div class="office-content">
+                                <p class="h2"><a class="office-title" href="#">Cambridge Office</a></p>
+                                <p class="p">
+                                    Unit 1.31 
+                                    <br>
+                                    St Hohn's Innovation Centre,
+                                    <br>
+                                    Cowley Road, Milton,
+                                    <br>
+                                    Cambridge,
+                                    <br>
+                                    CB4 0WS
+                                </p>
+                                <div class="tel">
+                                    <a class="text-web" href="#">01223 37 57 72</a>
+                                </div>
+                                <div class="office-btn-container">
+                                    <a class="btn btn-web office-item-btn" href="#">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="office-address-item">
+
+                        </div>
+                        <div class="office-address-item">
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
