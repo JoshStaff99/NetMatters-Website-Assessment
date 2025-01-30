@@ -124,7 +124,102 @@ include('inc/connection.php');
             </div>
 
             <div class="container">
+                <div class="bottom-row">
+                    <div class="ofh-it-support-container">
+                        <div>
+                            <div>
+                                <p><strong>Email us on:</strong><br></p>
+                                <p><a class="text-web">sales@netmatters.com</a></p>
+                                <P><strong>Business hours:</strong></p>
+                                <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div class="accordion out-of-hours">
+                                        <h4><a><p>Out of Hours IT Support<em class="fa fa-chevron-down rotate"></em></p></a></h4>
+                                        <div class="ofh-it-support-hidden">
+                                            <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks</p>
+                                            <p>
+                                                <strong>Monday - Friday 18:00 - 22:00</strong>
+                                                <strong>Saturday 08:00 - 16:00</strong>
+                                                <br>
+                                                <strong>Sunday 10:00 - 18:00</strong>
+                                            </p>
+                                            <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours voicemail. A technician will contact you on the number provided within 45 minutes of your call.</P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-us-form-container">
+                        <form id="contact-form" class="" method="POST" action="#">
+                            <div class="form-row">
+                                <div class="form-input-group">
+                                    <div class="form-group">
+                                        <label class="required" for="name">Your Name</label>
+                                        <input id="name" class="form-control" name="name" type="text" value="">
+                                    </div>
+                                </div>
+                                <div class="form-input-group">
+                                    <div class="form-group">
+                                        <label class="" for="company">Company Name</label>
+                                        <input id="company" class="form-control" name="company" type="text" value="">
+                                    </div> 
+                                </div>
+                                <div class="form-input-group">
+                                    <div class="form-group">
+                                        <label class="required" for="email">Your Email</label>
+                                        <input id="email" class="form-control" name="email" type="email" value="">
+                                    </div> 
+                                </div>
+                                <div class="form-input-group">
+                                    <div class="form-group">
+                                        <label class="required" for="telephone">Your Telephone Number</label>
+                                        <input id="telephone" class="form-control" name="telephone" type="text" value="">
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="required" for="message">Message</label>
+                                <textarea id="message" class="form-control" name="message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox">
+                                    <span class="media">
+                                        <span class="media-left checkbox-left">
+                                            <span class="button">
 
+                                            </span>
+                                        </span>
+                                        <span class="media-body">
+                                            Please tick this box if you wish to receive marketing information from us. Please see our
+                                            <a href="#" target="_blank">Privacy Policy</a>
+                                            for more information on how we keep your data safe.
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form-group form-label recaptcha-terms">
+                                <span>
+                                    This site is protected by reCAPTCHA and the Google
+                                    <a href="#" target="_blank"><u>Privacy Policy</u></a>
+                                    and
+                                    <a href="#" target="_blank"><u>Terms of Service</u></a>
+                                    apply.
+                                </span>
+                            </div>
+                            <div class="form-action-block">
+                                <button class="btn btn-primary">Send Enquiry</button>
+                                <small class="helper-text">
+                                    <span class="text-danger">*</span>Fields Required
+                                </small>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
 
         </div>
