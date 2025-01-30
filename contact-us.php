@@ -123,8 +123,7 @@ include('inc/connection.php');
                 </div>
             </div>
 
-            <div class="container">
-                <div class="bottom-row">
+            <div class="container bottom-row">
                     <div class="ofh-it-support-container">
                         <div>
                             <div>
@@ -157,25 +156,25 @@ include('inc/connection.php');
                     <div class="contact-us-form-container">
                         <form id="contact-form" class="" method="POST" action="#">
                             <div class="form-row">
-                                <div class="form-input-group">
+                                <div class="form-input-group form-input-left">
                                     <div class="form-group">
                                         <label class="required" for="name">Your Name</label>
                                         <input id="name" class="form-control" name="name" type="text" value="">
                                     </div>
                                 </div>
-                                <div class="form-input-group">
+                                <div class="form-input-group form-input-right">
                                     <div class="form-group">
                                         <label class="" for="company">Company Name</label>
                                         <input id="company" class="form-control" name="company" type="text" value="">
                                     </div> 
                                 </div>
-                                <div class="form-input-group">
+                                <div class="form-input-group form-input-left">
                                     <div class="form-group">
                                         <label class="required" for="email">Your Email</label>
                                         <input id="email" class="form-control" name="email" type="email" value="">
                                     </div> 
                                 </div>
-                                <div class="form-input-group">
+                                <div class="form-input-group form-input-right">
                                     <div class="form-group">
                                         <label class="required" for="telephone">Your Telephone Number</label>
                                         <input id="telephone" class="form-control" name="telephone" type="text" value="">
@@ -212,14 +211,13 @@ include('inc/connection.php');
                                 </span>
                             </div>
                             <div class="form-action-block">
-                                <button class="btn btn-primary">Send Enquiry</button>
+                                <button class="btn btn-primary enquiry-btn">Send Enquiry</button>
                                 <small class="helper-text">
                                     <span class="text-danger">*</span>Fields Required
                                 </small>
                             </div>
                         </form>
                     </div>
-                </div>
             </div>
 
         </div>

@@ -120,10 +120,25 @@
 }
 
 //Form section
-// .fa-chevron-down::before {
-//     //content: "\F078";
-//   }
 
+.bottom-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 50px;
+    flex: 0 0 auto;
+    max-width: 100%;
+}
+
+.ofh-it-support-container {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.contact-us-form-container {
+    box-sizing: border-box;
+    position: relative;
+}
 #contact-form {
     background-color: #e6e7e9;
     border-radius: 10px;
@@ -154,8 +169,25 @@
     margin-right: -15px;
 }
 
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .form-group {
     margin-bottom: 15px;
+    textarea {
+        overflow:auto;
+    }
+}
+
+.form-input-group {
+    width: 100%;
+  }
+
+textarea#message {
+    min-height: 100px;
+    height: 100px;
 }
 
 .form-control {
@@ -202,12 +234,36 @@
     margin-right: 20px;
 }
 
+.media-left {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 10px;
+}
+
+.media-body {
+    width: 10000px;
+    display: table-cell;
+    vertical-align: top;
+    zoom: 1;
+    overflow: hidden;
+}
+
 .recaptcha-terms {
     color: #333645;
     font-size: 11px;
     font-weight: 600;
     margin-bottom: 30px;
     margin-top: -10px;
+}
+
+.form-action-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.helper-text {
+    color: #333645;
 }
 
 .required::after {
@@ -217,6 +273,13 @@
 
 .text-danger {
     color: #a94442;
+}
+
+// Hover/Focus Effects
+.form-control:focus {
+    border-color: #5bc0de;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
 }
 
 //Media Queries
@@ -234,5 +297,42 @@
 @media (min-width: 992px) {
     .office-address-row {
         flex-direction: row;
+    }
+}
+
+// form section
+
+@media (min-width: 1260px) {
+    .ofh-it-support-container {
+      left: 66.66666667%;
+      width: 33.33333333%;
+      padding-left: 15px;
+    }
+}
+
+
+@media (min-width: 1260px) {
+    .contact-us-form-container {
+      right: 33.33333333%;
+      width: 66.66666667%;
+      padding-right: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .form-input-group {
+      width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .form-input-left {
+      padding-right: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .form-input-right {
+      padding-left: 15px;
     }
 }

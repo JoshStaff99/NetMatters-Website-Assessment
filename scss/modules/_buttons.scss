@@ -288,6 +288,17 @@
     padding: 5px 30px;
 }
 
+.enquiry-btn {
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;
+    background-color: #333645;
+}
+
 //Hover Effect 
 // Case Studies Buttons
 .case-study-button-1:hover {
@@ -333,4 +344,13 @@
     .btn-google, .btn-trustpilot{
     margin-top: 20px;
     }
+}
+
+///////
+//Contact Us Hover Effects
+///////
+.enquiry-btn:hover {
+    color: #fff;
+    background-color: #22242e;
+    border-color: #191a22;
 }
