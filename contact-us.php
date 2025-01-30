@@ -128,7 +128,7 @@ include('inc/connection.php');
                         <div>
                             <div>
                                 <p><strong>Email us on:</strong><br></p>
-                                <p><a class="text-web">sales@netmatters.com</a></p>
+                                <p><a class="text-web underline">sales@netmatters.com</a></p>
                                 <P><strong>Business hours:</strong></p>
                                 <p><strong>Monday - Friday 07:00 - 18:00</strong></p>
                             </div>
@@ -137,7 +137,7 @@ include('inc/connection.php');
                             <div>
                                 <div>
                                     <div class="accordion out-of-hours">
-                                        <h4><a><p>Out of Hours IT Support<em class="fa fa-chevron-down rotate"></em></p></a></h4>
+                                        <h4><a><p class="Ofh-button">Out of Hours IT Support<em class="fa fa-chevron-down rotate"></em></p></a></h4>
                                         <div class="ofh-it-support-hidden">
                                             <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks</p>
                                             <p>
@@ -226,5 +226,6 @@ include('inc/connection.php');
     <script src="js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="js/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jscontact-us.js"></script>
     </body>
 </html>

@@ -133,12 +133,16 @@
 .ofh-it-support-container {
     box-sizing: border-box;
     position: relative;
+    p {
+        color: #333645;
+    }
 }
 
 .contact-us-form-container {
     box-sizing: border-box;
     position: relative;
 }
+
 #contact-form {
     background-color: #e6e7e9;
     border-radius: 10px;
@@ -282,8 +286,17 @@ textarea#message {
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
 }
 
-//Media Queries
+.Ofh-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
+.underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+//Media Queries
 @media (min-width: 992px) {
     .office-address-item {
         width: 33.33333333%;

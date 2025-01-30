@@ -3219,6 +3219,9 @@ footer .footer-row h4 {
   box-sizing: border-box;
   position: relative;
 }
+.ofh-it-support-container p {
+  color: #333645;
+}
 
 .contact-us-form-container {
   box-sizing: border-box;
@@ -3370,6 +3373,16 @@ textarea#message {
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
+.Ofh-button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.underline:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 @media (min-width: 992px) {
@@ -4047,4 +4060,8 @@ a {
 }
 .ofh-it-support-hidden {
   display: none;
+}
+
+.ofh-it-support-active {
+  display: block;
 }/*# sourceMappingURL=styles.css.map */
