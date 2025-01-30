@@ -258,72 +258,7 @@ include('inc/connection.php');
             </div>
             <div class="container">
                 <div class="news-list">
-                    <div class="news-article">
-                        <div class="article">
-                            <a class="article-link" href="#"></a>
-                            <div class="article-img-container">
-                                <a href="#" class="art-btn-1 article-img-btn">Careers</a>
-                                <a class="article-img">
-                                    <img src="img/news-article/business-development-executive-AIfQ.png" alt="">
-                                </a>
-                            </div>
-                            <div class="article-block">
-                                <h3><a class="h3-1" href="#">Buisness Development Executive</a></h3>
-                                <p>Salary Range £26-36k per annum + Bonus Hours 40 hours per week, Monday - Friday  Location Whymondha...</p>
-                                <a class="btn btn-bus-dev" href="#">Read More</a>
-                                <div class="user">
-                                    <div class="user-img">
-                                        <img src="img/news-article/rebecca-moore-1fh7.jpg" alt="">
-                                    </div>
-                                    <div class="article-date"><strong>Posted by Rebecca Moore</strong><br>18th October 2024</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="news-article">
-                        <div class="article">
-                            <a class="article-link" href="#"></a>
-                            <div class="article-img-container">
-                                <a href="#" class="art-btn-2 article-img-btn">Insights</a>
-                                <a class="article-img">
-                                    <img src="img/news-article/why-should-i-P4Y2.png" alt="">
-                                </a>
-                            </div>
-                            <div class="article-block">
-                                <h3><a class="h3-2" href="#">Why Should I Invest in Content Marketing?</a></h3>
-                                <p>It seems as though everyone is publishing articles these days, but is it worth it? Articles, blog po...</p>
-                                <a class="btn btn-digital" href="#">Read More</a>
-                                <div class="user">
-                                    <div class="user-img">
-                                        <img src="img/news-article/netmatters-ltd-VXAv.png" alt="">
-                                    </div>
-                                    <div class="article-date"><strong>Posted by Netmatters</strong><br>16th October 2024</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="article-hidden news-article">
-                        <div class="article">
-                            <a class="article-link" href="#"></a>
-                            <div class="article-img-container">
-                                <a href="#" class="art-btn-3 article-img-btn">News</a>
-                                <a class="article-img">
-                                   <img src="img/news-article/september-notables-2024-ZBOM.png" alt=""> 
-                                </a>
-                            </div> 
-                            <div class="article-block">
-                                <h3><a class="h3-3" href="#">September Notables 2024 - Celebrating Our Tea...</a></h3>
-                                <p>September Notables 2024 Celebrating the achievements and dedication of our staff, at Netmatters, we...</p>
-                                <a class="btn btn-web" href="#">Read More</a>
-                                <div class="user">
-                                    <div class="user-img">
-                                        <img src="img/news-article/netmatters-ltd-VXAv.png" alt="">
-                                    </div>
-                                    <div class="article-date"><strong>Posted by Netmatters</strong><br>10 October 2024</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php include('inc/news.php'); ?>
                 </div>
             </div>
             <div class="view-all-mobile-container container">
