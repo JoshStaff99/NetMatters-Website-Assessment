@@ -154,7 +154,7 @@ include('inc/connection.php');
                         </div>
                     </div>
                     <div class="contact-us-form-container">
-                        <form id="contact-form" class="" method="POST" action="#">
+                        <form id="contact-form" name="contactForm" class="" method="POST" action="#" onsubmit="return validateForm()">
                             <div class="form-row">
                                 <div class="form-input-group form-input-left">
                                     <div class="form-group">
@@ -211,7 +211,7 @@ include('inc/connection.php');
                                 </span>
                             </div>
                             <div class="form-action-block">
-                                <button class="btn btn-primary enquiry-btn">Send Enquiry</button>
+                                <button class="btn btn-primary enquiry-btn" id="submitBtn">Send Enquiry</button>
                                 <small class="helper-text">
                                     <span class="text-danger">*</span>Fields Required
                                 </small>

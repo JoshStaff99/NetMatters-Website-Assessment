@@ -4064,4 +4064,8 @@ a {
 
 .ofh-it-support-active {
   display: block;
+}
+
+.form-control.has-error {
+  border-color: #d64541;
 }/*# sourceMappingURL=styles.css.map */
