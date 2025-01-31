@@ -156,15 +156,8 @@
                     </div>
                     <div class="contact-us-form-container">
                         <form id="contact-form" name="contactForm" class="" method="POST" action="inc/contactform.php" onsubmit="return validateForm()">
-                            <div class="alert alert-danger-hidden">
-                                <?php 
-                                // Output all error messages inside the alert div
-                                if (!empty($nameErr)) echo "<p>$nameErr</p>";
-                                if (!empty($emailErr)) echo "<p>$emailErr</p>";
-                                if (!empty($telephoneErr)) echo "<p>$telephoneErr</p>";
-                                if (!empty($messageErr)) echo "<p>$messageErr</p>";
-                                if (!empty($checkboxErr)) echo "<p>$checkboxErr</p>";
-                                ?>
+                            <div class="alert alert-danger-hidden" id="alert">
+
                             </div>
                             <div class="form-row">
                                 <div class="form-input-group form-input-left">

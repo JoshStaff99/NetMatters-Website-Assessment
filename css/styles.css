@@ -4070,10 +4070,6 @@ a {
   border-color: #d64541;
 }
 
-.alert-danger-hidden {
-  display: none;
-}
-
 .alert-danger-active {
   background-color: #f2dede;
   border-color: #ebccd1;
@@ -4086,5 +4082,20 @@ a {
   border-bottom-color: transparent;
   border-left-color: transparent;
   border-radius: 2px;
-  display: none;
+  display: block;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d6f1d8;
+  border-color: #d6f1d8;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: 2px;
+  display: block;
 }/*# sourceMappingURL=styles.css.map */

@@ -18,49 +18,8 @@ $(document).ready(function() {
     });
 });
 
-// Contact Us Form Validation
-
-// // Email validator 
-// const $form_TelNo = $('#telephone'); 
-// let isValidTelNo = ()=> /^\+?[0-9]{0,3}[-\s\.]?\(?[0-9]{3}\)?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test($form_TelNo.val());
-// const $form_EmailAddress = $('#email');
-// let isValidEmailAddress = ()=> /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($form_EmailAddress.val());
-
-// // Checks if fields are empty in form elements
-// function validateForm() {
-//   let nameForm = document.forms["contactForm"]["name"].value;
-//   let phonenumberForm = document.forms["contactForm"]["telephone"].value;
-//   let emailaddressForm = document.forms["contactForm"]["email"].value;
-//   let messageForm = document.forms["contactForm"]["message"].value;
-
-//   if (nameForm == "") {
-//     alert("First Name must be filled out");
-//     return false;
-//   } else if (phonenumberForm == "") {
-//     alert("Phone number must be filled out");
-//    return false;
-//   } else if (!isValidTelNo()) {
-//     alert("Not a valid telephone number");
-//     return false;
-//   } else if (emailaddressForm == "") {
-//     alert("Email Address must be filled out");
-//    return false; 
-//   } else if (!isValidEmailAddress()) {
-//     alert("Not a valid email address");
-//     return false;
-//   } else if (messageForm == "") {
-//     alert("Message must be filled out");
-//    return false;
-//   } else {
-//     return true;
-//   }
-// }
-
-// Email validator 
 const $form_TelNo = $('#telephone'); 
-//let isValidTelNo = ()=> /^\+?[0-9]{0,3}[-\s\.]?\(?[0-9]{3}\)?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test($form_TelNo.val());
 const $form_EmailAddress = $('#email');
-//let isValidEmailAddress = ()=> /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($form_EmailAddress.val());
 
 // Checks if fields are empty in form elements
 function validateForm() {
@@ -103,32 +62,6 @@ function validateForm() {
   return isValid;
 }
 
-// // // Prevents the page from refreshing when you click on the submit button
-// const $submitBtn = $('#submitBtn');
-
-// $submitBtn.on('click', function(event){
-//    if (validateForm() ) {
-//      alert('Form Submitted')
-//     $('#contact-form')[0].reset();
-//     //document.getElementsByClassName(".form").reset();
-//    } else
-//   event.preventDefault();
-// });
-
-// Prevents the page from refreshing when you click on the submit button
-// const $submitBtn = $('#submitBtn');
-
-// $submitBtn.on('click', function(event) {
-//    // Check if the form is valid
-//    if (validateForm()) {
-//      // Allow form submission to trigger the PHP validation
-//      $('#contact-form').submit();
-//    } else {
-//      // Prevent form submission if JavaScript validation fails
-//      event.preventDefault();
-//    }
-// });
-
 // Listen for the submit button click
 const $submitBtn = $('#submitBtn');
 
@@ -149,14 +82,16 @@ $submitBtn.on('click', function(event) {
           // Log the response for debugging
           console.log(response);
       
-          // Check if the response was successful
+          // Check if the response was successful (PHP validation passed)
           if (response.success) {
-            // If PHP validation is successful
-            alert('Form submitted successfully!');
-            $('#contact-form')[0].reset(); // Reset the form fields
+            // Display a success message in the alert container
+            displaySuccessMessage('Your message has been sent successfully!');
+
+            // Reset the form fields
+            $('#contact-form')[0].reset(); 
           } else {
             // If there are errors, display them using the displayErrors function
-            //displayErrors(response.errors);
+            displayErrors(response.errors);
           }
         },
         error: function(xhr, status, error) {
@@ -170,46 +105,43 @@ $submitBtn.on('click', function(event) {
     event.preventDefault();
   }
 
-   // Function to display errors returned by PHP
- function displayErrors(errors) {
-     $('.form-control').removeClass('alert-danger-active'); // Reset previous errors
-  
-     // Check if errors are returned for each field and add the 'has-error' class
-     if (errors.name) {
-       $('#name').addClass('alert-danger-active');
-     }
-     if (errors.email) {
-       $('#email').addClass('alert-danger-active');
-     }
-    if (errors.telephone) {
-       $('#telephone').addClass('alert-danger-active');
-     }
-    if (errors.message) {
-       $('#message').addClass('alert-danger-active');
-     }
-  
-     // Create HTML to display the error messages
-     let errorHtml = '';
-     for (const field in errors) {
-       errorHtml += `<p>${errors[field]}</p>`;
-     }
-  
-     // Display the errors in the alert-danger div
-    $('.alert-danger').html(errorHtml).show();
-   }
 });
 
-// // Function to display errors returned by PHP
-// function displayErrors(errors) {
-//   $('.form-control').removeClass('has-error'); // Reset previous errors
-//   if (errors.name) $('#name').addClass('has-error');
-//   if (errors.email) $('#email').addClass('has-error');
-//   if (errors.telephone) $('#telephone').addClass('has-error');
-//   if (errors.message) $('#message').addClass('has-error');
-//   // Display PHP errors (if any)
-//   let errorHtml = '';
-//   for (const field in errors) {
-//     errorHtml += `<p>${errors[field]}</p>`;
-//   }
-//   $('.alert-danger').html(errorHtml).show(); // Show the error alert
-// }
+// Function to display errors returned by PHP
+function displayErrors(errors) {
+  $('#alert').hide(); // Hide previous error messages
+
+  $('.form-control').removeClass('has-error'); // Reset previous errors
+
+  // Check if errors are returned for each field and add the 'has-error' class
+  if (errors.name) {
+    $('#name').addClass('has-error');
+  }
+  if (errors.email) {
+    $('#email').addClass('has-error');
+  }
+  if (errors.telephone) {
+    $('#telephone').addClass('has-error');
+  }
+  if (errors.message) {
+    $('#message').addClass('has-error');
+  }
+
+  // Create HTML to display the error messages
+  let errorHtml = '';
+  for (const field in errors) {
+    errorHtml += `<p class="alert-danger-active">${errors[field]}</p>`;
+  }
+
+  // Display the errors in the alert-danger div
+  $('#alert').html(errorHtml).show();
+}
+
+// Function to display a success message
+function displaySuccessMessage(message) {
+  // Hide any previous messages
+  $('.alert.alert-danger-hidden').hide();
+
+  // Show the success message in the alert-danger div
+  $('.alert.alert-danger-hidden').removeClass('alert-danger-hidden').addClass('alert alert-success').html(message).show();
+}
