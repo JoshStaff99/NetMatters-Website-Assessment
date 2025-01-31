@@ -58,9 +58,9 @@ $(document).ready(function() {
 
 // Email validator 
 const $form_TelNo = $('#telephone'); 
-let isValidTelNo = ()=> /^\+?[0-9]{0,3}[-\s\.]?\(?[0-9]{3}\)?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test($form_TelNo.val());
+//let isValidTelNo = ()=> /^\+?[0-9]{0,3}[-\s\.]?\(?[0-9]{3}\)?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test($form_TelNo.val());
 const $form_EmailAddress = $('#email');
-let isValidEmailAddress = ()=> /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($form_EmailAddress.val());
+//let isValidEmailAddress = ()=> /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($form_EmailAddress.val());
 
 // Checks if fields are empty in form elements
 function validateForm() {
@@ -85,16 +85,10 @@ function validateForm() {
   if (phonenumberForm.value == "") {
     $(phonenumberForm).addClass('has-error');
     isValid = false;
-  } else if (!isValidTelNo()) {
-    $(phonenumberForm).addClass('has-error');
-    isValid = false;
   }
 
   // Validate Email Address
   if (emailaddressForm.value == "") {
-    $(emailaddressForm).addClass('has-error');
-    isValid = false;
-  } else if (!isValidEmailAddress()) {
     $(emailaddressForm).addClass('has-error');
     isValid = false;
   }
@@ -109,14 +103,113 @@ function validateForm() {
   return isValid;
 }
 
-// // Prevents the page from refreshing when you click on the submit button
+// // // Prevents the page from refreshing when you click on the submit button
+// const $submitBtn = $('#submitBtn');
+
+// $submitBtn.on('click', function(event){
+//    if (validateForm() ) {
+//      alert('Form Submitted')
+//     $('#contact-form')[0].reset();
+//     //document.getElementsByClassName(".form").reset();
+//    } else
+//   event.preventDefault();
+// });
+
+// Prevents the page from refreshing when you click on the submit button
+// const $submitBtn = $('#submitBtn');
+
+// $submitBtn.on('click', function(event) {
+//    // Check if the form is valid
+//    if (validateForm()) {
+//      // Allow form submission to trigger the PHP validation
+//      $('#contact-form').submit();
+//    } else {
+//      // Prevent form submission if JavaScript validation fails
+//      event.preventDefault();
+//    }
+// });
+
+// Listen for the submit button click
 const $submitBtn = $('#submitBtn');
 
-$submitBtn.on('click', function(event){
-   if (validateForm() ) {
-     alert('Form Submitted')
-    $('#contact-form')[0].reset();
-    //document.getElementsByClassName(".form").reset();
-   } else
-  event.preventDefault();
+$submitBtn.on('click', function(event) {
+  // First, run JavaScript form validation
+  if (validateForm()) {
+    // If the form is valid, prevent the default form submission
+    event.preventDefault();
+
+    // Gather the form data
+    const formData = $('#contact-form').serialize(); // Serializes the form fields into a query string
+
+    $.ajax({
+        url: 'inc/contactform.php', // Make sure this path is correct
+        type: 'POST',
+        data: formData, // Send the serialized form data
+        success: function(response) {
+          // Log the response for debugging
+          console.log(response);
+      
+          // Check if the response was successful
+          if (response.success) {
+            // If PHP validation is successful
+            alert('Form submitted successfully!');
+            $('#contact-form')[0].reset(); // Reset the form fields
+          } else {
+            // If there are errors, display them using the displayErrors function
+            //displayErrors(response.errors);
+          }
+        },
+        error: function(xhr, status, error) {
+          // Handle any errors that occur during the AJAX request
+          console.error('Error occurred:', error);
+          alert('An error occurred while submitting the form.');
+        }
+      });
+  } else {
+    // If JS validation fails, prevent form submission
+    event.preventDefault();
+  }
+
+   // Function to display errors returned by PHP
+ function displayErrors(errors) {
+     $('.form-control').removeClass('alert-danger-active'); // Reset previous errors
+  
+     // Check if errors are returned for each field and add the 'has-error' class
+     if (errors.name) {
+       $('#name').addClass('alert-danger-active');
+     }
+     if (errors.email) {
+       $('#email').addClass('alert-danger-active');
+     }
+    if (errors.telephone) {
+       $('#telephone').addClass('alert-danger-active');
+     }
+    if (errors.message) {
+       $('#message').addClass('alert-danger-active');
+     }
+  
+     // Create HTML to display the error messages
+     let errorHtml = '';
+     for (const field in errors) {
+       errorHtml += `<p>${errors[field]}</p>`;
+     }
+  
+     // Display the errors in the alert-danger div
+    $('.alert-danger').html(errorHtml).show();
+   }
 });
+
+// // Function to display errors returned by PHP
+// function displayErrors(errors) {
+//   $('.form-control').removeClass('has-error'); // Reset previous errors
+//   if (errors.name) $('#name').addClass('has-error');
+//   if (errors.email) $('#email').addClass('has-error');
+//   if (errors.telephone) $('#telephone').addClass('has-error');
+//   if (errors.message) $('#message').addClass('has-error');
+//   // Display PHP errors (if any)
+//   let errorHtml = '';
+//   for (const field in errors) {
+//     errorHtml += `<p>${errors[field]}</p>`;
+//   }
+//   $('.alert-danger').html(errorHtml).show(); // Show the error alert
+// }
