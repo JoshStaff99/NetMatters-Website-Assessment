@@ -1,0 +1,351 @@
+// ==========================================================================
+// Middle Styles
+// ==========================================================================
+
+//Office-Nav
+.our-office-nav-container {
+    box-shadow: 0 5px 35px rgba(0, 0, 0, .1);
+    padding: 14px 0 13px;
+    width: 100%;
+}
+
+.our-office-nav {
+    background: none;
+    color: #333645;
+    font-size: .8125rem;
+    border-radius: 2px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    a {
+    color: #333645;
+    font-weight: 700;
+    }
+}
+
+.our-office-nav>li+li:before {
+    content: "/\A0";
+    padding: 0 5px;
+    color: #333645;
+}
+
+//Section-Top
+.section-top {
+    padding-bottom: 0;
+    padding-top: 50px;
+}
+
+.section-top-title {
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 0 0 28px;
+    color: #333645;
+}
+
+//Office Addresses
+
+.office-list {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.office-address-row {
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.office-address-item {
+    border-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 3px 35px rgba(0,0,0,.1);
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    text-decoration: none;
+     margin-top: 30px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    transition: .5s ease;
+}
+
+.office-image-full {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.office-content {
+    padding: 30px;
+    text-align: left;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    p {
+        font-size: .8125rem;
+        line-height: 1.375rem;
+        font-weight: 400;
+        margin-bottom: 15px;
+        margin: 0 0 10px;
+        letter-spacing: .4px;
+        color: #666;
+    }
+}
+
+.text-web {
+    font-weight: 700;
+    color: #926fb1;
+    font-size: 1.625rem;
+    margin: 0 0 15px;
+    line-height: 1.1;
+}
+
+.office-title {
+    font-weight: 400;
+    color: #333645;
+    background: transparent;
+    font-size: 1.25rem;
+}
+
+//Form section
+
+.bottom-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 50px;
+    flex: 0 0 auto;
+    max-width: 100%;
+}
+
+.ofh-it-support-container {
+    box-sizing: border-box;
+    position: relative;
+    p {
+        color: #333645;
+    }
+}
+
+.contact-us-form-container {
+    box-sizing: border-box;
+    position: relative;
+}
+
+#contact-form {
+    background-color: #e6e7e9;
+    border-radius: 10px;
+    padding: 30px;
+    label {
+        font-weight: 600;
+        color: #333645;
+        display: inline-block;
+        margin-bottom: 5px;
+        a{
+            text-decoration: underline;
+        }
+        .checkbox {
+            line-height: 32px;
+            cursor: pointer;
+        }
+    }
+    a {
+        color: #333645;
+        background: transparent;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    textarea {
+        overflow:auto;
+    }
+}
+
+.form-input-group {
+    width: 100%;
+  }
+
+textarea#message {
+    min-height: 100px;
+    height: 100px;
+}
+
+.form-control {
+    width: 100%;
+    height: 47px;
+    padding: 5px 15px;
+    border-color: #ccc;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #e5e5e5;
+      border-top-color: rgb(229, 229, 229);
+      border-right-color: rgb(229, 229, 229);
+      border-bottom-color: rgb(229, 229, 229);
+      border-left-color: rgb(229, 229, 229);
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control::placeholder {
+    color: #888;
+    opacity: 1; 
+}
+
+.form-control, output {
+    display: block;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}
+
+.checkbox {
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.checkbox .button {
+    border-radius: 3px;
+    border: 3px solid #333645;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+
+.media-left {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 10px;
+}
+
+.media-body {
+    width: 10000px;
+    display: table-cell;
+    vertical-align: top;
+    zoom: 1;
+    overflow: hidden;
+}
+
+.recaptcha-terms {
+    color: #333645;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+.form-action-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.helper-text {
+    color: #333645;
+}
+
+.required::after {
+    content: " *";
+    color: #d24d57;
+}
+
+.text-danger {
+    color: #a94442;
+}
+
+// Hover/Focus Effects
+.form-control:focus {
+    border-color: #5bc0de;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
+}
+
+.Ofh-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+//Media Queries
+@media (min-width: 992px) {
+    .office-address-item {
+        width: 33.33333333%;
+        position: relative;
+        min-height: 1px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .office-address-row {
+        flex-direction: row;
+    }
+}
+
+// form section
+
+@media (min-width: 1260px) {
+    .ofh-it-support-container {
+      left: 66.66666667%;
+      width: 33.33333333%;
+      padding-left: 15px;
+    }
+}
+
+
+@media (min-width: 1260px) {
+    .contact-us-form-container {
+      right: 33.33333333%;
+      width: 66.66666667%;
+      padding-right: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .form-input-group {
+      width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .form-input-left {
+      padding-right: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .form-input-right {
+      padding-left: 15px;
+    }
+}
